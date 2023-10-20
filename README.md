@@ -1,12 +1,12 @@
 # Grupo_4_ECommerce
 
-¿Qué productos o servicios brindará nuestro sitio?;
+¿Qué productos o servicios brindará nuestro sitio?
 Nuestra tienda en línea de productos de informática ofrecerá una amplia gama de productos, desde hardware y software de última generación hasta accesorios tecnológicos, dispositivos electrónicos y productos especializados para gaming y educación. También brindaremos servicios de reparación, mantenimiento, consultoría tecnológica y soporte técnico. Nuestro compromiso será ofrecer productos de alta calidad y un servicio al cliente excepcional.
 
-¿Quién será nuestra audiencia objetivo?;
+¿Quién será nuestra audiencia objetivo?
 La audiencia objetivo de nuestra tienda en línea de productos de informática abarcará las necesidades de entusiastas de la tecnología, profesionales de TI y empresas, estudiantes y educadores, usuarios de hogar, gamers, pequeñas empresas, profesionales creativos, personas en busca de reparaciones y servicios de mantenimiento. , entidades gubernamentales y organizaciones sin fines de lucro, así como compradores en línea experimentados.
 
-¿Cómo ajustaremos nuestra oferta a ese público?;
+¿Cómo ajustaremos nuestra oferta a ese público?
 Ajustaremos nuestra oferta a nuestra audiencia objetivo de la siguiente manera:
 
 -Segmentaremos nuestro catálogo de productos y contenido para atender las necesidades específicas de nuestros clientes.
