@@ -7,7 +7,7 @@ Nuestra tienda en línea de productos de informática ofrecerá una amplia gama 
 La audiencia objetivo de nuestra tienda en línea de productos de informática abarcará las necesidades de entusiastas de la tecnología, profesionales de TI y empresas, estudiantes y educadores, usuarios de hogar, gamers, pequeñas empresas, profesionales creativos, personas en busca de reparaciones y servicios de mantenimiento, entidades gubernamentales y organizaciones sin fines de lucro, así como compradores en línea experimentados.
 
 ¿Cómo ajustaremos nuestra oferta a ese público?
-Ajustaremos nuestra oferta a nuestra audiencia objetivo de la siguiente manera:
+Ajustaremos nuestra oferta al público de la siguiente manera:
 
 -Segmentaremos nuestro catálogo de productos y contenido para atender las necesidades específicas de nuestros clientes.
 
