@@ -23,11 +23,11 @@ Ajustaremos nuestra oferta a nuestra audiencia objetivo de la siguiente manera:
 
 Paginas Web referentes:
 
-1)CompraGamer: Ofrece una amplia variedad de productos de informática y es una de las plataformas de comercio electrónico más grandes y populares de la Argentina.
-2)Mexx Computacion: Ofrece una variedad de productos electrónicos y de informática, incluyendo hardware y accesorios.
-3)Venex: Es una tienda en línea especializada en electrónica y tecnología, con una amplia gama de componentes de hardware, software y productos relacionados.
-4)Fullh4rd: Es una tienda en línea de productos de tecnología con sede en la proviencia de Buenos Aires, que realiza envíos a nivel internacional.  
-5)Dell Technologies: Si nos enfocamos en productos de una marca específica, Dell es un ejemplo de una marca que vende sus productos directamente a través de su sitio web.
+1) CompraGamer: Ofrece una amplia variedad de productos de informática y es una de las plataformas de comercio electrónico más grandes y populares de la Argentina.
+2) Mexx Computacion: Ofrece una variedad de productos electrónicos y de informática, incluyendo hardware y accesorios.
+3) Venex: Es una tienda en línea especializada en electrónica y tecnología, con una amplia gama de componentes de hardware, software y productos relacionados.
+4) Fullh4rd: Es una tienda en línea de productos de tecnología con sede en la proviencia de Buenos Aires, que realiza envíos a nivel internacional.  
+5) Dell Technologies: Si nos enfocamos en productos de una marca específica, Dell es un ejemplo de una marca que vende sus productos directamente a través de su sitio web.
 
 Miembros del Equipo:
 -José Martin Guzmán Olivera
