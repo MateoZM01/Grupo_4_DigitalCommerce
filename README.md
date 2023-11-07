@@ -1,4 +1,4 @@
-# Grupo_4_ECommerce
+# Grupo_4_DigitalCommerce
 
 ¿Qué productos o servicios brindará nuestro sitio?
 Nuestra tienda en línea de productos de informática ofrecerá una amplia gama de productos, desde hardware y software de última generación hasta accesorios tecnológicos, dispositivos electrónicos y productos especializados para gaming y educación. También brindaremos servicios de reparación, mantenimiento, consultoría tecnológica y soporte técnico. Nuestro compromiso será ofrecer productos de alta calidad y un servicio al cliente excepcional.
