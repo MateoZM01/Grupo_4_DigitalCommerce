@@ -1,0 +1,209 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/header-footer.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="top-header">
+            <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo de la empresa">
+            
+            <div class="busqueda">
+                <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
+                <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+    
+            <h2 class="opciones-pago"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de
+                crédito
+            </h2>
+    
+        </div>
+    
+        <nav class="navegacion">
+
+            <ul class="left-navbar">
+                <li><a href="/">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="/register">Creá tu cuenta </a><i class="fa-regular fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+    
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+    
+    </header>
+
+    <form id="formularioLogin" action="/" method="post">
+
+        <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" required>
+
+        <input type="password" id="contrasena" name="contrasena" placeholder="Elegí tu Contraseña" required>
+
+        <input id="botonEnviarLogin" type="submit" value="Enviar">
+        
+    </form>
+
+    <footer>
+
+        <div class="contenedorSection">
+            <section class="seccion-pago">
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                    seguro!</p>
+            </section>
+            <section class="seccion-envio-gratis">
+                <i class="fa-solid fa-gift"></i>
+                <h4>Envío gratis desde $2,500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                    Mercado Puntos.</p>
+            </section>
+            <section class="seccion-seguridad">
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegid@.</p>
+            </section>
+        </div>
+
+        <p class="copyright">© 1999-2020 MercadoLiebre S.R.L.</p>
+
+    </footer>
+    
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/header-footer.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+    <title>Login</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Formulario Login y Registro de Usuarios</title>
+</head>
+<body>
+
+   <!-- Formularios -->
+    <div class="contenedor-formularios">
+
+        <!-- Contenido de los Formularios -->
+        <div class="contenido-tab">
+            <!-- Iniciar Sesion -->
+            <div id="iniciar-sesion">
+                <h1>Iniciar Sesión</h1>
+                <form action="#" method="post">
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class="req">*</span>
+                        </label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+                    <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
+                    <input type="submit" class="button button-block" value="INGRESAR">
+                </form>
+            </div>
+
+            <!-- Registrarse -->
+            <div id="registrarse">
+                <h1>Registrarse</h1>
+                <form action="#" method="post">
+                    <div class="fila-arriba">
+                        <div class="contenedor-input">
+                            <label>
+                                Nombre <span class="req">*</span>
+                            </label>
+                            <input type="text" required >
+                        </div>
+
+                        <div class="contenedor-input">
+                            <label>
+                                Apellido <span class="req">*</span>
+                            </label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Usuario <span class="req">*</span>
+                        </label>
+                        <input type="text" required>
+                    </div>
+                    <div class="contenedor-input">
+                            <label>
+                                Email <span class="req">*</span>
+                            </label>
+                        <input type="email" required>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+
+                    <div class="contenedor-input">
+                        <label>
+                            Repetir Contraseña <span class="req">*</span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+
+                    <input type="submit" class="button button-block" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+   <script src="js/jquery.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+</html>

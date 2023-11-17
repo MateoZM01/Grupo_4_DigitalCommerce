@@ -1,0 +1,382 @@
+/*
+Colores
+--Amarillo: #EAC926;
+--Azul: #03264C;
+--Celeste: #1259c3;
+--Gris oscuro: #666;
+--Gris claro: #ebebeb;
+--Verde: #39b54a;
+*/
+
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+#formularioLogin {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    align-items: center;
+    font-size: 18px;
+    padding: 20px 0;
+    background-color: #ebebeb;
+}
+
+#usuario {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 0 20vw 0 20vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+}
+
+#contrasena {
+    background-color: #ffffff;
+    color: #03264C;
+    width: 0 20vw 0 20vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+}
+
+#botonEnviarLogin {
+    background-color: #1259c3;
+    color: #ffffff;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid #ffffff;
+    transition-property: background-color;
+    transition-duration: 0,5s;
+}
+
+#botonEnviarLogin:hover {
+    background-color: #0022AA;
+}
+
+
+@media (min-width: 361px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .busqueda {
+        width: 30%;
+    }
+
+    .opciones-pago {
+        width: 30%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .navegacion {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navegacion ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navegacion a {
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        padding: 20px 0;
+        font-size: 17px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .basado-en-ultima-visita {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .seccion-ofertas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .producto:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .producto:hover .descripciones {
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenedorSection {
+        display: flex;4px
+        flex-direction: row;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(224, 227, 233);
+    font-family: "Ubuntu", helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(102, 123, 167);
+    transition: .5s ease;
+    
+    &:hover {
+        color: rgb(53, 64, 87);
+    }
+}
+
+.contenedor-formularios {
+    background-color: white;
+    padding: 40px;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(#13232f,.3);
+    
+}
+
+.contenedor-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+  
+    li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        background: rgba(#a0b3b0,.25);
+        color: #a0b3b0;
+        font-size: 20px;
+        float: left;
+        width: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s ease;
+        
+        &:hover {
+            background: rgb(53, 64, 87);
+            color: #fff;
+        }
+    }
+    
+    .active a {
+        background: rgb(102, 123, 167);
+        color: #fff;
+    }
+}
+
+.contenido-tab > div:last-child {
+    display: none;
+}
+
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(#fff,.5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 18px;
+    
+    .req {
+        margin: 2px;
+        color: rgb(102, 123, 167);
+    }
+}
+
+label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+    
+    .req {
+        opacity: 0;
+    }
+}
+
+label.highlight {
+    color: #fff;
+}
+
+input {
+    font-size: 18px;
+    font-weight:100;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border: 1px solid #a0b3b0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border-color: rgb(102, 123, 167);
+    }
+}
+
+.contenedor-input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.fila-arriba {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    div {
+        float: left;
+        width: 48%;
+        margin-right: 4%;
+        
+        &:last-child { 
+            margin: 0;
+        }
+    }
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: lighter;
+    background: rgb(102, 123, 167);
+    color: #fff;
+    transition: all .5s ease;
+    -webkit-appearance: none;
+    
+    &:hover, &:focus {
+        background: rgb(53, 64, 87);
+    }
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .fila-arriba {
+        div {
+            width: 100%;
+
+            &:last-child {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-tabs {
+        li a {
+            width: 100%;
+        }
+    }
+}
