@@ -34,5 +34,6 @@ Miembros del Equipo:
 -Mateo Zarbá Muratore
 -Ricardo Coronel
 -Mauro Rodriguez
+-Ignacio Fonzo
 
 https://trello.com/b/v4laiXZg/digitalcommerce
