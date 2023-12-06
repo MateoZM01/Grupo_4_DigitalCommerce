@@ -4,7 +4,7 @@ app.use(express.static('public'));
 
 
 app.listen(5000, ()=>{
-    console.log('BOCA BOCAAAA ESTO ES BOCAAAA');
+    console.log('Servidor Funcionando');
 });
 
 app.get('/', (req,res)=>{
@@ -19,6 +19,6 @@ app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
 
-app.get("/", (req, res) => {
+app.get("/product_detail", (req, res) => {
   res.sendFile(__dirname + "/views/product_Detail.html");
 });
