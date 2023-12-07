@@ -1,5 +1,3 @@
-/* Globales */
-
 :root {
   --color-principal: #ececec;
   --color-secundario: #dbd5d4;
@@ -75,19 +73,22 @@ body {
 }
 
 .search-button i {
-  color: white;
+  color: rgb(7, 7, 7);
+}
+button.search-button :hover {
+  background-color: #0072bb;
 }
 
 .header__manage-account a {
   text-decoration: none;
-  color: white;
+  color: rgb(11, 11, 11);
   background-color: var(--color-secundario);
   padding: 1rem;
   margin-left: 0.8rem;
 }
 
 .header__manage-account a:hover {
-  background-color: #Ffa500;
+  background-color: #0072bb;
 }
 
 .header__manage-account i {
@@ -123,13 +124,13 @@ body {
 
   .header__manage-account {
     display: none;
+    color: black;
   }
 
   .burger-menu {
     display: block;
     padding: 1rem 1.3rem;
-    background-color: #Ffa500
-    ;
+    background-color: #0072bb;
     color: white;
     font-size: 2rem;
     cursor: pointer;
@@ -278,7 +279,7 @@ body {
   margin: 0 auto;
   background-color: var(--color-secundario);
   padding: 1rem;
-  color: white;
+  color: rgb(4, 4, 4);
   border-radius: 0 0 1rem 0;
   margin-bottom: 3rem;
 }
@@ -307,7 +308,7 @@ body {
 
 .main__product a {
   text-decoration: none;
-  color: white;
+  color: rgb(3, 2, 2);
   background-color: var(--color-secundario);
   padding: 1rem;
   font-size: 1.7rem;
@@ -316,8 +317,7 @@ body {
 }
 
 .main__product a:hover {
-  background-color: #Ffa500
-  ;
+  background-color: #0072bb;
 }
 
 @media (max-width: 1024px) {

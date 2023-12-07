@@ -1,8 +1,8 @@
 /* Globales */
 
 :root {
-  --color-principal: #5ccb5f;
-  --color-secundario: #006414;
+  --color-principal: #ececec;
+  --color-secundario: #dbd5d4;
 }
 
 * {
@@ -80,14 +80,14 @@ body {
 
 .header__manage-account a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   background-color: var(--color-secundario);
   padding: 1rem;
   margin-left: 0.8rem;
 }
 
 .header__manage-account a:hover {
-  background-color: #004e10;
+  background-color: #0072bb;
 }
 
 .header__manage-account i {
@@ -128,7 +128,7 @@ body {
   .burger-menu {
     display: block;
     padding: 1rem 1.3rem;
-    background-color: #004e10;
+    background-color: #0072bb;
     color: white;
     font-size: 2rem;
     cursor: pointer;
@@ -219,14 +219,14 @@ body {
 
 .form__container form input[type="submit"] {
   background-color: var(--color-secundario);
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.7rem;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 .form__container form input[type="submit"]:hover {
-  background-color: #02400e;
+  background-color: #0072bb;
 }
 
 @media (max-width: 1024px) {
