@@ -1,8 +1,8 @@
 /* Globales */
 
 :root {
-  --color-principal: #ececec;
-  --color-secundario: #dbd5d4;
+  --color-principal: #5ccb5f;
+  --color-secundario: #006414;
 }
 
 * {
@@ -166,6 +166,87 @@ body {
   }
 }
 
+/* Main */
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+
+.form__container {
+  background-color: var(--color-principal);
+  width: 50%;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.form__subtitle h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.form__subtitle p {
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.form__subtitle a {
+  text-decoration: none;
+}
+
+.form__container form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.inputs__name-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.form__container form p {
+  margin-bottom: 3rem;
+}
+
+.form__container form p a {
+  color: black;
+}
+
+.form__container form input[type="submit"] {
+  background-color: var(--color-secundario);
+  color: white;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__container form input[type="submit"]:hover {
+  background-color: #02400e;
+}
+
+@media (max-width: 1024px) {
+  .form__container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .form__container {
+    width: 100%;
+  }
+}
+
 /* Nav */
 
 .nav {
@@ -204,150 +285,13 @@ body {
     display: none;
   }
 }
-/* Hero */
-
-.hero {
-  width: 100%;
-  height: 10rem;
-  background-image: url(/images/image-hero.jpg);
-}
-
-.header__hero-benefits {
-  background-color: white;
-  padding-top: 10rem;
-}
-
-.header__hero-benefits-container {
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
-}
-
-.header__hero-benefits-container div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header__hero-benefits-card {
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  padding: 0 5rem;
-}
-
-@media (max-width: 1024px) {
-  .header__hero-benefits-container {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 30rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .header__hero-benefits-container {
-    flex-direction: column;
-    gap: 5rem;
-  }
-
-  .header__hero-benefits-card {
-    border-left: none;
-    border-right: none;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 5rem 0;
-  }
-}
-
-/* Main */
-
-.main {
-  margin-top: 10rem;
-  height: 50vh;
-}
-
-.main__heading {
-  text-align: center;
-  font-size: 3rem;
-  width: 30%;
-  margin: 0 auto;
-  background-color: var(--color-secundario);
-  padding: 1rem;
-  color: white;
-  border-radius: 0 0 1rem 0;
-  margin-bottom: 3rem;
-}
-
-.main__products-container {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 7rem;
-}
-
-.main__product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main__product img {
-  width: 30rem;
-}
-
-.main__product p {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.main__product a {
-  text-decoration: none;
-  color: white;
-  background-color: var(--color-secundario);
-  padding: 1rem;
-  font-size: 1.7rem;
-  margin-top: 1.3rem;
-  font-weight: 700;
-}
-
-.main__product a:hover {
-  background-color: #004e10;
-}
-
-@media (max-width: 1024px) {
-  .main {
-    max-width: 100%;
-  }
-
-  .main__heading {
-    width: 60%;
-  }
-
-  .main__products-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .main__heading {
-    width: 100%;
-  }
-
-  .main__products-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
 /* Footer */
 
 .footer {
   background-color: var(--color-principal);
   padding: 2rem 0;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .footer__container {
@@ -358,7 +302,7 @@ body {
 }
 
 .footer__methods div img {
-  width: 10rem;
+  width: 40rem;
   margin-top: 0.7rem;
 }
 
