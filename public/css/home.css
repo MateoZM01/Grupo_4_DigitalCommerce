@@ -349,7 +349,7 @@ button.search-button :hover {
 .footer {
   background-color: var(--color-principal);
   padding: 2rem 0;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 .footer__container {
@@ -360,7 +360,7 @@ button.search-button :hover {
 }
 
 .footer__methods div img {
-  width: 10rem;
+  width: 40rem;
   margin-top: 0.7rem;
 }
 
