@@ -4,7 +4,7 @@ app.use(express.static('public'));
 
 
 app.listen(5000, ()=>{
-    console.log('Servidor Funcionando');
+    console.log('Servidor Funcionando http://localhost:5000/');
 });
 
 app.get('/', (req,res)=>{

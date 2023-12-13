@@ -1,18 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
 /* Header styles */
 .header {
-  background-color: #4285f4; /* Cambia el color del fondo del header */
+  background-color: #b3d0ff; /* Cambia el color del fondo del header */
   color: #fff;
   padding: 10px 0;
 }
 
-/* Ajustes al botón de búsqueda */
-.search-button {
-  background-color: #fff;
-  border: none;
-  padding: 8px 15px; /* Ajusta el padding para un aspecto más equilibrado */
-  cursor: pointer;
-  color: #4285f4; /* Color del texto del botón */
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 0 10%;
 }
+
+.logo {
+  width: auto;
+  height: 100px;
+  margin: 0 5px;
+}
+
+/* Ajustes al botón de búsqueda */
+.busqueda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 400px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 15px;
+  
+  margin: 0 5px;
+}
+
+.barra-busqueda {
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.boton-busqueda {
+  background: none;
+  border: 0;
+  color: gray;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.boton-login {
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0 5px;
+  color: gray;
+}
+
+.boton-carrito {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 30px;
+  margin: 0 5px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #4285f4;
+}
+
+.navbar li {
+  margin: 0 5%;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carousel-inner {
+  height: 50vh;
+}
+
+.carousel-inner .item img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Esto es para evitar márgenes adicionales debidos a la alineación de línea */
+  margin: 0 auto; /* Centrar la imagen dentro del contenedor */
+  max-height: 100%;
+}
+
+.main__product-img {
+  width: 100%;
+}
+
+.carousel-inner > .item > .carousel-img {
+      width: 60%;
+      margin: auto;
+  }
+
 /* Hero section */
 .hero {
   height: 200px;
@@ -35,9 +143,19 @@
 }
 /* Footer styles */
 .footer {
-  background-color: #333;
+  width: 100%;
+  background-color: #4285f4;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
   color: #fff;
   padding: 20px 0;
+}
+
+.footer__methods {
+  justify-content: center;
 }
 
 /* Estilo de los enlaces en el pie de página */
@@ -50,3 +168,5 @@
 .footer a:hover {
   color: #4285f4; /* Cambia el color al pasar el ratón */
 }
+
+
