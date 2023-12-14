@@ -73,6 +73,7 @@ body {
 
 .header__manage-account a:hover {
     background-color: #0072bb;
+    transition: 1s ease;
 }
 
 .header__manage-account i {

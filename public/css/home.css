@@ -93,23 +93,30 @@
 
 .navbar li {
   margin: 0 5%;
+}
+
+.navbar li a {
   color: #fff;
 }
 
-a {
-  text-decoration: none;
-}
-
-.carousel-inner {
+.carousel {
+  display: flex;
+  width: 70%;
   height: 50vh;
 }
 
-.carousel-inner .item img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Esto es para evitar márgenes adicionales debidos a la alineación de línea */
-  margin: 0 auto; /* Centrar la imagen dentro del contenedor */
-  max-height: 100%;
+.carousel .coursel_img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  filter: brightness(.5);
+  transition: .5s ease;
+}
+
+.carousel .coursel_img.active {
+  width: 50%;
+  object-fit: contain;
+  filter: brightness(1);
 }
 
 .main__product-img {
@@ -141,32 +148,104 @@ a {
   border-radius: 8px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-/* Footer styles */
+
+
+
+.footer__methods {
+  justify-content: center; 
+}
+
+Estilo de los enlaces en el pie de página
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Agrega transición para un cambio de color suave */
+} 
+
+ .footer a:hover {
+  color: #4285f4; /* Cambia el color al pasar el ratón */
+}
+
+
+
 .footer {
-  width: 100%;
+  
+  padding: 2rem 0;
   background-color: #4285f4;
+  color: #fff;
 }
 
 .footer__container {
   display: flex;
   justify-content: space-around;
-  color: #fff;
-  padding: 20px 0;
+  text-align: center;
+  align-items: start;
+  
 }
 
-.footer__methods {
-  justify-content: center;
+.footer__methods div img {
+  width: 30rem;
+  margin-top: 0.7rem;
 }
 
-/* Estilo de los enlaces en el pie de página */
-.footer a {
+.footer__social-networks i {
+  font-size: 3rem;
+  margin-top: 0.7rem;
+}
+
+.footer__contacto i {
+  margin-right: 1rem;
+}
+
+.botón {
+  width: 50%;
+  font-size: 15px;
+  padding: 5px 10px;
+  transition: color 450ms;
+}
+
+.botón:hover {
+  background-color: #0072bb;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.relleno {
+  width: 50%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.formulario {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+      gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+      flex-direction: column;
+      gap: 3rem;
+  }
+
+  .footer__contacto,
+  .footer__social-networks {
+      border-bottom: 1px solid var(--color-secundario);
+      padding-bottom: 1rem;
+  }
+}
+* .footer a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease; /* Agrega transición para un cambio de color suave */
 }
 
-.footer a:hover {
+* .footer a:hover {
   color: #4285f4; /* Cambia el color al pasar el ratón */
 }
-
-
