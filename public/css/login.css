@@ -1,208 +1,197 @@
 * {
-    padding: 0;
     margin: 0;
-}
-
-*, *:before, *:after {
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background: rgb(224, 227, 233);
     font-family: "Ubuntu", helvetica;
+}
+
+/* header */
+.header {
+    background-color: #b3d0ff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.top-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    width: 100%;
+    height: 10vh;
+    padding: 0 10%;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(102, 123, 167);
-    transition: .5s ease;
-    
-    &:hover {
-        color: rgb(53, 64, 87);
-    }
+.logo {
+    width: auto;
+    height: 100px;
+    margin: 0 5px;
 }
 
-.contenedor-formularios {
-    background-color: white;
-    padding: 40px;
-    width: 60%;
-    max-width: 600px;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px 4px rgba(#13232f,.3);
-    
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+
+    margin: 0 5px;
 }
 
-.contenedor-tabs {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 40px 0;
-    
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-  
-    li a {
-        display: block;
-        text-decoration: none;
-        padding: 15px;
-        background: rgba(#a0b3b0,.25);
-        color: #a0b3b0;
-        font-size: 20px;
-        float: left;
-        width: 50%;
-        text-align: center;
-        cursor: pointer;
-        transition: .5s ease;
-        
-        &:hover {
-            background: rgb(53, 64, 87);
-            color: #fff;
-        }
-    }
-    
-    .active a {
-        background: rgb(102, 123, 167);
-        color: #fff;
-    }
-}
-
-.contenido-tab > div:last-child {
-    display: none;
-}
-
-
-h1 {
-    text-align: center;
-    color: #000000;
-    font-weight: 300;
-    margin: 0 0 40px;
-}
-
-label {
-    position: absolute;
-    transform: translateY(6px);
-    left: 13px;
-    color: rgba(#fff,.5);
-    transition: all 0.25s ease;
-    -webkit-backface-visibility: hidden;
-    pointer-events: none;
-    font-size: 18px;
-    
-    .req {
-        margin: 2px;
-        color: rgb(102, 123, 167);
-    }
-}
-
-label.active {
-    transform: translateY(50px);
-    left: 2px;
+.barra-busqueda {
+    border: none;
     font-size: 14px;
-    
-    .req {
-        opacity: 0;
-    }
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 5px;
 }
 
-label.highlight {
-    color: #fff;
-}
-
-input {
-    font-size: 18px;
-    font-weight:100;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 5px 10px;
-    border: 1px solid #a0b3b0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: #fff;
-    transition: all 0.5s ease;
-    border-radius: 5px;
-    &:focus {
-        outline: none;
-        border-color: rgb(102, 123, 167);
-    }
-}
-
-.contenedor-input {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.fila-arriba {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    div {
-        float: left;
-        width: 48%;
-        margin-right: 4%;
-        
-        &:last-child { 
-            margin: 0;
-        }
-    }
-}
-
-.button {
+.boton-busqueda {
+    background: none;
     border: 0;
-    outline: none;
-    border-radius: 5px;
+    color: gray;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
     cursor: pointer;
-    padding: 15px 0;
-    font-size: 20px;
-    font-weight: lighter;
-    background: rgb(102, 123, 167);
-    color: #fff;
-    transition: all .5s ease;
-    -webkit-appearance: none;
-    
-    &:hover, &:focus {
-        background: rgb(53, 64, 87);
+}
+
+.header__manage-account a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: var(--color-secundario);
+    padding: 1rem;
+    margin-left: 0.8rem;
+}
+
+.header__manage-account a:hover {
+    background-color: #0072bb;
+}
+
+.header__manage-account i {
+    margin-left: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .header__logo_link {
+        max-width: 25%;
+    }
+
+    .header__top-form {
+        width: 60%;
+        display: flex;
+    }
+
+    .header__manage-account {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        padding: 1rem 1.3rem;
+        background-color: #0072bb;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
     }
 }
 
-.button-block {
-    display: block;
-    width: 100%;
+@media (max-width: 768px) {
+    .top-header {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .header-logo-link {
+        width: 10rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+    }
+
+    .busqueda {
+        width: 80%;
+        display: flex;
+    }
+
 }
 
-.forgot {
-    margin-top: -20px;
-    text-align: right;
-    margin-bottom: 20px;
+/* main */
+
+/* footer */
+.footer {
+    background-color: #fff;
+    padding: 2rem 0;
 }
 
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
 
-@media screen and (max-width: 500px) {
-    .fila-arriba {
-        div {
-            width: 100%;
+.footer__methods div img {
+    width: 30rem;
+    margin-top: 0.7rem;
+}
 
-            &:last-child {
-                margin-bottom: 40px;
-            }
-        }
+.footer__social-networks i {
+    font-size: 3rem;
+    margin-top: 0.7rem;
+}
+
+.footer__contacto i {
+    margin-right: 1rem;
+}
+
+.botón {
+    width: 50%;
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: color 450ms;
+}
+
+.botón:hover {
+    background-color: #0072bb;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.relleno {
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.formulario {
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .footer__container {
+        gap: 3rem;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .contenedor-tabs {
-        li a {
-            width: 100%;
-        }
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer__contacto,
+    .footer__social-networks {
+        border-bottom: 1px solid var(--color-secundario);
+        padding-bottom: 1rem;
     }
 }

@@ -1,130 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/css/styles.css" rel="stylesheet" />
-    <link href="/css/header-footer.css" rel="stylesheet" />
-    <link href="/css/login.css" rel="stylesheet" />
-    <title>Login</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/css/login.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet" />
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/login.css" />
+  <title>Iniciar Sesión</title>
+</head>
 
-    <title>Iniciar Sesión</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo__mobile">
-        <a href="/" class="header__logo_link"
-          ><img
-            src="/public/css/images/Logodc.png"
-            alt="imagen logo"
-            class="header__logo-mobile"
-        /></a>
+<body>
+  <header class="header">
+    <div class="top-header">
+      <a href="/" class="header-logo-link"><img class="logo" src="/images/Logodc.png" alt="Logo de la empresa"></a>
+      <div class="busqueda">
+        <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
+        <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-      <div class="header__top-container container">
-        <a href="/" class="header__logo_link"
-          ><img
-            src="/public/css/images/Logodc.png "
-            alt="imagen logo"
-            class="header__logo"
-        /></a>
-        <form action="" class="header__top-form">
-          <input
-            type="text"
-            class="search-bar"
-            placeholder="Buscar productos"
-          />
-          <button type="submit" class="search-button">
-            <i class="fa fa-search"></i>
-          </button>
-        </form>
-        <div class="header__manage-account">
-          <a href="/login">Iniciar Sesión<i class="fas fa-sign-in-alt"></i></a>
-          <a href="/register">Registrarse<i class="far fa-id-card"></i></a>
-          <a href="/carrito" class="carrito-compras"
-            ><i class="fas fa-shopping-basket icono-carrito"></i
-          ></a>
-          <a href="/" class="nav__item">Inicio</a>
-        </div>
-
-    <!-- Formularios -->
-    <div class="contenedor-formularios">
-      <!-- Contenido de los Formularios -->
-      <div class="contenido-tab">
-        <!-- Iniciar Sesion -->
-        <div id="iniciar-sesion">
-          <h1>Iniciar Sesión</h1>
-          <form action="#" method="post">
-            <div class="contenedor-input">
-              <label> Usuario <span class="req">*</span> </label>
-              <input type="text" required />
-            </div>
-
-            <div class="contenedor-input">
-              <label> Contraseña <span class="req">*</span> </label>
-              <input type="password" required />
-            </div>
-            <p class="forgot"><a href="#">Se te olvidó la contraseña?</a></p>
-            <input type="submit" class="button button-block" value="INGRESAR" />
-          </form>
-        </div>
-        <footer class="footer">
-          <div class="footer__container container">
-            <div class="footer__social-networks">
-              <h3>NUESTRAS REDES SOCIALES</h3>
-              <div>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </div>
-            </div>
-            <div class="footer__contacto">
-              <h3>CONTACTO</h3>
-              <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
-              <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
-              <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
-            </div>
-            <div class="footer__methods">
-              <div>
-                <h3>MEDIOS DE PAGO</h3>
-                <img src="images/pagos.png" alt="medios de pago" />
-              </div>
-            </div>
-          </div>
-        </footer>
-
+      <div class="header__manage-account">
+        <a href="/register">Registrarse<i class="far fa-id-card"></i></a>
+        <a href="/carrito" i class="fas fa-shopping-basket icono-carrito"></i></a>
+        <a href="/" class="nav__item">Inicio</a>
       </div>
     </div>
+  </header>
+  <main>
+    <form action="/" method="GET" class="formulario">
+      <br>
+      <input class="relleno" type="text" name="user" placeholder="Nombre de usuario" required>
+      <br>
+      <br>
+      <input class="relleno" type="password" name="pass" placeholder="Contraseña" required>
+      <br>
+      <br>
+      <button class="botón" type="submit">Enviar</button>
+      <br>
+      <br>
+    </form>
+  </main>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__social-networks">
+        <h3>NUESTRAS REDES SOCIALES</h3>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+      </div>
+      <div class="footer__contacto">
+        <h3>CONTACTO</h3>
+        <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
+        <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
+        <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
+      </div>
+      <div class="footer__methods">
+        <div>
+          <h3>MEDIOS DE PAGO</h3>
+          <img src="images/pagos.png" alt="medios de pago" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
