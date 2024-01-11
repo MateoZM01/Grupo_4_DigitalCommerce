@@ -65,7 +65,7 @@ body {
 
 .header__manage-account a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(65, 132, 255);
     background-color: var(--color-secundario);
     padding: 1rem;
     margin-left: 0.8rem;
@@ -125,33 +125,88 @@ body {
 }
 
 /* main */
-
-/* footer */
-.footer {
-    background-color: #fff;
-    padding: 2rem 0;
+.main {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.footer__container {
+.main-register {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-register input, .main-register button .main input, .main button {
+    width: 100%;
+}
+
+.main-register input {
+    padding: 5%;
+}
+
+.main-register button {
+    background-color: #b3d0ff;
+    border-radius: 25px;
+}
+
+.card-login {
+    padding: 5%;
+    border-radius: 30px;
+    background-color: #4285f4;
+    color: #fff;
+}
+
+/* footer */
+.footer__methods {
+    justify-content: center; 
+  }
+  
+  Estilo de los enlaces en el pie de página
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Agrega transición para un cambio de color suave */
+  } 
+  
+   .footer a:hover {
+    color: #4285f4; /* Cambia el color al pasar el ratón */
+  }
+  
+  
+  
+  .footer {
+    
+    padding: 2rem 0;
+    background-color: #4285f4;
+    color: #fff;
+  }
+  
+  .footer__container {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    align-items: center;
-}
-
-.footer__methods div img {
+    align-items: start;
+    
+  }
+  
+  .footer__methods div img {
     width: 30rem;
     margin-top: 0.7rem;
-}
-
-.footer__social-networks i {
+  }
+  
+  .footer__social-networks i {
     font-size: 3rem;
     margin-top: 0.7rem;
-}
-
-.footer__contacto i {
+  }
+  
+  .footer__contacto i {
     margin-right: 1rem;
-}
+  }
 
 .botón {
     width: 50%;
@@ -164,6 +219,8 @@ body {
     background-color: #0072bb;
     color: #FFF;
     border-radius: 5px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
 }
 
 .relleno {
