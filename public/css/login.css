@@ -141,15 +141,15 @@ body {
     flex-direction: column;
 }
 
-.main-register input, .main-register button .main input, .main button {
+.main-register input, .main-register button, .main input, .main button {
     width: 100%;
 }
 
-.main-register input {
+.main input, .main-register input {
     padding: 5%;
 }
 
-.main-register button {
+.main button, .main-register button {
     background-color: #b3d0ff;
     border-radius: 25px;
 }
