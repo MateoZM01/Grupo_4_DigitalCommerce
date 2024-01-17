@@ -1,10 +1,11 @@
 /* Globales */
-
+/* Definición de variables de color */
 :root {
-    --color-principal: #5ccb5f;
-    --color-secundario: #006414
+    --color-principal: #b3d0ff;
+    --color-secundario: #4285f4;
 }
 
+/* Estilos generales y configuración */
 * {
     margin: 0;
     padding: 0;
@@ -16,18 +17,21 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
+    background: rgb(224, 227, 233);
+    font-family: "Ubuntu", helvetica;
 }
 
+/* Contenedor global */
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
-/* Top Header */
+/* Header */
 .header {
     background-color: var(--color-principal);
+    color: #fff;
+    padding: 10px 0;
 }
 
 .header__top-container {
@@ -37,10 +41,8 @@ body {
     padding: 1.5rem 0;
 }
 
-
 .header__logo_link {
-    text-align: center
-    ;
+    text-align: center;
 }
 
 .header__logo {
@@ -76,23 +78,24 @@ body {
     color: white;
 }
 
-.header__manage-account a{
+.header__manage-account a {
     text-decoration: none;
-    color: white;
+    color: rgb(65, 132, 255);
     background-color: var(--color-secundario);
     padding: 1rem;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
 }
 
 .header__manage-account a:hover {
-    background-color: #004d0f;
+    background-color: #0072bb;
+    transition: 1s ease;
 }
 
 .header__manage-account i {
     margin-left: 1rem;
 }
 
-.header__manage-account .carrito-compras i  {
+.header__manage-account .carrito-compras i {
     margin-left: 0;
 }
 
@@ -105,12 +108,13 @@ body {
     margin-bottom: 0.7rem;
 }
 
+/* Media Queries para pantallas de tamaño máximo de 1024px */
 @media (max-width: 1024px) {
     .header {
         background-color: var(--color-principal);
     }
 
-    .header__logo_link{
+    .header__logo_link {
         max-width: 25%;
     }
 
@@ -126,18 +130,19 @@ body {
     .burger-menu {
         display: block;
         padding: 1rem 1.3rem;
-        background-color: #004e10;
+        background-color: #0072bb;
         color: white;
-        font-size:  2rem;
+        font-size: 2rem;
         cursor: pointer;
     }
 }
 
+/* Media Queries para pantallas de tamaño máximo de 768px */
 @media (max-width: 768px) {
-    .nav{
+    .nav {
         display: none;
     }
-    
+
     .header__logo {
         display: none;
     }
@@ -162,12 +167,9 @@ body {
         justify-content: center;
         gap: 3rem;
     }
-
 }
 
-
-/* Nav */
-
+/* Navigation */
 .nav {
     background-color: var(--color-secundario);
     width: 100%;
@@ -177,7 +179,6 @@ body {
 .nav__container {
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .nav__item {
@@ -190,9 +191,9 @@ body {
 .nav__item:hover {
     border-bottom: 2px solid #fefefe;
     color: #fefefe;
-
 }
 
+/* Media Queries para pantallas de tamaño máximo de 1024px */
 @media (max-width: 1024px) {
     .nav__container {
         flex-wrap: wrap;
@@ -201,14 +202,14 @@ body {
     }
 }
 
+/* Media Queries para pantallas de tamaño máximo de 768px */
 @media (max-width: 768px) {
-    .nav{
+    .nav {
         display: none;
     }
 }
 
-/* Main */
-
+/* Main Section */
 .main {
     width: 90%;
     margin: 6rem auto 10rem;
@@ -226,25 +227,25 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 3rem;
-    background-color: #0072BB;
-    box-shadow: 19px 14px 32px -6px rgba(0,77,15,0.79);
-    -webkit-box-shadow: 19px 14px 32px -6px rgba(0,77,15,0.79);
-    -moz-box-shadow: 19px 14px 32px -6px rgba(0,77,15,0.79);
+    background-color: var(--color-principal);
+    box-shadow: 19px 14px 32px -6px rgba(0, 77, 15, 0.79);
+    -webkit-box-shadow: 19px 14px 32px -6px rgba(0, 77, 15, 0.79);
+    -moz-box-shadow: 19px 14px 32px -6px rgba(0, 77, 15, 0.79);
 }
 
-@media(max-width: 1200px) {
+/* Media Queries para pantallas de tamaño máximo de 1200px */
+@media (max-width: 1200px) {
     .main__container {
         width: 95%;
     }
 }
-
 
 .main__productos-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 50%;
-    background-color: #0072BB;
+    background-color: var(--color-principal);
 }
 
 .main__producto-detalles p {
@@ -252,7 +253,7 @@ body {
 }
 
 .main__producto-detalles p span {
-    font-weight: 700
+    font-weight: 700;
 }
 
 .main__producto-cantidad {
@@ -265,15 +266,15 @@ body {
 .main__producto-cantidad button {
     padding: 0.7rem;
     font-size: 1.5rem;
-    background-color: #0072BB;
+    background-color: var(--color-principal);
     color: white;
     border: none;
     cursor: pointer;
 }
-.main__producto-cantidad button:hover {
-    background-color:#0072BB;
-}
 
+.main__producto-cantidad button:hover {
+    background-color: var(--color-principal);
+}
 
 .main__producto {
     display: flex;
@@ -284,172 +285,15 @@ body {
     width: 30%;
     text-align: center;
 }
+
 .main__producto-img img {
     max-width: 10rem;
-    
 }
-
 
 .main__detalles-container {
-    background-color: #0072BB;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.main__total-pago {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.main__cupon-descuento {
-    text-decoration: underline;
-    color: black;
-}
-
-.main__total, .main__subtotal, .main__descuento{
-    font-size: 2rem;
-}
-
-.main__total-pago span {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.metodo__pago-tarjeta {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.metodo__pago-transferencia {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.metodo__pago-efectivo {
-    font-size: 2rem;
-}
-
-.metodo__pago-efectivo input, .metodo__pago-tarjeta input, .metodo__pago-transferencia input {
-    margin-left: 1rem;
-}
-
-.main__metodo-pago input[type="submit"] {
-    background-color: var(--color-secundario);
-    color: white;
-    border: none;
-    margin: 0 auto;
-    font-size: 2rem;
-    margin-top: 3rem;
-    text-transform: uppercase;
-    display: block;
-    padding: 1rem;
-    border-radius:1rem 0 1rem 0;
-    cursor: pointer;
-
-}
-
-.main__metodo-pago input[type="submit"]:hover {
-    background-color: #0072BB;
-}
-
-.main__calcular-costo-envio {
-    background-color: #0072BB;
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-    text-transform: uppercase;
-}
-
-@media(max-width:1024px) {
-    .main__container {
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-
-    }
-    .main__productos-container {
-        width: 100%;
-    }
-    .main__detalles-container {
-        width: 100%;
-        height: 60rem;
-        margin-top: 3rem;
-    }
-}
-
-@media(max-width:800px) {
-    .main__container {
-        width: 80%;
-
-    }
-}
-
-@media(max-width:640px) {
-    .main__container {
-        width: 90%;
-
-    }
-
-    .main__producto {
-        flex-direction: column;
-        align-items: center;
-        border-bottom: 2px solid var(--color-secundario);
-        padding-bottom: 1rem;
-    }
-
-    .main__producto-cantidad {
-        justify-content: center;
-    }
-}
-
-/* Footer */
-
-.footer {
     background-color: var(--color-principal);
-    padding: 2rem 0;
-    margin-top: 10rem;
-}
-
-.footer__container {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    flex-direction: column;
     align-items: center;
-}
-
-.footer__methods div img {
-    width: 40rem;
-    margin-top: 0.7rem;
-}
-
-
-.footer__social-networks i{
-    font-size: 3rem;
-    margin-top: 0.7rem;
-}
-
-.footer__contacto i{
-    margin-right: 1rem;
-}
-
-@media(max-width:1024px) {
-    .footer__container {
-        gap: 3rem;
-    }
-}
-
-@media(max-width:768px) {
-    .footer__container {
-        flex-direction: column;
-        gap: 3rem;
-    }
-
-    .footer__contacto, .footer__social-networks {
-        border-bottom: 1px solid var(--color-secundario);
-        padding-bottom: 1rem;
-    }
-}
+    justify-content: space-around;
+    width

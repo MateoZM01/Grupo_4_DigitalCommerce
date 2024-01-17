@@ -8,5 +8,8 @@ const mainControllers = {
     register:  (req, res) => {
         res.render("register");
     },
+    car: (req, res) => {
+        res.render("carrito"); 
+    },
 }
 module.exports = mainControllers
