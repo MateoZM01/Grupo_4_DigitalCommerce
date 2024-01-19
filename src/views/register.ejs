@@ -2,26 +2,40 @@
 <html lang="en">
 
 <head>
+  <!-- Configuración del documento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Enlaces a hojas de estilo externas -->
   <link href="/css/login.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Preconexión a servicios externos -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Enlaces a fuentes de Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet" />
 
+  <!-- Título de la página -->
   <title>Iniciar Sesión</title>
 </head>
 
 <body>
+  <!-- Encabezado de la página -->
   <header class="header">
     <div class="top-header">
+      <!-- Enlace al inicio y logo de la empresa -->
       <a href="/" class="header-logo-link"><img class="logo" src="/images/Logodc.png" alt="Logo de la empresa"></a>
+
+      <!-- Barra de búsqueda -->
       <div class="busqueda">
         <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
         <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
+
+      <!-- Enlaces de gestión de cuenta y carrito -->
       <div class="header__manage-account">
         <a href="/register">Registrarse<i class="far fa-id-card"></i></a>
         <a href="/carrito" i class="fas fa-shopping-basket icono-carrito"></i></a>
@@ -29,32 +43,36 @@
       </div>
     </div>
   </header>
+
+  <!-- Contenido principal de la página -->
   <main class="main-register">
     <div class="card-login">
       <h1>Crea tu cuenta</h1>
-    <form action="/" method="GET" class="formulario">
-      <br>
-      <input class="relleno" type="text" name="user" placeholder="Nombre" required>
-      <br><br>
-      <input class="relleno" type="text" name="user" placeholder="Apellido" required>
-      <br><br>
-      <input class="relleno" type="text" name="user" placeholder="Correo electrónico" required>
-      <br><br>
-      <input class="relleno" type="password" name="pass" placeholder="Contraseña" required>
-      <br><br>
-      <input class="relleno" type="password" name="pass" placeholder="Confirmar contraseña" required>
-      <br><br>
-      <h4>Al registrarse, acepta nuestros <a href="">Terminos y Condiciones</a> y <a href="">Politicas de privacidad</a></h4>
-      <br>
-      <button class="botón" type="submit">Crear cuenta</button>
-      <br>
-    </form>
+      <!-- Formulario de registro -->
+      <form action="/" method="GET" class="formulario">
+        <br>
+        <input class="relleno" type="text" name="user" placeholder="Nombre" required>
+        <br><br>
+        <input class="relleno" type="text" name="user" placeholder="Apellido" required>
+        <br><br>
+        <input class="relleno" type="text" name="user" placeholder="Correo electrónico" required>
+        <br><br>
+        <input class="relleno" type="password" name="pass" placeholder="Contraseña" required>
+        <br><br>
+        <input class="relleno" type="password" name="pass" placeholder="Confirmar contraseña" required>
+        <br><br>
+        <h4>Al registrarse, acepta nuestros <a href="">Terminos y Condiciones</a> y <a href="">Politicas de privacidad</a></h4>
+        <br>
+        <button class="botón" type="submit">Crear cuenta</button>
+        <br>
+      </form>
     </div>
-    
   </main>
 
+  <!-- Pie de página de la página -->
   <footer class="footer">
     <div class="footer__container container">
+      <!-- Redes sociales -->
       <div class="footer__social-networks">
         <h3>NUESTRAS REDES SOCIALES</h3>
         <div>
@@ -63,12 +81,16 @@
           <i class="fa-brands fa-square-x-twitter"></i>
         </div>
       </div>
+
+      <!-- Información de contacto -->
       <div class="footer__contacto">
         <h3>CONTACTO</h3>
         <p><i class="fa-solid fa-envelope"></i>conmasgansqueconocimento@gmail.com</p>
         <p><i class="fa-brands fa-square-whatsapp"></i>385174587</p>
         <p><i class="fa-solid fa-compass"></i>Av.Simpreviva N° 912 Springfield</p>
       </div>
+
+      <!-- Métodos de pago aceptados -->
       <div class="footer__methods">
         <div>
           <h3>MEDIOS DE PAGO</h3>

@@ -1,233 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <!-- Enlace a la hoja de estilo de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <!-- Estilos CSS en línea -->
     <style>
-        * {
-    margin: 0;
-    box-sizing: border-box;
-}
+      /* Establecer valores predeterminados para todos los elementos */
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-:root {
-    --default-padding: 0px;
-    --default-margin: 0px;
-}
+      /* Definir variables CSS */
+      :root {
+        --default-padding: 0px;
+        --default-margin: 0px;
+      }
 
+      /* Estilos para el cuerpo del documento */
+      body {
+        font-family: Arial, sans-serif;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
 
-        body {
-            font-family: Arial, sans-serif;
-            flex-direction: column ;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header, footer {
-            background-color: #d6d1d0;
-            color: rgb(7, 1, 1);
-            padding: 1em;
-            text-align: center;
-        }
-        .product-detail {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 2em;
-            background-color: white;
-            padding: 2em;
-        }
-        .product-image {
-            width: 300px;
-            height: 300px;
-        }
-        .product-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .product-name {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .product-price {
-            color: green;
-            font-size: 1.2em;
-        }
-        button {
-            background-color: #0a0a0a;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-        button:hover {
-    background-color: #0072BB; /* Azul Francia */
-}
-        .related-products {
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            font-weight: bold;
-            overflow-x: auto;
-            flex-wrap: wrap;
-        }
-        img{
-            width: 300px;
-            height: 300px;
-        }
-        .related-product {
-            flex: 0 0 auto;
-            flex-wrap: wrap;
-            font-weight: normal;
-            width: 200px;
-            margin-right: 1em;
-            width: 400px;
-            height: 400px;
-        }
-        .comments {
-            margin-top: 2em;
-            padding: 1em;
-            font-weight: bold;
-        }
-        .comment {
-            border-bottom: 1px solid #ccc;
-            padding: 1em 0;
-            font-weight: normal;
-        }
-        .comment-author {
-            font-weight: bold;
-        }
-        .nav-menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        .nav-menu li {
-            float: left;
-        }
-        .nav-menu li a {
-            display: block;
-            color: rgb(8, 7, 7);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .nav-menu li a:hover {
-            background-color: #0072BB;
-        }
-        .profile-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-        }
+      /* Estilos para encabezado y pie de página */
+      header, footer {
+        background-color: #d6d1d0;
+        color: rgb(7, 1, 1);
+        padding: 1em;
+        text-align: center;
+      }
+
+      /* Estilos para la sección de detalles del producto */
+      .product-detail {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        background-color: white;
+        padding: 2em;
+      }
+
+      /* Estilos para la imagen del producto */
+      .product-image {
+        width: 300px;
+        height: 300px;
+      }
+
+      /* Estilos para la información del producto */
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      /* Estilos para el nombre del producto */
+      .product-name {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+
+      /* Estilos para el precio del producto */
+      .product-price {
+        color: green;
+        font-size: 1.2em;
+      }
+
+      /* Estilos para el botón de agregar al carrito */
+      button {
+        background-color: #0a0a0a;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      /* Estilos para el botón de agregar al carrito al pasar el ratón sobre él */
+      button:hover {
+        background-color: #0072BB; /* Azul Francia */
+      }
+
+      /* Estilos para la sección de productos relacionados */
+      .related-products {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-weight: bold;
+        overflow-x: auto;
+        flex-wrap: wrap;
+      }
+
+      /* Estilos para las imágenes de los productos relacionados */
+      img {
+        width: 300px;
+        height: 300px;
+      }
+
+      /* Estilos para cada producto relacionado */
+      .related-product {
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+        font-weight: normal;
+        width: 200px;
+        margin-right: 1em;
+        width: 400px;
+        height: 400px;
+      }
+
+      /* Estilos para la sección de comentarios */
+      .comments {
+        margin-top: 2em;
+        padding: 1em;
+        font-weight: bold;
+      }
+
+      /* Estilos para cada comentario */
+      .comment {
+        border-bottom: 1px solid #ccc;
+        padding: 1em 0;
+        font-weight: normal;
+      }
+
+      /* Estilos para el autor del comentario */
+      .comment-author {
+        font-weight: bold;
+      }
+
+      /* Estilos para el menú de navegación */
+      .nav-menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      /* Estilos para cada elemento del menú de navegación */
+      .nav-menu li {
+        float: left;
+      }
+
+      /* Estilos para cada enlace del menú de navegación */
+      .nav-menu li a {
+        display: block;
+        color: rgb(8, 7, 7);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Estilos al pasar el ratón sobre cada enlace del menú de navegación */
+      .nav-menu li a:hover {
+        background-color: #0072BB;
+      }
+
+      /* Estilos para el icono de perfil en el menú de navegación */
+      .profile-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
     </style>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="public/css/home.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-</head>
-<body>
-    <header>
-        <h1>Digital Commerce</h1>
-        <ul class="nav-menu">
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#Registro">Registro</a></li>
-            <li><a href="#InicioSesion">Inicio de sesión</a></li>
-            <li><a href="#MiCuenta"><img src="images/messi.jpg" alt="Icono de perfil" class="profile-icon"> Mi cuenta</a></li>
-        </ul>
-    </header>
-  <body>
-    <div class="product-detail">
-      <img
-        class="product-image"
-        src="images/macbook.jpg"
-        alt="product-image"
-      />
-      <div class="product-info">
-        <span class="product-name">MacBook Pro 2019</span>
-        <span class="product-price">$9000</span>
-        <p class="product-description">
-            CPU: 1.6GHz Intel Core i5-8210Y (dual-core, 4 threads, 4MB cache, up to 3.6GHz)<br>
-            Placa de Video: Intel UHD Graphics 617<br>
-            RAM: 8GB (2,133MHz LPDDR3)<br>
-            Tamaño de pantalla: 13.3 pulgadas, 2,560 x 1,600 Retina True Tone display (backlit LED, IPS)<br>
-            Storage: 256GB PCIe SSD[^1^][4]
-            Almacenamiento: SSD PCIe de 256 GB<br>
-            Puertos: 2x Thunderbolt 3 (USB-C), conector para auriculares de 3,5 mm<br>
-            Tamaño: 11,97 x 8,36 x 0,61 pulgadas (30,41 x 21,24 x 1,56 cm; ancho x profundidad x alto)<br>
-        </p>
-        <button>Agregar al carrito</button>
-      </div>
-    </div>
-    <span class="related-products">Productos Relacionados</span>
-    <div class="related-products">
-        <div class="related-product">
-            <img
-            class="related-images" 
-            src="images/s10.jpg" 
-            alt="Samsung Galaxy S10">
-            <p>Samsung Galaxy S10</p>
-            <p>$70.000</p>
-        </div>
-        <div class="related-product">
-            <img
-            class="related-images" 
-            src="images/Smart.jpg" 
-            alt="Producto relacionado 2">
-            <p>Smart Tv Samsung</p>
-            <p>$120.000</p>
-        </div>
-        <!-- Agrega más productos relacionados aquí... -->
-    </div>
-    <div class="comments">
-        <span class="comments">Comentarios</span><i class='far fa-comment'></i>
-        <div class="comment">
-            <img src="public/images/momo.jpg" alt="Perfil 1" class="profile-icon">
-            <p class="comment-author">juancito01</p>
-            <p>y esos auris de virgo momo?</p>
-        </div>
-        <div class="comment">
-            <img src="images/bill.jpg" alt="bill" class="profile-icon">
-            <p class="comment-author">Bill Gates</p>
-            <p>Muy mala, no la compren.</p>
-        </div>
-  </body>
-  <footer class="footer">
-    <div class="footer__container container">
-      <div class="footer__social-networks">
-        <h3>NUESTRAS REDES SOCIALES</h3>
-        <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-x-twitter"></i>
-        </div>
-      </div>
-      <div class="footer__contacto">
-        <h3>CONTACTO</h3>
-        <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
-        <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
-        <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
-      </div>
-      <div class="footer__methods">
-        <div>
-          <h3>MEDIOS DE PAGO</h3>
-          <img src="/public/css/images/pagos.png" alt="medios de pago" />
-        </div>
-      </div>
-    </div>
-  </footer>
-</html>
+  
