@@ -1,4 +1,5 @@
 const mainControllers = {
+    
     home: (req, res) => {
         res.render("home");
     },
@@ -8,8 +9,14 @@ const mainControllers = {
     register:  (req, res) => {
         res.render("register");
     },
-    car: (req, res) => {
-        res.render("carrito"); 
-    },
+    productCart: (req, res) => {
+        res.render('./products/productCart');
+            },
+    productDetail: (req, res) => {
+                res.render('./products/productDetail');
+            },
+                
+
+
 }
 module.exports = mainControllers

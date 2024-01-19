@@ -1,24 +1,37 @@
-const express = require('express');const path=require("path")
+const express = require('express');
+const path=require("path");
 const app = express();
-const mainRoutes = require("./routes/main")
-const productsRoutes = require("./routes/products")
-const carritoRoutes = require ("./routes/carrito")
+const port = 5000;
+const mainRoutes = require("./routes/main");
+const productsRoutes = require("./routes/products");
+//const carritoRoutes = require ("./routes/cart");
+
 app.use(express.static('public'));
 
-app.set("view engine","ejs")
+app.set("view engine","ejs");
 
-app.set("views",path.resolve(__dirname,"./views"))
+app.set("views",path.join(__dirname,"/views"));
 
-app.use(mainRoutes)
+app.use(mainRoutes);
 
-app.use("/products",productsRoutes)
+app.use("/products",productsRoutes);
 
-app.use("/carrito", carritoRoutes);S
+//app.use("/cart", carritoRoutes);
 
 app.get("/product_detail", (req, res) => {
     res.sendFile(__dirname + "/views/product_Detail.html");
 });
 
-app.listen(5000, () => {
-    console.log('Servidor Funcionando http://localhost:5000/');
+app.get('*', (req, res) => {
+    res.send(`
+    <h1>No existe esa página</h1>
+    <h3><a href="/">Volver al Home</a></h3>
+    `)
+});
+
+app.listen(port, () => {
+    console.log(`
+    Servidor levantado correctamente en el puerto ${port}
+    http://localhost:5000/
+    `);
 });

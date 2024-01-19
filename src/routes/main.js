@@ -8,12 +8,12 @@ const mainRoutes = {
     cart: "/cart",
     login:'/login',
     register: '/register',
-    carrito: '/carrito',
+    productCart:'/productCart'
 }
 //Mapeando las rutas a los controladores
 router.get(mainRoutes.home, mainControllers.home);
 router.get(mainRoutes.login, mainControllers.login);
 router.get(mainRoutes.register, mainControllers.register);
-router.get(mainRoutes.cart,mainControllers.cart);
+router.get(mainRoutes.cart , mainControllers.productCart);
 //Exportando el router
 module.exports = router
