@@ -12,6 +12,6 @@ const productsRoutes = {
 
 // Asociación de la ruta "/index" con la función getAllProducts del controlador productsControllers
 router.get(productsRoutes.index, productsControllers.getAllProducts);
-
+router.get(productsRoutes.detail, productsControllers.productDetail);
 // Exportación del router para su uso en otros archivos
 module.exports = router;

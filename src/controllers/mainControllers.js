@@ -17,18 +17,8 @@ const mainControllers = {
         // Renderiza la vista llamada "register"
         res.render("register");
     },
+    
 
-    // Controlador para la ruta del carrito de productos ("/productCart")
-    productCart: (req, res) => {
-        // Renderiza la vista llamada "productCart" en la carpeta "products"
-        res.render('./products/productCart');
-    },
-
-    // Controlador para la ruta del detalle del producto ("/productDetail")
-    productDetail: (req, res) => {
-        // Renderiza la vista llamada "productDetail" en la carpeta "products"
-        res.render('./products/productDetail');
-    }
 };
 
 // Exporta el objeto mainControllers para su uso en otros archivos
