@@ -24,9 +24,9 @@
   <!-- Encabezado de la página -->
   <header class="header">
     <div class="top-header">
-      <!-- Logo de la empresa con enlace a la página principal -->
-      <a href="/" class="header-logo-link"><img class="logo" src="/images/Logodc.png" alt="Logo de la empresa"></a>
-      
+      <!-- Logo de la empresa -->
+      <img class="logo" src="/images/Logodc.png" alt="Logo de la empresa">
+
       <!-- Barra de búsqueda -->
       <div class="busqueda">
         <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
@@ -107,7 +107,7 @@
     </div>
   </main>
 
-  <!-- Pie de página -->
+  <!-- Pie de página de la página -->
   <footer class="footer">
     <div class="footer__container container">
       <!-- Redes sociales -->
@@ -119,16 +119,16 @@
           <i class="fa-brands fa-square-x-twitter"></i>
         </div>
       </div>
-      
+
       <!-- Información de contacto -->
       <div class="footer__contacto">
         <h3>CONTACTO</h3>
-        <p><i class="fa-solid fa-envelope"></i>conmasgansqueconocimento@gmail.com</p>
-        <p><i class="fa-brands fa-square-whatsapp"></i>3851784147</p>
-        <p><i class="fa-solid fa-compass"></i>Av.Simpreviva N° 912 Springfield</p>
+        <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
+        <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
+        <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
       </div>
-      
-      <!-- Medios de pago -->
+
+      <!-- Métodos de pago aceptados -->
       <div class="footer__methods">
         <div>
           <h3>MEDIOS DE PAGO</h3>
@@ -137,6 +137,19 @@
       </div>
     </div>
   </footer>
-</body>
 
+  <!-- Script para cambiar la imagen activa en mouseover -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll("section img");
+
+      images.forEach(image => {
+        image.addEventListener("mouseover", function () {
+          images.forEach(img => img.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
 </html>
