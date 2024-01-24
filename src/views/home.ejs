@@ -1,188 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Configuración de la página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Configuración de la página -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos y fuentes -->
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
 
-  <!-- Estilos y fuentes -->
-  <link rel="stylesheet" href="/css/home.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
-  <!-- Scripts externos -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Scripts externos -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <!-- Título de la página -->
-  <title>Digital Commerce - Home</title>
-</head>
+    <!-- Título de la página -->
+    <title>Digital Commerce - Home</title>
+  </head>
 
-<body>
-  <!-- Encabezado -->
-  <header class="header">
-    <div class="top-header">
-      <!-- Logo de la empresa -->
-      <img class="logo" src="/images/Logodc.png" alt="Logo de la empresa">
+  <body>
+    <!-- Encabezado -->
+    <header class="header">
+      <div class="top-header">
+        <!-- Logo de la empresa -->
+        <img class="logo" src="/images/Logodc.png" alt="Logo de la empresa" />
 
-      <!-- Barra de búsqueda -->
-      <div class="busqueda">
-        <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
-        <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </div>
+        <!-- Barra de búsqueda -->
+        <div class="busqueda">
+          <input
+            class="barra-busqueda"
+            type="text"
+            placeholder="Buscar productos, marcas"
+          />
+          <button class="boton-busqueda">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
 
-      <!-- Iniciar sesión -->
-      <div class="login">
-        <button class="boton-login">
-          <a href="/login">INICIAR SESIÓN<i class="fas fa-sign-in-alt"></i></a>
-        </button>
-      </div>
+        <!-- Iniciar sesión -->
+        <div class="login">
+          <button class="boton-login">
+            <a href="/login"
+              >INICIAR SESIÓN<i class="fas fa-sign-in-alt"></i
+            ></a>
+          </button>
+        </div>
 
-      <!-- Carrito de compras -->
-      <div class="carrito">
-        <button class="boton-carrito">
-          <a href="/cart"><i class="fa-solid fa-basket-shopping"></i></a>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Barra de navegación -->
-  <nav>
-    <ul class="navbar">
-      <li><a href="#">PRODUCTOS</a></li>
-      <li><a href="#">ARMA TU PC</a></li>
-      <li><a href="#">AYUDA</a></li>
-      <li><a href="#">MARCAS SPONSOR</a></li>
-    </ul>
-  </nav>
-
-  <!-- Carrusel de imágenes -->
-  <div style="display: grid; place-items: center;">
-    <section class="carousel">
-      <img class="coursel_img" src="images/cooler-cpu.webp" alt="">
-      <img class="coursel_img" src="images/GAB148-jpg.webp" alt="">
-      <img class="coursel_img active" class="active" src="images/rtx-4090.webp" alt="">
-      <img class="coursel_img" src="images/procesador-Amd-Ryzen-9-7900X.jpeg" alt="">
-      <img class="coursel_img" src="images/memoria-m2.webp" alt="">
-      <img class="coursel_img" src="images/MEMORIADDR5.WEBP" alt="">
-    </section>
-  </div>
-
-  <!-- Contenido principal -->
-  <main class="main container">
-    <h2 class="main__heading">NUEVOS LANZAMIENTOS</h2>
-    <div class="main__products-container">
-      <!-- Producto 1 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/teclado red.webp" alt="imagen teclado" />
-        <h3>Teclado mecanico Redragon</h3>
-        <p>$20.000</p>
-        <P> UN CLASICO BBB</P>
-        <P> BUENO BARATO BONITO</P>
-        <a href="/product_detail">Ver producto</a>
-      </div>
-
-      <!-- Producto 2 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/auri.logi.png" alt="imagen auris" />
-        <h2>Auriculares Logitech</h2>
-        <p>$32.000</p>
-        <P> NO MERECES MENOS REY</P>
-        <P> ANTES QUE SUBA EL DOLAR METELE PLOMO</P>
-        <a href="/product_detail">Ver producto</a>
-      </div>
-
-      <!-- Producto 3 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/celular.webp" alt="Celular Samsung" />
-        <h2>Celular Samsung S23 Ultra</h2>
-        <p>$700.000</p>
-        <p> BUSCALA DEL ANGULO IPHONE 15 </p>
-        <P> IDEAL PARA QUEDAR BIEN CON LA TOXICA</P>
-        <a href="/product_detail">Ver producto</a>
-      </div>
-
-      <!-- Producto 4 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/monitor.png" alt="imagen monitor" />
-        <h2>Monitor</h2>
-        <p>$340.000</p>
-        <P> SOS SHOOTER? </P>
-        <P> NO LO QUIERES.. LO NECESITAS!</P>
-        <a href="/product_detail">Ver producto</a>
-      </div>
-
-      <!-- Producto 5 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/placamadre.webp" alt="imagen mother" />
-        <h2>MotherBoard MSI</h2>
-        <p>$325.000</p>
-        <P> MANDALE UN F5 A LA MIMADA </P>
-        <P>EL DDR4 USABA TU ABUELA </P>
-        <a href="/public/css/images/bill.jpeg">Ver producto</a>
-      </div>
-
-      <!-- Producto 6 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/mousepad.webp" alt="imagen pad" />
-        <h2>Mouse Pad</h2>
-        <p>$120.000</p>
-        <P> ES UN ELIXIR PARA TU MOUSE  </P>
-        <P> NO TE VAS ARREPENTIR </P>
-        <a href="/product_detail">Ver producto</a>
-      </div>
-    </div>
-  </main>
-
-  <!-- Pie de página -->
-  <footer class="footer">
-    <div class="footer__container container">
-      <!-- Redes sociales -->
-      <div class="footer__social-networks">
-        <h3>NUESTRAS REDES SOCIALES</h3>
-        <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-x-twitter"></i>
+        <!-- Carrito de compras -->
+        <div class="carrito">
+          <button class="boton-carrito">
+            <a href="/cart"><i class="fa-solid fa-basket-shopping"></i></a>
+          </button>
         </div>
       </div>
+    </header>
 
-      <!-- Información de contacto -->
-      <div class="footer__contacto">
-        <h3>CONTACTO</h3>
-        <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
-        <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
-        <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
-      </div>
+    <!-- Barra de navegación -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">PRODUCTOS</a></li>
+        <li><a href="#">ARMA TU PC</a></li>
+        <li><a href="#">AYUDA</a></li>
+        <li><a href="#">MARCAS SPONSOR</a></li>
+      </ul>
+    </nav>
 
-      <!-- Métodos de pago -->
-      <div class="footer__methods">
-        <div>
-          <h3>MEDIOS DE PAGO</h3>
-          <img src="images/pagos.png" alt="medios de pago" />
+    <!-- Carrusel de imágenes -->
+    <div style="display: grid; place-items: center">
+      <section class="carousel">
+        <img class="coursel_img" src="images/cooler-cpu.webp" alt="" />
+        <img class="coursel_img" src="images/GAB148-jpg.webp" alt="" />
+        <img
+          class="coursel_img active"
+          class="active"
+          src="images/rtx-4090.webp"
+          alt=""
+        />
+        <img
+          class="coursel_img"
+          src="images/procesador-Amd-Ryzen-9-7900X.jpeg"
+          alt=""
+        />
+        <img class="coursel_img" src="images/memoria-m2.webp" alt="" />
+        <img class="coursel_img" src="images/MEMORIADDR5.WEBP" alt="" />
+      </section>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="main container">
+      <h2 class="main__heading">NUEVOS LANZAMIENTOS</h2>
+      <div class="main__products-container">
+        <!-- Producto 1 -->
+        <div class="main__product">
+          <img
+            class="main__product-img"
+            src="images/teclado red.webp"
+            alt="imagen teclado"
+          />
+          <h3>Teclado mecanico Redragon</h3>
+          <p>$20.000</p>
+          <P> UN CLASICO BBB</P>
+          <P> BUENO BARATO BONITO</P>
+          <a href="/products/detail/1">Ver producto</a>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="main__product">
+          <img
+            class="main__product-img"
+            src="images/auri.logi.png"
+            alt="imagen auris"
+          />
+          <h2>Auriculares Logitech</h2>
+          <p>$32.000</p>
+          <P> NO MERECES MENOS REY</P>
+          <P> ANTES QUE SUBA EL DOLAR METELE PLOMO</P>
+          <a href="/products/detail/2">Ver producto</a>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="main__product">
+          <img
+            class="main__product-img"
+            src="images/celular.webp"
+            alt="Celular Samsung"
+          />
+          <h2>Celular Samsung S23 Ultra</h2>
+          <p>$700.000</p>
+          <p>BUSCALA DEL ANGULO IPHONE 15</p>
+          <P> IDEAL PARA QUEDAR BIEN CON LA TOXICA</P>
+          <a href="/products/detail/3">Ver producto</a>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="main__product">
+          <img
+            class="main__product-img"
+            src="images/monitor.png"
+            alt="imagen monitor"
+          />
+          <h2>Monitor</h2>
+          <p>$340.000</p>
+          <P> SOS SHOOTER? </P>
+          <P> NO LO QUIERES.. LO NECESITAS!</P>
+          <a href="/products/detail/4">Ver producto</a>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="main__product">
+          <img
+            class="main__product-img"
+            src="images/placamadre.webp"
+            alt="imagen mother"
+          />
+          <h2>MotherBoard MSI</h2>
+          <p>$325.000</p>
+          <P> MANDALE UN F5 A LA MIMADA </P>
+          <P>EL DDR4 USABA TU ABUELA </P>
+          <a href="/products/detail/5">Ver producto</a>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="main__product">
+          <img
+            class="main__product-img"
+            src="images/mousepad.webp"
+            alt="imagen pad"
+          />
+          <h2>Mouse Pad</h2>
+          <p>$120.000</p>
+          <P> ES UN ELIXIR PARA TU MOUSE </P>
+          <P> NO TE VAS ARREPENTIR </P>
+          <a href="/products/detail/6">Ver producto</a>
         </div>
       </div>
-    </div>
-  </footer>
+    </main>
 
-  <!-- Script para el carrusel de imágenes -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll("section img");
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <!-- Redes sociales -->
+        <div class="footer__social-networks">
+          <h3>NUESTRAS REDES SOCIALES</h3>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </div>
+        </div>
 
-      images.forEach(image => {
-        image.addEventListener("mouseover", function () {
-          images.forEach(img => img.classList.remove("active"));
-          this.classList.add("active");
+        <!-- Información de contacto -->
+        <div class="footer__contacto">
+          <h3>CONTACTO</h3>
+          <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
+          <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
+          <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
+        </div>
+
+        <!-- Métodos de pago -->
+        <div class="footer__methods">
+          <div>
+            <h3>MEDIOS DE PAGO</h3>
+            <img src="images/pagos.png" alt="medios de pago" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script para el carrusel de imágenes -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("section img");
+
+        images.forEach((image) => {
+          image.addEventListener("mouseover", function () {
+            images.forEach((img) => img.classList.remove("active"));
+            this.classList.add("active");
+          });
         });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
