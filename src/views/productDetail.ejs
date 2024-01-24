@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Enlaces a hojas de estilo y fuentes -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/public/css/productDetail.css"
-    />
+    <link rel="stylesheet" href="/css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +17,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
     <!-- Título de la página -->
     <title>Digital Commerce - Detalle de Producto</title>
   </head>
@@ -30,14 +29,22 @@
     <header class="header">
       <div class="top-header">
         <!-- Logo de la empresa con enlace a la página principal -->
-        <a href="/" class="header-logo-link"><img class="logo" src="/images/Logodc.png" alt="Logo de la empresa"></a>
-        
+        <a href="/" class="header-logo-link"
+          ><img class="logo" src="/images/Logodc.png" alt="Logo de la empresa"
+        /></a>
+
         <!-- Barra de búsqueda -->
         <div class="busqueda">
-          <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
-          <button class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input
+            class="barra-busqueda"
+            type="text"
+            placeholder="Buscar productos, marcas"
+          />
+          <button class="boton-busqueda">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        
+
         <!-- Enlaces para gestionar la cuenta, registrarse y ver el carrito -->
         <div class="header__manage-account">
           <a href="/register">Registrarse<i class="far fa-id-card"></i></a>
@@ -52,7 +59,7 @@
       <!-- Imagen del producto -->
       <img
         class="product-image"
-        src="/public/images/macbook.jpg"
+        src="/public/images/macbookpro.jpg"
         alt="product-image"
       />
 
@@ -86,21 +93,21 @@
       <div class="related-product">
         <img
           class="related-images"
-          src="/public/images/s10.jpg"
-          alt="Samsung Galaxy S10"
+          src="/public/images/celular.webp"
+          alt="Celular Samsung S23 ULTRA"
         />
-        <p>Samsung Galaxy S10</p>
-        <p>$70.000</p>
+        <p>Samsung Galaxy S23 ULTRA</p>
+        <p>$700.000</p>
       </div>
       <!-- Producto relacionado 2 -->
       <div class="related-product">
         <img
           class="related-images"
-          src="/public/images/smart.jpg"
+          src="/public/images/auri.logi.png"
           alt="Producto relacionado 2"
         />
-        <p>Smart Tv Samsung</p>
-        <p>$120.000</p>
+        <p>Auricular Logitech</p>
+        <p>$30.000</p>
       </div>
       <!-- Puedes agregar más productos relacionados aquí... -->
     </div>
@@ -110,13 +117,17 @@
       <span class="comments">Comentarios</span><i class="far fa-comment"></i>
       <!-- Comentario 1 -->
       <div class="comment">
-        <img src="public/images/momo.jpg" alt="Perfil 1" class="profile-icon" />
+        <img
+          src="/public/images/momo.jpeg"
+          alt="Perfil 1"
+          class="profile-icon"
+        />
         <p class="comment-author">juancito01</p>
         <p>y esos auris de virgo momo?</p>
       </div>
       <!-- Comentario 2 -->
       <div class="comment">
-        <img src="images/bill.jpg" alt="bill" class="profile-icon" />
+        <img src="/public/images/bill.jpeg" alt="bill" class="profile-icon" />
         <p class="comment-author">Bill Gates</p>
         <p>Muy mala, no la compren.</p>
       </div>

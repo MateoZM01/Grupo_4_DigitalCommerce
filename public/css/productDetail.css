@@ -139,9 +139,129 @@ body {
     display: flex;
   }
 }
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 
-/*Estilo de los enlaces en el pie de página */
-.footer a {
+.product-detail {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  background-color: white;
+  padding: 2em;
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.product-price {
+  color: green;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #0a0a0a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0072bb; /* Azul Francia */
+}
+
+.related-products {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-weight: bold;
+  overflow-x: auto;
+  flex-wrap: wrap;
+}
+
+.related-product {
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  font-weight: normal;
+  width: 400px; /* Ajusta el ancho según tus necesidades */
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  margin-right: 1em;
+}
+
+img {
+  width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+  height: auto;
+}
+
+.comments {
+  margin-top: 2em;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.comment {
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+  font-weight: normal;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-menu li {
+  float: left;
+}
+
+.nav-menu li a {
+  display: block;
+  color: rgb(8, 7, 7);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  background-color: #0072bb;
+}
+
+.profile-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.footer__methods {
+  justify-content: center;
+}
+
+Estilo de los enlaces en el pie de página .footer a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease; /* Agrega transición para un cambio de color suave */
