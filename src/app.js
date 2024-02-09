@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require("path");
 const app = express();
-const port = 5000;
+const port = 4000;
 
 // Importación de rutas definidas en archivos separados
 const mainRoutes = require("./routes/main");
@@ -25,6 +25,6 @@ app.use("/cart", cartRoutes);
 app.listen(port, () => {
     console.log(`
     Servidor levantado correctamente en el puerto ${port}
-    http://localhost:5000/
+    http://localhost:${port}/
     `);
 });
