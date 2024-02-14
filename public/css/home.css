@@ -99,10 +99,13 @@
   color: #fff;
 }
 
+/* carousel  */
 .carousel {
   display: flex;
   width: 70%;
   height: 50vh;
+  margin: auto;
+  overflow: hidden;
 }
 
 .carousel .coursel_img {
@@ -110,7 +113,7 @@
   flex-grow: 1;
   object-fit: cover;
   filter: brightness(.5);
-  transition: .5s ease;
+  transition: .7s ease;
 }
 
 .carousel .coursel_img.active {
@@ -135,20 +138,30 @@
 }
 /* Main content styles */
 .main__products-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid; /* Usamos grid layout para un mejor control */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas autoajustables */
   gap: 20px; /* Espaciado entre productos */
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .main__product {
-  width: calc(30% - 20px); /* Ajusta el ancho y el margen entre productos */
-  margin: 0 10px 20px 0;
-  padding: 15px;
-  border: 1px solid #ddd; /* Borde suave alrededor de cada producto */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Aumentamos el espacio interno */
+  border-radius: 12px; /* Bordes redondeados más pronunciados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos */
 }
 
+.main__product:hover {
+  transform: translateY(-5px); /* Elevación al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.main__product-img {
+  height: 300px;
+  object-fit: contain;
+}
 
 
 .footer__methods {
