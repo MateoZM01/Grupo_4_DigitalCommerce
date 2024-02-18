@@ -1,58 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Configuración del documento -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Enlaces a hojas de estilo y fuentes -->
-    <link rel="stylesheet" href="/css/productDetail.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <!-- Título de la página -->
-    <title>Digital Commerce - Detalle de Producto</title>
-  </head>
+  <%- include('./partials/head') %>
   <body>
     <!-- Encabezado de la página -->
-    <header class="header">
-      <div class="top-header">
-        <!-- Logo de la empresa con enlace a la página principal -->
-        <a href="/" class="header-logo-link"
-          ><img class="logo" src="/images/Logodc.png" alt="Logo de la empresa"
-        /></a>
-
-        <!-- Barra de búsqueda -->
-        <div class="busqueda">
-          <input
-            class="barra-busqueda"
-            type="text"
-            placeholder="Buscar productos, marcas"
-          />
-          <button class="boton-busqueda">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-
-        <!-- Enlaces para gestionar la cuenta, registrarse y ver el carrito -->
-        <div class="header__manage-account">
-          <a href="/register">Registrarse<i class="far fa-id-card"></i></a>
-          <a href="/cart"><i class="fa-solid fa-basket-shopping"></i></a>
-          <a href="/" class="nav__item">Inicio</a>
-        </div>
-      </div>
-    </header>
+    <%- include('./partials/header') %>
 
     <!-- Cuerpo de la página -->
     <div class="product-detail">
@@ -115,34 +66,6 @@
     </div>
 
     <!-- Pie de página -->
-    <footer class="footer">
-      <div class="footer__container container">
-        <!-- Redes sociales -->
-        <div class="footer__social-networks">
-          <h3>NUESTRAS REDES SOCIALES</h3>
-          <div>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-x-twitter"></i>
-          </div>
-        </div>
-
-        <!-- Información de contacto -->
-        <div class="footer__contacto">
-          <h3>CONTACTO</h3>
-          <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
-          <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
-          <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
-        </div>
-
-        <!-- Métodos de pago -->
-        <div class="footer__methods">
-          <div>
-            <h3>MEDIOS DE PAGO</h3>
-            <img src="/images/pagos.png" alt="medios de pago" />
-          </div>
-        </div>
-      </div>
-    </footer>
+    <%- include('./partials/footer.ejs')%>
   </body>
 </html>

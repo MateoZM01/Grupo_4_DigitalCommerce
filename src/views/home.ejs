@@ -1,205 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Configuración de la página -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Estilos y fuentes -->
-  <link rel="stylesheet" href="/css/home.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<%- include('./partials/head') %>
 
-  <!-- Scripts externos -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <body>
 
-  <!-- Título de la página -->
-  <title>Digital Commerce - Home</title>
-</head>
-<body>
-  <!-- Encabezado -->
-  <header class="header">
-    <div class="top-header">
-      <!-- Logo de la empresa -->
-      <img class="logo" src="/images/Logodc.png" alt="Logo de la empresa" />
+    <%- include('./partials/header') %>
 
-      <!-- Barra de búsqueda -->
-      <div class="busqueda">
-        <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas" />
-        <button class="boton-busqueda">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+      <!-- Barra de navegación -->
+      <nav>
+        <ul class="navbar">
+          <li><a href="#">PRODUCTOS</a></li>
+          <li><a href="#">ARMA TU PC</a></li>
+          <li><a href="#">AYUDA</a></li>
+          <li><a href="#">MARCAS SPONSOR</a></li>
+        </ul>
+      </nav>
+
+      <!-- Carrusel de imágenes -->
+      <div style="display: grid; place-items: center">
+        <section class="carousel">
+          <img class="coursel_img" src="images/cooler-cpu.webp" alt="" />
+          <img class="coursel_img" src="images/GAB148-jpg.webp" alt="" />
+          <img class="coursel_img active" src="images/rtx-4090.webp" alt="" />
+          <img class="coursel_img" src="images/procesador-Amd-Ryzen-9-7900X.jpeg" alt="" />
+          <img class="coursel_img" src="images/memoria-m2.webp" alt="" />
+          <img class="coursel_img" src="images/MEMORIADDR5.WEBP" alt="" />
+        </section>
       </div>
 
-      <!-- Iniciar sesión -->
-      <div class="login">
-        <a href="/login" class="boton-login">INICIAR SESIÓN<i class="fas fa-sign-in-alt"></i></a>
-      </div>
+      <!-- Contenido principal -->
+      <main class="main container">
+        <h2 class="main__heading">NUEVOS LANZAMIENTOS</h2>
+        <div class="main__products-container">
+          <!-- Producto 1 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/teclado_red.webp" alt="imagen teclado" />
+            <h3>Teclado mecanico Redragon</h3>
+            <p>$60.000</p>
+            <p>UN CLASICO BBB</p>
+            <p>BUENO BARATO BONITO</p>
+            <a href="/products/detail/1">Ver producto</a>
+          </div>
 
-      <!-- Carrito de compras -->
-      <div class="carrito">
-        <a href="/cart" class="boton-carrito"><i class="fa-solid fa-basket-shopping"></i></a>
-      </div>
-    </div>
-  </header>
+          <!-- Producto 2 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/auri.logi.png" alt="imagen auris" />
+            <h3>Auriculares Logitech</h3>
+            <p>$320.000</p>
+            <p>NO MERECES MENOS REY</p>
+            <p>ANTES QUE SUBA EL DOLAR METELE PLOMO</p>
+            <a href="/products/detail/2">Ver producto</a>
+          </div>
 
-  <!-- Barra de navegación -->
-  <nav>
-    <ul class="navbar">
-      <li><a href="#">PRODUCTOS</a></li>
-      <li><a href="#">ARMA TU PC</a></li>
-      <li><a href="#">AYUDA</a></li>
-      <li><a href="#">MARCAS SPONSOR</a></li>
-    </ul>
-  </nav>
+          <!-- Producto 3 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/celular.webp" alt="Celular Samsung" />
+            <h3>Celular Samsung S23 Ultra</h3>
+            <p>$1.600.000</p>
+            <p>BUSCALA DEL ANGULO IPHONE 15</p>
+            <p>IDEAL PARA QUEDAR BIEN CON LA TOXICA</p>
+            <a href="/products/detail/3">Ver producto</a>
+          </div>
 
-  <!-- Carrusel de imágenes -->
-  <div style="display: grid; place-items: center">
-    <section class="carousel">
-      <img class="coursel_img" src="images/cooler-cpu.webp" alt="" />
-      <img class="coursel_img" src="images/GAB148-jpg.webp" alt="" />
-      <img class="coursel_img active" src="images/rtx-4090.webp" alt="" />
-      <img class="coursel_img" src="images/procesador-Amd-Ryzen-9-7900X.jpeg" alt="" />
-      <img class="coursel_img" src="images/memoria-m2.webp" alt="" />
-      <img class="coursel_img" src="images/MEMORIADDR5.WEBP" alt="" />
-    </section>
-  </div>
+          <!-- Producto 4 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/monitor.png" alt="imagen monitor" />
+            <h3>Monitor</h3>
+            <p>$620.000</p>
+            <p>SOS SHOOTER?</p>
+            <p>NO LO QUIERES.. LO NECESITAS!</p>
+            <a href="/products/detail/4">Ver producto</a>
+          </div>
 
-  <!-- Contenido principal -->
-  <main class="main container">
-    <h2 class="main__heading">NUEVOS LANZAMIENTOS</h2>
-    <div class="main__products-container">
-      <!-- Producto 1 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/teclado_red.webp" alt="imagen teclado" />
-        <h3>Teclado mecanico Redragon</h3>
-        <p>$60.000</p>
-        <p>UN CLASICO BBB</p>
-        <p>BUENO BARATO BONITO</p>
-        <a href="/products/detail/1">Ver producto</a>
-      </div>
+          <!-- Producto 5 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/placamadre.webp" alt="imagen mother" />
+            <h3>MotherBoard MSI</h3>
+            <p>$520.000</p>
+            <p>MANDALE UN F5 A LA MIMADA</p>
+            <p>EL DDR4 USABA TU ABUELA</p>
+            <a href="/products/detail/5">Ver producto</a>
+          </div>
 
-      <!-- Producto 2 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/auri.logi.png" alt="imagen auris" />
-        <h3>Auriculares Logitech</h3>
-        <p>$320.000</p>
-        <p>NO MERECES MENOS REY</p>
-        <p>ANTES QUE SUBA EL DOLAR METELE PLOMO</p>
-        <a href="/products/detail/2">Ver producto</a>
-      </div>
+          <!-- Producto 6 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/impresora.hp.webp" alt="imagen impresora" />
+            <h3>Impresora Multifunción</h3>
+            <p>$250.000</p>
+            <p>IMPRESIÓN DE ALTA CALIDAD</p>
+            <p>PARA TUS NECESIDADES DIARIAS</p>
+            <a href="/products/detail/6">Ver producto</a>
+          </div>
 
-      <!-- Producto 3 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/celular.webp" alt="Celular Samsung" />
-        <h3>Celular Samsung S23 Ultra</h3>
-        <p>$1.600.000</p>
-        <p>BUSCALA DEL ANGULO IPHONE 15</p>
-        <p>IDEAL PARA QUEDAR BIEN CON LA TOXICA</p>
-        <a href="/products/detail/3">Ver producto</a>
-      </div>
+          <!-- Producto 7 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/router.webp" alt="imagen router" />
+            <h3>Router WiFi Gigabit</h3>
+            <p>$180.000</p>
+            <p>CONEXIÓN ESTABLE Y RÁPIDA</p>
+            <p>PARA TODOS TUS DISPOSITIVOS</p>
+            <a href="/products/detail/7">Ver producto</a>
+          </div>
 
-      <!-- Producto 4 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/monitor.png" alt="imagen monitor" />
-        <h3>Monitor</h3>
-        <p>$620.000</p>
-        <p>SOS SHOOTER?</p>
-        <p>NO LO QUIERES.. LO NECESITAS!</p>
-        <a href="/products/detail/4">Ver producto</a>
-      </div>
-
-      <!-- Producto 5 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/placamadre.webp" alt="imagen mother" />
-        <h3>MotherBoard MSI</h3>
-        <p>$520.000</p>
-        <p>MANDALE UN F5 A LA MIMADA</p>
-        <p>EL DDR4 USABA TU ABUELA</p>
-        <a href="/products/detail/5">Ver producto</a>
-      </div>
-
-<!-- Producto 6 -->
-       <div class="main__product">
-        <img class="main__product-img" src="images/impresora.hp.webp" alt="imagen impresora" />
-        <h3>Impresora Multifunción</h3>
-        <p>$250.000</p>
-        <p>IMPRESIÓN DE ALTA CALIDAD</p>
-        <p>PARA TUS NECESIDADES DIARIAS</p>
-        <a href="/products/detail/6">Ver producto</a>
-      </div>
-
-<!-- Producto 7 -->
-      <div class="main__product">
-      <img class="main__product-img" src="images/router.webp" alt="imagen router" />
-      <h3>Router WiFi Gigabit</h3>
-      <p>$180.000</p>
-      <p>CONEXIÓN ESTABLE Y RÁPIDA</p>
-      <p>PARA TODOS TUS DISPOSITIVOS</p>
-      <a href="/products/detail/7">Ver producto</a>
-   </div>
-
-      <!-- Producto 8 -->
-      <div class="main__product">
-        <img class="main__product-img" src="images/mousepad.webp" alt="imagen pad" />
-        <h3>Mouse Pad</h3>
-        <p>$7.200</p>
-        <p>ES UN ELIXIR PARA TU MOUSE</p>
-        <p>NO TE VAS ARREPENTIR</p>
-        <a href="/products/detail/8">Ver producto</a>
-      </div>
-    </div>
-  </main>
-
-  
-  <!-- Pie de página -->
-  <footer class="footer">
-    <div class="footer__container container">
-      <!-- Redes sociales -->
-      <div class="footer__social-networks">
-        <h3>NUESTRAS REDES SOCIALES</h3>
-        <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-square-x-twitter"></i>
+          <!-- Producto 8 -->
+          <div class="main__product">
+            <img class="main__product-img" src="images/mousepad.webp" alt="imagen pad" />
+            <h3>Mouse Pad</h3>
+            <p>$7.200</p>
+            <p>ES UN ELIXIR PARA TU MOUSE</p>
+            <p>NO TE VAS ARREPENTIR</p>
+            <a href="/products/detail/8">Ver producto</a>
+          </div>
         </div>
-      </div>
+      </main>
 
 
-          <!-- Información de contacto -->
-      <div class="footer__contacto">
-        <h3>CONTACTO</h3>
-        <p><i class="fa-solid fa-envelope"></i>Dcommerce@gmail.com</p>
-        <p><i class="fa-brands fa-square-whatsapp"></i>09122018</p>
-        <p><i class="fa-solid fa-compass"></i>Av. Roca 912</p>
-      </div>
+      <!-- Pie de página -->
+      <%- include('./partials/footer.ejs')%>
 
-       <!-- Métodos de pago -->
-       <div class="footer__methods">
-        <div>
-          <h3>MEDIOS DE PAGO</h3>
-          <img src="images/pagos.png" alt="medios de pago" />
-        </div>
-      </div>
-    </div>
-  </footer>
+      <!-- Script para el carrusel de imágenes -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const images = document.querySelectorAll("section img");
 
-  <!-- Script para el carrusel de imágenes -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll("section img");
-
-      images.forEach((image) => {
-        image.addEventListener("mouseover", function () {
-          images.forEach((img) => img.classList.remove("active"));
-          this.classList.add("active");
+          images.forEach((image) => {
+            image.addEventListener("mouseover", function () {
+              images.forEach((img) => img.classList.remove("active"));
+              this.classList.add("active");
+            });
+          });
         });
-      });
-    });
-  </script>
-</body>
+      </script>
+  </body>
+
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+
+    <main>
+        <div id="crearProducto">
+            <form action="/products/create" method="POST" enctype="multipart/form-data">
+
+                <h1>Cargar un nuevo producto</h1>
+
+                <input type="text" name="name" placeholder="Nombre" required="required" value="">
+
+                <input type="text" name="description" placeholder="Descripcion" required="required" value="">
+
+                <input type="number" id="price" name="price" value="" required="required">
+
+                <input type="file" name="images" accept=".jpg,.png" multiple>
+
+                <button type="submit" class="btn btn btn-info">Guardar</button>
+                <a href="/administrar" class="btn btn-danger">Volver</a>
+            </form>
+        </div>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

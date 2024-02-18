@@ -28,7 +28,6 @@ router.get(mainRoutes.register, mainControllers.register);
 //     `)
 // });
 
-    
 
 // Exportando el router para su uso en otras partes de la aplicación
 module.exports = router;
