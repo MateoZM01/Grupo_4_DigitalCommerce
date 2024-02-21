@@ -58,6 +58,7 @@
   line-height: normal;
   overflow: visible;
   cursor: pointer;
+  
 }
 
 .boton-login {
@@ -73,7 +74,9 @@
   align-items: center;
   margin: 0 5px;
   color: gray;
+  transition: color 0.3s ease;
 }
+
 
 .boton-carrito {
   background-color: transparent;
@@ -101,25 +104,31 @@
 
 /* carousel  */
 .carousel {
-  display: flex;
-  width: 70%;
-  height: 50vh;
-  margin: auto;
-  overflow: hidden;
-}
-
+      display: flex;
+      width: 90%;
+      height: 50vh;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 12px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+      position: relative; /* Importante para el posicionamiento absoluto de las imágenes */
+    }
 .carousel .coursel_img {
   width: 0;
   flex-grow: 1;
   object-fit: cover;
-  filter: brightness(.5);
-  transition: .7s ease;
+  filter: brightness(0.5); /* Reducción de brillo */
+  transition: width 0.7s ease, filter 0.7s ease; /* Transiciones */
+ 
 }
 
 .carousel .coursel_img.active {
   width: 50%;
   object-fit: contain;
   filter: brightness(1);
+ 
 }
 
 .main__product-img {
@@ -130,12 +139,14 @@
       width: 60%;
       margin: auto;
   }
+  
 
 /* Hero section */
 .hero {
   height: 200px;
   background: url('public\images\messi.webp') center/cover; /* Añade una imagen de fondo */
 }
+
 /* Main content styles */
 .main__products-container {
   display: grid; /* Usamos grid layout para un mejor control */
