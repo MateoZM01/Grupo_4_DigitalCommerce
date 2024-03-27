@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('./partials/head') %>
+<%- include('./partials/head') %>
+
   <body>
     <!-- Encabezado de la página -->
     <%- include('./partials/header') %>
 
-    <!-- Cuerpo de la página -->
-    <div class="product-detail">
-      <!-- Imagen del producto -->
-      <img
-        class="product-image"
-        src="/images/macbookpro.jpg"
-        alt="product-image"
-      />
+      <!-- Cuerpo de la página -->
+      <div class="product-detail">
+        <!-- Imagen del producto -->
+        <img class="product-image" src="/images/macbookpro.jpg" alt="product-image" />
 
-      <!-- Información del producto -->
-      <div class="product-info">
-        <span class="product-name">MacBook Pro 2019</span>
-        <span class="product-price">$9000</span>
-        <p class="product-description">
-          <!-- Detalles técnicos del producto -->
-          CPU: 1.6GHz Intel Core i5-8210Y (dual-core, 4 threads, 4MB cache, up
-          to 3.6GHz)<br />
-          Placa de Video: Intel UHD Graphics 617<br />
-          RAM: 8GB (2,133MHz LPDDR3)<br />
-          Tamaño de pantalla: 13.3 pulgadas, 2,560 x 1,600 Retina True Tone
-          display (backlit LED, IPS)<br />
-          Storage: 256GB PCIe SSD[^1^][4] Almacenamiento: SSD PCIe de 256 GB<br />
-          Puertos: 2x Thunderbolt 3 (USB-C), conector para auriculares de 3,5
-          mm<br />
-          Tamaño: 11,97 x 8,36 x 0,61 pulgadas (30,41 x 21,24 x 1,56 cm; ancho x
-          profundidad x alto)<br />
-        </p>
-        <!-- Botón para agregar al carrito -->
-        <button>Agregar al carrito</button>
+        <!-- Información del producto -->
+        <div class="product-info">
+          <span class="product-name">MacBook Pro 2019</span>
+          <span class="product-price">$9000</span>
+          <p class="product-description">
+            <!-- Detalles técnicos del producto -->
+            CPU: 1.6GHz Intel Core i5-8210Y (dual-core, 4 threads, 4MB cache, up
+            to 3.6GHz)<br />
+            Placa de Video: Intel UHD Graphics 617<br />
+            RAM: 8GB (2,133MHz LPDDR3)<br />
+            Tamaño de pantalla: 13.3 pulgadas, 2,560 x 1,600 Retina True Tone
+            display (backlit LED, IPS)<br />
+            Storage: 256GB PCIe SSD[^1^][4] Almacenamiento: SSD PCIe de 256 GB<br />
+            Puertos: 2x Thunderbolt 3 (USB-C), conector para auriculares de 3,5
+            mm<br />
+            Tamaño: 11,97 x 8,36 x 0,61 pulgadas (30,41 x 21,24 x 1,56 cm; ancho x
+            profundidad x alto)<br />
+          </p>
+          <!-- Botón para agregar al carrito -->
+          <button>Agregar al carrito</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Sección de productos relacionados -->
-    <span class="related-products"> Productos Relacionados</span>
-    <div class="related-products">
-      <!-- Producto relacionado 1 -->
-      <div class="main__product">
-        <img
-          class="main__product-img"
-          src="/images/auri.logi.png"
-          alt="imagen auris"
-        />
-        <h3>Auriculares Logitech</h3>
-        <p>$32.000</p>
-        <a href="/products/detail/2">Ver producto</a>
+      <!-- Sección de productos relacionados -->
+      <span class="related-products"> Productos Relacionados</span>
+      <div class="related-products">
+        <!-- Producto relacionado 1 -->
+        <div class="main__product">
+          <img class="main__product-img" src="/images/auri.logi.png" alt="imagen auris" />
+          <h3>Auriculares Logitech Pro X Wireless</h3>
+          <p>$32.000</p>
+          <a href="/products/detail/2">Ver producto</a>
+        </div>
+        <!-- Producto relacionado 2 -->
+        <div class="main__product">
+          <img class="main__product-img" src="/images/teclado_red.webp" alt="imagen teclado" />
+          <h3>Teclado mecánico Redragon K630</h3>
+          <p>$20.000</p>
+          <a href="/products/detail/1">Ver producto</a>
+        </div>
+        <!-- Puedes agregar más productos relacionados aquí... -->
       </div>
-      <!-- Producto relacionado 2 -->
-      <div class="main__product">
-        <img
-          class="main__product-img"
-          src="/images/teclado red.webp"
-          alt="imagen teclado"
-        />
-        <h3>Teclado mecanico Redragon</h3>
-        <p>$20.000</p>
-        <a href="/products/detail/1">Ver producto</a>
-      </div>
-      <!-- Puedes agregar más productos relacionados aquí... -->
-    </div>
 
-    <!-- Pie de página -->
-    <%- include('./partials/footer.ejs')%>
+      <!-- Pie de página -->
+      <%- include('./partials/footer.ejs')%>
   </body>
+
 </html>

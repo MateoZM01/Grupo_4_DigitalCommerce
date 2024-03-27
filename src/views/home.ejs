@@ -11,7 +11,7 @@
       <nav>
         <ul class="navbar">
           <li><a href="#">PRODUCTOS</a></li>
-          <li><a href="#">ARMA TU PC</a></li>
+          <li><a href="#">ARMÁ TU PC</a></li>
           <li><a href="#">AYUDA</a></li>
           <li><a href="#">MARCAS SPONSOR</a></li>
         </ul>
@@ -36,20 +36,20 @@
           <!-- Producto 1 -->
           <div class="main__product">
             <img class="main__product-img" src="images/teclado_red.webp" alt="imagen teclado" />
-            <h3>Teclado mecanico Redragon</h3>
+            <h3>Teclado mecánico Redragon K630</h3>
             <p>$60.000</p>
-            <p>UN CLASICO BBB</p>
-            <p>BUENO BARATO BONITO</p>
+            <p>ERGONÓMICO Y APTO PARA DIVERSOS USOS</p>
+            <p>CON CONECTOR USB</p>
             <a href="/products/detail/1">Ver producto</a>
           </div>
 
           <!-- Producto 2 -->
           <div class="main__product">
             <img class="main__product-img" src="images/auri.logi.png" alt="imagen auris" />
-            <h3>Auriculares Logitech</h3>
+            <h3>Auriculares Logitech Pro X Wireless</h3>
             <p>$320.000</p>
-            <p>NO MERECES MENOS REY</p>
-            <p>ANTES QUE SUBA EL DOLAR METELE PLOMO</p>
+            <p>COMODIDAD Y RENDIMIENTO</p>
+            <p>HASTA 20 HS. DE DURACIÓN DE BATERÍA</p>
             <a href="/products/detail/2">Ver producto</a>
           </div>
 
@@ -58,28 +58,28 @@
             <img class="main__product-img" src="images/celular.webp" alt="Celular Samsung" />
             <h3>Celular Samsung S23 Ultra</h3>
             <p>$1.600.000</p>
-            <p>BUSCALA DEL ANGULO IPHONE 15</p>
-            <p>IDEAL PARA QUEDAR BIEN CON LA TOXICA</p>
+            <p>CÁMARA DE ALTA RESOLUCIÓN CON MODO NOCTURNO MEJORADO</p>
+            <p>CONECTIVIDAD 5G</p>
             <a href="/products/detail/3">Ver producto</a>
           </div>
 
           <!-- Producto 4 -->
           <div class="main__product">
             <img class="main__product-img" src="images/monitor.png" alt="imagen monitor" />
-            <h3>Monitor</h3>
+            <h3>Monitor Gamer Gigabyte Curvo 165hz 1ms</h3>
             <p>$620.000</p>
-            <p>SOS SHOOTER?</p>
-            <p>NO LO QUIERES.. LO NECESITAS!</p>
+            <p>RESOLUCIÓN DE QHD</p>
+            <p>COMODIDAD VISUAL EN TODO MOMENTO</p>
             <a href="/products/detail/4">Ver producto</a>
           </div>
 
           <!-- Producto 5 -->
           <div class="main__product">
             <img class="main__product-img" src="images/placamadre.webp" alt="imagen mother" />
-            <h3>MotherBoard MSI</h3>
+            <h3>Motherboard Am5 - Msi Pro X670-p Wifi Ddr5 Ryzen</h3>
             <p>$520.000</p>
-            <p>MANDALE UN F5 A LA MIMADA</p>
-            <p>EL DDR4 USABA TU ABUELA</p>
+            <p>COMPATIBLE CON PROCESADORES AMD</p>
+            <p>CUENTA CON CHIPSET: AMD X670</p>
             <a href="/products/detail/5">Ver producto</a>
           </div>
 
@@ -106,10 +106,10 @@
           <!-- Producto 8 -->
           <div class="main__product">
             <img class="main__product-img" src="images/mousepad.webp" alt="imagen pad" />
-            <h3>Mouse Pad</h3>
+            <h3>Mouse Pad Gamer</h3>
             <p>$7.200</p>
-            <p>ES UN ELIXIR PARA TU MOUSE</p>
-            <p>NO TE VAS ARREPENTIR</p>
+            <p>PRECISIÓN Y COMODIDAD EN CADA MOVIMIENTO</p>
+            <p>ANTIDESLIZANTE</p>
             <a href="/products/detail/8">Ver producto</a>
           </div>
         </div>
@@ -119,19 +119,19 @@
       <!-- Pie de página -->
       <%- include('./partials/footer.ejs')%>
 
-      <!-- Script para el carrusel de imágenes -->
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const images = document.querySelectorAll("section img");
+        <!-- Script para el carrusel de imágenes -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll("section img");
 
-          images.forEach((image) => {
-            image.addEventListener("mouseover", function () {
-              images.forEach((img) => img.classList.remove("active"));
-              this.classList.add("active");
+            images.forEach((image) => {
+              image.addEventListener("mouseover", function () {
+                images.forEach((img) => img.classList.remove("active"));
+                this.classList.add("active");
+              });
             });
           });
-        });
-      </script>
+        </script>
   </body>
 
 </html>

@@ -157,6 +157,8 @@ body {
   width: 50%;
   font-size: 15px;
   padding: 5px 10px;
+  background-color: #fff;
+  color: #0030E1;
   transition: color 450ms;
 }
 
@@ -174,6 +176,10 @@ body {
   border: none;
   border-radius: 5px;
   padding: 2px;
+}
+
+.terminos, .politicas {
+  color: #0030E1 ;
 }
 
 @media (max-width: 1024px) {

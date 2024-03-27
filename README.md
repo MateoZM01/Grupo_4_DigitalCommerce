@@ -35,5 +35,6 @@ Miembros del Equipo:
 -Ricardo Coronel
 -Mauro Rodriguez
 -Ignacio Fonzo
+-Aynelen Ledesma
 
 https://trello.com/b/v4laiXZg/digitalcommerce

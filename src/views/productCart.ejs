@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('./partials/head') %>
+<head>
+  <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/css/carrito.css">
+</head>
 
 <body>
   <!-- Encabezado de la página -->
   <%- include('./partials/header') %>
 
-  <!-- Contenido principal de la página -->
-  <main class="main">
-    <div class="main__container">
-      <!-- Contenedor de productos -->
-      <div class="main__productos-container">
-        <!-- Producto 1 -->
-        <div class="main__product">
-          <img
-            class="main__product-img"
-            src="/images/auri.logi.png"
-            alt="Auriculares sección de producto"
-          />
-       
-          <div class="main__producto-detalles">
-            <p>Auriculares Logitech <span>$32.000</span></p>
-            <div class="main__producto-cantidad">
-              <button-name><i class="fa-solid fa-plus"></i></button>
-              <p>1</p>
-              <button-name><i class="fa-solid fa-minus"></i></button>
-              <button-type><i class="fa-solid fa-trash"></i></button>
+    <!-- Contenido principal de la página -->
+    <main class="main">
+      <div class="main__container">
+        <!-- Contenedor de productos -->
+        <div class="main__productos-container">
+          <!-- Producto 1 -->
+          <div class="main__product">
+            <img class="main__product-img" src="/images/auri.logi.png" alt="Auriculares sección de producto" />
+
+            <div class="main__producto-detalles">
+              <p>Auriculares Logitech Pro X Wireless</p>
+              <p>$32.000</p>
+              <div class="main__producto-cantidad">
+                <button-name><i class="fa-solid fa-plus"></i></button>
+                  <p>1</p>
+                  <button-name><i class="fa-solid fa-minus"></i></button>
+                    <button-type><i class="fa-solid fa-trash"></i></button>
+              </div>
             </div>
           </div>
+
+          <!-- Productos adicionales (repetidos para demostración) -->
+          <!-- Producto 2 -->
+          <!-- Producto 3 -->
+          <!-- Producto 4 -->
         </div>
 
-        <!-- Productos adicionales (repetidos para demostración) -->
-        <!-- Producto 2 -->
-        <!-- Producto 3 -->
-        <!-- Producto 4 -->
-      </div>
-
-      <!-- Detalles y método de pago -->
-            <div class="main__detalles-container">
-        <!-- Total de la compra y detalles -->
-        <div class="main__total-pago">
-          <p class="main__total"><span>Total: </span>$50.000</p>
-          <p class="main__subtotal"><span>Subtotal: </span>$50.000</p>
-          <div>
-            <p class="main__descuento"><span>Descuento: </span>$0</p>
-            <a href="#" class="main__cupon-descuento">Agregar cupón de descuento</a>
-          </div>
-          
-        </div>
-
-        <!-- Métodos de pago -->
-        <div class="main__metodo-pago">
-          <form action="">
-            <div class="metodo__pago-tarjeta">
-              <i class="fa-solid fa-credit-card"></i>
-              <label for="">Tarjeta de crédito</label>
-              <input type="checkbox" name="pago-tarjeta" id="pago-tarjeta" value="pago-tarjeta">
+        <!-- Detalles y método de pago -->
+        <div class="main__detalles-container">
+          <!-- Total de la compra y detalles -->
+          <div class="main__total-pago">
+            <p class="main__precio"><span>Total: </span>$50.000</p>
+            <p class="main__precio"><span>Subtotal: </span>$50.000</p>
+            <div>
+              <p class="main__precio"><span>Descuento: </span>$0</p>
+              <a href="#" class="main__cupon-descuento">Agregar cupón de descuento</a>
             </div>
-            <!-- Más métodos de pago -->
-            <input type="submit" value="Realizar compra" class="main__button-pagar">
-          </form>
+
+          </div>
+
+          <!-- Métodos de pago -->
+          <div class="main__metodo-pago">
+            <form action="">
+              <div class="metodo__pago-tarjeta">
+                <i class="fa-solid fa-credit-card"></i>
+                <label for="">Tarjeta de crédito</label>
+                <input type="radio" name="pago-tarjeta" id="credit" value="credit">
+                <br>
+                <i class="fa-solid fa-credit-card"></i>
+                <label for="">Tarjeta de débito</label>
+                <input type="radio" name="pago-tarjeta" id="debit" value="debit">
+              </div>
+
+              <!-- Más métodos de pago -->
+              <input type="submit" value="Realizar compra" class="main__button-pagar">
+            </form>
+          </div>
+
+          <!-- Enlace para calcular costo de envío -->
+          <a href="#" class="main__calcular-costo-envio">Calcular costo de envío</a>
         </div>
-
-        <!-- Enlace para calcular costo de envío -->
-        <a href="#" class="main__calcular-costo-envio">Calcular costo de envío</a>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- Pie de página de la página -->
-  <%- include('./partials/footer.ejs')%>
+    <!-- Pie de página de la página -->
+    <%- include('./partials/footer.ejs')%>
 
-  <!-- Script para cambiar la imagen activa en mouseover -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll("section img");
-
-      images.forEach(image => {
-        image.addEventListener("mouseover", function () {
-          images.forEach(img => img.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
-    });
-  </script>
 </body>
+
 </html>

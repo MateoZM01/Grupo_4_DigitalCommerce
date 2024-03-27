@@ -2,39 +2,40 @@
 <html lang="en">
 
 <%- include('./partials/head') %>
-<link rel="stylesheet" href="/css/registro.css">
+  <link rel="stylesheet" href="/css/registro.css">
 
-<body>
-  <!-- Encabezado de la página -->
-  <%- include('./partials/header') %>
+  <body>
+    <!-- Encabezado de la página -->
+    <%- include('./partials/header') %>
 
-  <!-- Contenido principal de la página -->
-  <main class="main-register">
-    <div class="card-login">
-      <h1>Crea tu cuenta</h1>
-      <!-- Formulario de registro -->
-      <form action="/" method="GET" class="formulario">
-        <br>
-        <input class="relleno" type="text" name="user" placeholder="Nombre" required>
-        <br><br>
-        <input class="relleno" type="text" name="user" placeholder="Apellido" required>
-        <br><br>
-        <input class="relleno" type="text" name="user" placeholder="Correo electrónico" required>
-        <br><br>
-        <input class="relleno" type="password" name="pass" placeholder="Contraseña" required>
-        <br><br>
-        <input class="relleno" type="password" name="pass" placeholder="Confirmar contraseña" required>
-        <br><br>
-        <h4>Al registrarse, acepta nuestros <a href="">Terminos y Condiciones</a> y <a href="">Politicas de privacidad</a></h4>
-        <br>
-        <button class="botón" type="submit">Crear cuenta</button>
-        <br>
-      </form>
-    </div>
-  </main>
+      <!-- Contenido principal de la página -->
+      <main class="main-register">
+        <div class="card-login">
+          <h1>Crea tu cuenta</h1>
+          <!-- Formulario de registro -->
+          <form action="/" method="GET" class="formulario">
+            <br>
+            <input class="relleno" type="text" name="user" placeholder="Nombre" required>
+            <br><br>
+            <input class="relleno" type="text" name="user" placeholder="Apellido" required>
+            <br><br>
+            <input class="relleno" type="text" name="user" placeholder="Correo electrónico" required>
+            <br><br>
+            <input class="relleno" type="password" name="pass" placeholder="Contraseña" required>
+            <br><br>
+            <input class="relleno" type="password" name="pass" placeholder="Confirmar contraseña" required>
+            <br><br>
+            <h4>Al registrarse, acepta nuestros <a href="" class="terminos">Términos y Condiciones</a> y <a href="" class="politicas">Políticas de
+                privacidad</a></h4>
+            <br>
+            <button class="botón" type="submit">Crear cuenta</button>
+            <br>
+          </form>
+        </div>
+      </main>
 
-  <!-- Pie de página de la página -->
-  <%- include('./partials/footer.ejs')%>
-</body>
+      <!-- Pie de página de la página -->
+      <%- include('./partials/footer.ejs')%>
+  </body>
 
 </html>

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Teclado mecanico Redragon K630",
+    "name": "Teclado mecánico Redragon K630",
     "price": 60000,
     "image": "teclado_red.webp",
     "description": "Disfrutá de tus partidas en otro nivel con Redragon, marca reconocida que se especializa en brindar la mejor experiencia de juego al público gamer desde hace más de 20 años. Sus teclados se adaptan a todo tipo de jugadores y esto los convierten en un fiel reflejo de la alta gama y calidad que la compañía ofrece."
@@ -33,5 +33,26 @@
     "price": 520000,
     "image": "placamadre.webp",
     "description": "La serie PRO está diseñada para profesionales de todos los ámbitos de la vida. La línea presenta un rendimiento impresionante y alta calidad, mientras que su objetivo principal es: brindar a los usuarios una experiencia increíble. Los usuarios que se preocupan por la productividad y la eficiencia definitivamente pueden contar con la serie MSI PRO para ayudarlos con la multitarea y aumentar la eficiencia."
+  },
+  {
+    "id": 6,
+    "name": "Impresora Multifunción",
+    "price": 250000,
+    "image": "impresora.hp.webp",
+    "description": "Agregar descripción"
+  },
+  {
+    "id": 7,
+    "name": "Router WiFi Gigabit",
+    "price": 180000,
+    "image": "router.webp",
+    "description": "Agregar descripción"
+  },
+  {
+    "id": 8,
+    "name": "Mouse Pad Gamer Oficina Xl Negro Antideslizante 80x40 Cm 3mm",
+    "price": 7200,
+    "image": "mousepad.webp",
+    "description": "Es tan fácil deslizar el mouse. Con tu Alitrade MP408003-1 podrás llenar la pantalla de tu ordenador de clicks. Su elaborada superficie le dará precisión y comodidad a tus movimientos."
   }
 ]

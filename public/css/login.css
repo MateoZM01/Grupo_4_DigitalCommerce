@@ -210,6 +210,7 @@ Estilo de los enlaces en el pie de página .footer a {
   width: 50%;
   font-size: 15px;
   padding: 5px 10px;
+  color: #0030E1;
   transition: color 450ms;
 }
 
