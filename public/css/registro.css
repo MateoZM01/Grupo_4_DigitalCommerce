@@ -158,7 +158,7 @@ body {
   font-size: 15px;
   padding: 5px 10px;
   background-color: #fff;
-  color: #0030E1;
+  color: #3A3B42;
   transition: color 450ms;
 }
 
@@ -244,7 +244,7 @@ body {
   justify-content: center; 
 }
 
-Estilo de los enlaces en el pie de página
+/* Estilo de los enlaces en el pie de página */
 .footer a {
   color: #fff;
   text-decoration: none;
@@ -254,8 +254,6 @@ Estilo de los enlaces en el pie de página
  .footer a:hover {
   color: #4285f4; /* Cambia el color al pasar el ratón */
 }
-
-
 
 .footer {
   

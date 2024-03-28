@@ -37,4 +37,5 @@ Miembros del Equipo:
 -Ignacio Fonzo
 -Aynelen Ledesma
 
+Tablero de Trello:
 https://trello.com/b/v4laiXZg/digitalcommerce
