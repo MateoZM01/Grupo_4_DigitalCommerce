@@ -3,33 +3,37 @@
 
 <head>
     <%- include('./partials/head.ejs') %>
-
+        <link rel="stylesheet" href="/css/crearProducto.css">
 </head>
 
 <body>
     <%- include('./partials/header.ejs') %>
 
-    <main>
-        <div id="crearProducto">
-            <form action="/products/create" method="POST" enctype="multipart/form-data">
+        <main class="main">
+            <div id="crearProducto">
+                <form action="/products/create" method="POST" enctype="multipart/form-data">
 
-                <h1>Cargar un nuevo producto</h1>
+                    <h1>Cargar un nuevo producto</h1>
+                    <br>
+                    <input type="text" name="name" placeholder="Nombre" required="required" value="">
+                    <br>
+                    <br>
+                    <input type="text" name="description" placeholder="Descripción" required="required" value="">
+                    <br>
+                    <br>
+                    <input type="number" id="price" name="price" value="" required="required">
+                    <br>
+                    <br>
+                    <input type="file" name="images" accept=".jpg,.png" multiple>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn btn-info">Guardar</button>
+                    <a href="/products" class="btn btn-danger">Volver</a>
+                </form>
+            </div>
+        </main>
 
-                <input type="text" name="name" placeholder="Nombre" required="required" value="">
-
-                <input type="text" name="description" placeholder="Descripcion" required="required" value="">
-
-                <input type="number" id="price" name="price" value="" required="required">
-
-                <input type="file" name="images" accept=".jpg,.png" multiple>
-
-                <button type="submit" class="btn btn btn-info">Guardar</button>
-                <a href="/administrar" class="btn btn-danger">Volver</a>
-            </form>
-        </div>
-    </main>
-
-    <%- include('./partials/footer.ejs') %>
+        <%- include('./partials/footer.ejs') %>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Teclado mecánico Redragon K630",
+    "name": "Teclado mecanico Redragon K630",
     "price": 60000,
     "image": "teclado_red.webp",
-    "description": "Disfrutá de tus partidas en otro nivel con Redragon, marca reconocida que se especializa en brindar la mejor experiencia de juego al público gamer desde hace más de 20 años. Sus teclados se adaptan a todo tipo de jugadores y esto los convierten en un fiel reflejo de la alta gama y calidad que la compañía ofrece."
+    "description": "Disfrutá de tus partidas en otro nivel con Redragon, marca reconocida que se especializa en brindar la mejor experiencia de juego al público gamer desde hace más de 20 años. Sus teclados se adaptan a todo tipo de jugadores y esto los convierten en un fiel reflejo de la alta gama y calidad que la compañía ofrece"
   },
   {
     "id": 2,
@@ -18,7 +18,7 @@
     "name": "Celular Samsung S23 Ultra",
     "price": 1600000,
     "image": "celular.webp",
-    "description": "Hacé que las noches sean más épicas con la cámara nocturna. Es un kit de nivel profesional que cabe en una mano. La cámara posterior triple y la cámara de selfie ofrecen hardware y software de cámara innovadores para que puedas capturar fácilmente una galería llena de contenido digno de compartir. Adiós, resplandor. Las asombrosas pantallas Infinity-O de 120 Hz están diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster para una alta visibilidad al aire libre, lo que mantiene la vista nítida a plena luz del día o de noche. Ahora el único resplandor que verás será el de las cámaras de los celosos. Disfrutá la noche sin necesidad de cables. La vida no disminuye su ritmo y tomar un descanso para recargar energía es una vía rápida para la ansiedad de estar desconectado. La batería se adapta de manera inteligente a la forma en que usás tu smartphone, por lo que dura más de 24 horas"
+    "description": "Hacé que las noches sean más épicas con la cámara nocturna. Es un kit de nivel profesional que cabe en una mano. La cámara posterior triple y la cámara de selfie ofrecen hardware y software de cámara innovadores para que puedas capturar fácilmente una galería llena de contenido digno de compartir. Adiós, resplandor. Las asombrosas pantallas Infinity-O de 120 Hz están diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster para una alta visibilidad al aire libre, lo que mantiene la vista nítida a plena luz del día o de noche. Ahora el único resplandor que verás será el de las cámaras de los celosos. Disfrutá la noche sin necesidad de cables. La vida no disminuye su ritmo y tomar un descanso para recargar energía es una vía rápida para la ansiedad de estar desconectado. La batería se adapta de manera inteligente a la forma en que usás tu smartphone, por lo que dura más de 24 horas."
   },
   {
     "id": 4,

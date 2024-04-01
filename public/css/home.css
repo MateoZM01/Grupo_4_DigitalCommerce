@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 /* Header styles */
 .header {
-  background-color: #b3d0ff; /* Cambia el color del fondo del header */
+  background-color: #b3d0ff;
+  /* Cambia el color del fondo del header */
   color: #fff;
   padding: 10px 0;
 }
@@ -23,7 +24,7 @@
 
 .logo {
   width: auto;
-  height: 100px;
+  height: 90px;
   margin: 0 5px;
 }
 
@@ -38,7 +39,7 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 15px;
-  
+
   margin: 0 5px;
 }
 
@@ -58,7 +59,7 @@
   line-height: normal;
   overflow: visible;
   cursor: pointer;
-  
+
 }
 
 .boton-login {
@@ -113,69 +114,86 @@
 
 /* carousel  */
 .carousel {
-      display: flex;
-      width: 90%;
-      height: 50vh;
-      margin: auto;
-      overflow: hidden;
-      border-radius: 12px; /* Bordes redondeados */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
-      position: relative; /* Importante para el posicionamiento absoluto de las imágenes */
-    }
+  display: flex;
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transiciones */
+  position: relative;
+  /* Importante para el posicionamiento absoluto de las imágenes */
+}
+
 .carousel .coursel_img {
   width: 0;
   flex-grow: 1;
   object-fit: cover;
-  filter: brightness(0.5); /* Reducción de brillo */
-  transition: width 0.7s ease, filter 0.7s ease; /* Transiciones */
- 
+  filter: brightness(0.5);
+  /* Reducción de brillo */
+  transition: width 0.7s ease, filter 0.7s ease;
+  /* Transiciones */
+
 }
 
 .carousel .coursel_img.active {
   width: 50%;
   object-fit: contain;
   filter: brightness(1);
- 
+
 }
 
 .main__product-img {
   width: 100%;
 }
 
-.carousel-inner > .item > .carousel-img {
-      width: 60%;
-      margin: auto;
-  }
-  
+.carousel-inner>.item>.carousel-img {
+  width: 60%;
+  margin: auto;
+}
+
 
 /* Hero section */
 .hero {
   height: 200px;
-  background: url('public\images\messi.webp') center/cover; /* Añade una imagen de fondo */
+  background: url('public\images\messi.webp') center/cover;
+  /* Añade una imagen de fondo */
 }
 
 /* Main content styles */
 .main__products-container {
-  display: grid; /* Usamos grid layout para un mejor control */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas autoajustables */
-  gap: 20px; /* Espaciado entre productos */
+  display: grid;
+  /* Usamos grid layout para un mejor control */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Columnas autoajustables */
+  gap: 20px;
+  /* Espaciado entre productos */
   justify-content: center;
   margin-bottom: 40px;
 }
 
 .main__product {
-  padding: 20px; /* Aumentamos el espacio interno */
-  border-radius: 12px; /* Bordes redondeados más pronunciados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px;
+  /* Aumentamos el espacio interno */
+  border-radius: 12px;
+  /* Bordes redondeados más pronunciados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transiciones para efectos */
 }
 
 .main__product:hover {
-  transform: translateY(-5px); /* Elevación al pasar el mouse */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  transform: translateY(-5px);
+  /* Elevación al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  /* Sombra más pronunciada */
 }
 
 .main__product-img {
@@ -185,22 +203,24 @@
 
 
 .footer__methods {
-  justify-content: center; 
+  justify-content: center;
 }
 
-Estilo de los enlaces en el pie de página
+/* Estilo de los enlaces en el pie de página */
+
 .footer a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease; /* Agrega transición para un cambio de color suave */
-} 
+  transition: color 0.3s ease;
+  /* Agrega transición para un cambio de color suave */
+}
 
- .footer a:hover {
-  color: #4285f4; /* Cambia el color al pasar el ratón */
+.footer a:hover {
+  color: #4285f4;
+  /* Cambia el color al pasar el ratón */
 }
 
 .footer {
-  
   padding: 2rem 0;
   background-color: #4285f4;
   color: #fff;
@@ -211,7 +231,7 @@ Estilo de los enlaces en el pie de página
   justify-content: space-around;
   text-align: center;
   align-items: start;
-  
+
 }
 
 .footer__methods div img {
@@ -255,28 +275,31 @@ Estilo de los enlaces en el pie de página
 
 @media (max-width: 1024px) {
   .footer__container {
-      gap: 3rem;
+    gap: 3rem;
   }
 }
 
 @media (max-width: 768px) {
   .footer__container {
-      flex-direction: column;
-      gap: 3rem;
+    flex-direction: column;
+    gap: 3rem;
   }
 
   .footer__contacto,
   .footer__social-networks {
-      border-bottom: 1px solid var(--color-secundario);
-      padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-secundario);
+    padding-bottom: 1rem;
   }
 }
+
 * .footer a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease; /* Agrega transición para un cambio de color suave */
+  transition: color 0.3s ease;
+  /* Agrega transición para un cambio de color suave */
 }
 
 * .footer a:hover {
-  color: #4285f4; /* Cambia el color al pasar el ratón */
+  color: #4285f4;
+  /* Cambia el color al pasar el ratón */
 }

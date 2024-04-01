@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .product-detail {
   display: flex;
   justify-content: space-around;
-  margin-top: 2em;
-  background-color: white;
+  background-color: rgb(224, 227, 233);
   padding: 2em;
 }
 
@@ -34,8 +33,12 @@
   font-size: 1.2em;
 }
 
+span {
+  font-size: 20px;
+}
+
 button {
-  background-color: #b3d0ff;
+  background-color: #8fb4f0;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -51,7 +54,7 @@ button {
 }
 
 button:hover {
-  background-color: #0072bb; /* Azul Francia */
+  background-color: #0072bb;
   transition: all 1s ease;
 }
 
@@ -62,16 +65,7 @@ button:hover {
   font-weight: bold;
   overflow-x: auto;
   flex-wrap: wrap;
-  margin-left: 10px;
-}
-
-.related-product {
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  font-weight: normal;
-  width: 400px; /* Ajusta el ancho según tus necesidades */
-  height: 400px; /* Ajusta la altura según tus necesidades */
-  margin-right: 1em;
+  background-color: #b3d0ff;
 }
 
 img {
@@ -79,7 +73,7 @@ img {
   height: auto;
 }
 
-/* Main content styles */
+/* main */
 .main__products-container {
   display: flex;
   flex-wrap: wrap;

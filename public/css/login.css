@@ -33,9 +33,9 @@ body {
 }
 
 .card-login {
-  padding: 5%;
+  padding: 3%;
   border-radius: 30px;
-  background-color: #4285f4;
+  background-color: #5b9aff;
   color: #fff;
 }
 
@@ -65,4 +65,8 @@ body {
 
 .formulario {
   text-align: center;
+}
+
+h1 {
+  padding-bottom: 25px;
 }
