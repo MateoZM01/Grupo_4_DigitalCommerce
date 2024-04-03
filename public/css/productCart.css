@@ -1,10 +1,3 @@
-/* Globales */
-/* Definición de variables de color */
-:root {
-  --color-principal: #b3d0ff;
-  --color-secundario: #4285f4;
-}
-
 /* Estilos generales y configuración */
 * {
   margin: 0;
@@ -33,6 +26,10 @@ body {
   flex-direction: column;
 }
 
+.main__product {
+  background-color: rgb(224, 227, 233);
+}
+
 .main input {
   padding: 3%;
   width: 100%;
@@ -52,10 +49,9 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 3rem;
-  background-color: var(--color-principal);
-  box-shadow: 19px 14px 32px -6px rgba(0, 77, 15, 0.79);
-  -webkit-box-shadow: 19px 14px 32px -6px rgba(0, 77, 15, 0.79);
-  -moz-box-shadow: 19px 14px 32px -6px rgba(0, 77, 15, 0.79);
+  background-color: #b3d0ff;
+  box-shadow: 19px 14px 32px -6px rgba(1, 140, 255, 0.288);
+  -webkit-box-shadow: 19px 14px 32px -6px rgba(0, 132, 255, 0.329);
 }
 
 .main__precio {
