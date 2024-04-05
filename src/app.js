@@ -10,9 +10,8 @@ app.use(methodOverride('_method'));
 
 // Importación de rutas definidas en archivos separados
 const mainRoutes = require("./routes/main");
-const productsRoutes = require("./routes/products");
 const cartRoutes = require("./routes/cart");
-const adminRoutes = require("./routes/admin");
+const productsRoutes = require("./routes/products");
 
 // Configuración para servir archivos estáticos en la carpeta 'public'
 app.use(express.static('public'));
@@ -26,9 +25,8 @@ app.use(express.urlencoded({ extended: false }));
 
 // Uso de las rutas definidas en los archivos de rutas
 app.use(mainRoutes);
-app.use("/", productsRoutes);
 app.use("/cart", cartRoutes);
-app.use("/", adminRoutes);
+app.use("/", productsRoutes);
 
 // Iniciar el servidor en el puerto especificado
 app.listen(port, () => {

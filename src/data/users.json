@@ -1,40 +1,38 @@
 [
-    {
-      "names": "Juan Perez",
-      "email": "juan.perez@correo.com",
-      "password": "clave123",
-      "date_of_birth": "1990-01-01"
-    },
-    {
-        "names": "Roxana Carabajal",
-        "email": "roxi.cara@correo.com",
-        "password": "clave345",
-        "date_of_birth": "1990-01-01"
-    },
-    
-      {
-        "names": "Maria Fernandez",
-        "email": "maria.fernadez@correo.com",
-        "password": "contraseña",
-        "date_of_birth": "1995-05-10"
-      },
-      {
-        "names": "David Torres",
-        "email": "david.torres@correo.com",
-        "password": "password123",
-        "date_of_birth": "1988-02-15"
-      },
-      {
-        "names": "Isabella Ruiz",
-        "email": "isabella.ruiz@correo.com",
-        "password": "abcd1234",
-        "date_of_birth": "2000-12-24"
-      },
-      {
-        "names": "Gabriel Lopez",
-        "email": "gabriel.lopez@correo.com",
-        "password": "claveSegura",
-        "date_of_birth": "1992-07-07"
-      }
-  ]
-  
+  {
+    "names": "Juan Perez",
+    "email": "juan.perez@correo.com",
+    "password": "clave123",
+    "date_of_birth": "1990-01-01"
+  },
+  {
+    "names": "Roxana Carabajal",
+    "email": "roxi.cara@correo.com",
+    "password": "clave345",
+    "date_of_birth": "1990-01-01"
+  },
+  {
+    "names": "Maria Fernandez",
+    "email": "maria.fernadez@correo.com",
+    "password": "contraseña",
+    "date_of_birth": "1995-05-10"
+  },
+  {
+    "names": "David Torres",
+    "email": "david.torres@correo.com",
+    "password": "password123",
+    "date_of_birth": "1988-02-15"
+  },
+  {
+    "names": "Isabella Ruiz",
+    "email": "isabella.ruiz@correo.com",
+    "password": "abcd1234",
+    "date_of_birth": "2000-12-24"
+  },
+  {
+    "names": "Gabriel Lopez",
+    "email": "gabriel.lopez@correo.com",
+    "password": "claveSegura",
+    "date_of_birth": "1992-07-07"
+  }
+]
