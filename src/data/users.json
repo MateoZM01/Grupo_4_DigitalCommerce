@@ -1,38 +1,44 @@
 [
   {
-    "names": "Juan Perez",
+    "id": 1,
+    "name": "Juan Perez",
     "email": "juan.perez@correo.com",
     "password": "clave123",
-    "date_of_birth": "1990-01-01"
+    "date_of_birth": 27
   },
   {
-    "names": "Roxana Carabajal",
+    "id": 2,
+    "name": "Roxana Carabajal",
     "email": "roxi.cara@correo.com",
-    "password": "clave345",
-    "date_of_birth": "1990-01-01"
+    "password": "roxcara",
+    "age": 42
   },
   {
-    "names": "Maria Fernandez",
+    "id": 3,
+    "name": "Maria Fernandez",
     "email": "maria.fernadez@correo.com",
     "password": "contraseña",
-    "date_of_birth": "1995-05-10"
+    "age": 31
   },
   {
-    "names": "David Torres",
+    "id": 4,
+    "name": "David Torres",
     "email": "david.torres@correo.com",
     "password": "password123",
-    "date_of_birth": "1988-02-15"
+    "age": 25
   },
   {
-    "names": "Isabella Ruiz",
+    "id": 5,
+    "name": "Isabella Ruiz",
     "email": "isabella.ruiz@correo.com",
-    "password": "abcd1234",
-    "date_of_birth": "2000-12-24"
+    "password": "isaruiz2",
+    "age": 19
   },
   {
-    "names": "Gabriel Lopez",
+    "id": 6,
+    "name": "Gabriel Lopez",
     "email": "gabriel.lopez@correo.com",
-    "password": "claveSegura",
-    "date_of_birth": "1992-07-07"
+    "password": "gabilopez123",
+    "age": 23
   }
 ]

@@ -4,6 +4,7 @@ const path = require("path");
 const app = express();
 const port = 4000;
 const methodOverride = require('method-override');
+const session = require("express-session");
 
 //Esto nos permite poder enviar datos desde el POST por el metodo PUT y el metodo DELETE
 app.use(methodOverride('_method'));
@@ -12,6 +13,7 @@ app.use(methodOverride('_method'));
 const mainRoutes = require("./routes/main");
 const cartRoutes = require("./routes/cart");
 const productsRoutes = require("./routes/products");
+const usersRoutes = require("./routes/users");
 
 // Configuración para servir archivos estáticos en la carpeta 'public'
 app.use(express.static('public'));
@@ -23,10 +25,14 @@ app.set("views", path.join(__dirname, "/views"));
 //URL encode  - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
 
+// Configuración de token para uso de session
+app.use(session ({ secret: "abc123" }));
+
 // Uso de las rutas definidas en los archivos de rutas
-app.use(mainRoutes);
+app.use("/", mainRoutes);
 app.use("/cart", cartRoutes);
 app.use("/", productsRoutes);
+app.use("/", usersRoutes);
 
 // Iniciar el servidor en el puerto especificado
 app.listen(port, () => {

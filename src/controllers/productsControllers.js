@@ -85,6 +85,6 @@ const productsControllers = {
     fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), productoGuardarFinal);
     res.redirect('/products');
   }
-}
+};
 // Exporta el objeto productsControllers para su uso en otros archivos
 module.exports = productsControllers;
