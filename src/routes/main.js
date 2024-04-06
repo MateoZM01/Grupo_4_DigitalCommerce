@@ -1,8 +1,8 @@
 // Importando el objeto Router de Express
-const { Router } = require("express");
+const express = require("express");
 
 // Creando una instancia de Router
-const router = Router();
+const router = express.Router();
 
 // Importando los controladores definidos en mainControllers
 const mainControllers = require("../controllers/mainControllers");
@@ -13,13 +13,14 @@ const mainRoutes = {
     cart: "/cart",
     login: '/login',
     register: '/register',
-    productCart: '/productCart'
+    productCart: '/productCart',
 };
 
 // Mapeando las rutas a los controladores correspondientes
 router.get(mainRoutes.home, mainControllers.home);
 router.get(mainRoutes.login, mainControllers.login);
 router.get(mainRoutes.register, mainControllers.register);
+
 // Ruta para manejar cualquier otra solicitud (404)
 // router.get('*', (req, res) => {
 //     res.send(`

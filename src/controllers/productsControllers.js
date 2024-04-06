@@ -3,44 +3,56 @@ const fs = require('fs');
 const { log } = require('console');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
-const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+// const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+function getProducts(){
+  return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+}
 
 const productsControllers = {
 
   index: (req, res) => {
-    let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));
-    res.render(path.resolve(__dirname, '../views/admin.ejs'), { productos })
+    const productos = getProducts();
+    
+    res.render('admin', { productos });
+
   },
   create: (req, res) => {
-    res.render(path.resolve(__dirname, '../views/crearProducto.ejs'))
+    res.render('crearProducto');
   },
   save: (req, res) => {
-    let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));
+    const productos = getProducts();
 
-    let ultimoElemento = productos[productos.length - 1];
+    const image = req.file ? req.file.filename : 'default-image.png';
 
-    let nuevoProducto = {
-      id: ultimoElemento ? parseInt(ultimoElemento.id) + 1 : 1,
+    const nuevoProducto = {
+      id: productos[productos.length - 1.].id + 1,
       name: req.body.name,
       price: req.body.price,
-      image: req.file.filename,
-      description: req.body.description
-    }
-    productos.push(nuevoProducto)
-    let nuevoProductoAGuardar = JSON.stringify(productos, null, 2);
-    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), nuevoProductoAGuardar);
-    res.redirect('/products');
+      description: req.body.description,
+      image,
+    };
+
+    productos.push(nuevoProducto);
+    fs.writeFileSync(productsFilePath, JSON.stringify(productos), {
+      flag: 'w',
+      encoding: 'utf-8',
+    });
+    
+    res.redirect('/');
   },
   show: (req, res) => {
-    let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));
-    let id = req.params.id;
-    let miProducto;
-    productos.forEach(producto => {
-      if (producto.id == id) {
-        miProducto = producto;
+    const { id } = req.params;
+
+    const productos = getProducts();
+
+    const producto = productos.find((producto) => producto.id == id);
+
+      if (!producto) {
+        res.redirect('/');
       }
-    })
-    res.render(path.resolve(__dirname, '../views/productDetail.ejs'), { miProducto })
+
+    res.render('productDetail', { producto })
   },
   edit: (req, res) => {
     let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));

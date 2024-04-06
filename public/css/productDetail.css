@@ -8,13 +8,13 @@
 .product-detail {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(224, 227, 233);
+  background-color: #fff;
   padding: 2em;
 }
 
 .product-image {
-  width: 300px;
-  height: 300px;
+  width: 50%;
+  height: 250px;
 }
 
 .product-info {
@@ -87,5 +87,5 @@ img {
   border: 1px solid #ddd; /* Borde suave alrededor de cada producto */
   border-radius: 8px; /* Bordes redondeados */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  background-color: rgb(224, 227, 233);
+  background-color: #fff;
 }

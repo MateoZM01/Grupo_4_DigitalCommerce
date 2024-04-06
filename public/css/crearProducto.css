@@ -10,6 +10,15 @@ body {
 }
 
 .main {
-    height: 60vh;
+    height: 65vh;
     margin-left: 15px;
+}
+
+.desc {
+    width: 50%;
+    height: 70px;
+}
+
+.products-title {
+    text-align: center;
 }

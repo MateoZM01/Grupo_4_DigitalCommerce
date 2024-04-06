@@ -5,7 +5,7 @@ const app = express();
 const port = 4000;
 const methodOverride = require('method-override');
 
-//Esto nos permite poder enviar datos desde el POST  por el metodo PUT como por el metodo DELETE
+//Esto nos permite poder enviar datos desde el POST por el metodo PUT y el metodo DELETE
 app.use(methodOverride('_method'));
 
 // Importación de rutas definidas en archivos separados
