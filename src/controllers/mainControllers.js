@@ -4,7 +4,7 @@ const fs = require('fs');
 const mainControllers = {
     // Controlador para la ruta principal ("/" o "home")
     index: (req, res) => {
-        // Renderiza la vista llamada "home"
+        // Renderiza la vista llamada "index"
         res.render("index");
     },
 
@@ -12,12 +12,6 @@ const mainControllers = {
     login: (req, res) => {
         // Renderiza la vista llamada "login"
         res.render("login");
-    },
-
-    // Controlador para la ruta de registro ("/register")
-    register: (req, res) => {
-        // Renderiza la vista llamada "register"
-        res.render("register");
     },
 
 };

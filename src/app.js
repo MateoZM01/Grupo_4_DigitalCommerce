@@ -30,7 +30,7 @@ app.use(session ({ secret: "abc123" }));
 
 // Uso de las rutas definidas en los archivos de rutas
 app.use("/", mainRoutes);
-app.use("/cart", cartRoutes);
+app.use("/", cartRoutes);
 app.use("/", productsRoutes);
 app.use("/", usersRoutes);
 

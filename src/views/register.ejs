@@ -12,24 +12,35 @@
       <main class="main-register">
         <div class="card-login">
           <h1>Crea tu cuenta</h1>
-          
+
           <!-- Formulario de registro -->
-          <form action="/" method="GET" class="formulario">
+          <form action="/" method="POST" class="formulario">
             <br>
-            <input class="relleno" type="text" name="user" placeholder="Nombre" required>
-            <br><br>
-            <input class="relleno" type="text" name="user" placeholder="Apellido" required>
-            <br><br>
-            <input class="relleno" type="text" name="user" placeholder="Correo electrónico" required>
-            <br><br>
-            <input class="relleno" type="password" name="pass" placeholder="Contraseña" required>
-            <br><br>
-            <input class="relleno" type="password" name="pass" placeholder="Confirmar contraseña" required>
-            <br><br>
-            <h4>Al registrarse, acepta nuestros <a href="" class="terminos">Términos y Condiciones</a> y <a href="" class="politicas">Políticas de
+            <label for="name" class="form-label">Ingrese su nombre:</label>
+            <input type="text" id="name " name="name" placeholder="Ej: José Martín Guzmán Olivera" class="relleno">
+            <br>
+            <br>
+            <label for="email" class="form-label">Ingrese su email:</label>
+            <input class="relleno" type="email " id="email" name="email" placeholder="Ej: martin_guzman_@hotmail.com"
+              required>
+            <br>
+            <br>
+            <label for="password" class="form-label">Ingrese su contraseña:</label>
+            <input class="relleno" type="password" id="password" name="pass" placeholder="Ej: abc123" required>
+            <br>
+            <br>
+            <label for="age" class="form-label">Ingrese su edad:</label>
+            <input class="relleno" type="number" id="age" name="age" placeholder="Ej: 30" required>
+            <br>
+            <br>
+            <label for="images" class="form-label">Imagen del perfil de usuario:</label>
+            <input class="relleno2" type="file" name="images" accept=".jpg,.png" multiple>
+            <br>
+            <h4>Al registrarse, acepta nuestros <a href="" class="terminos">Términos y Condiciones</a> y <a href=""
+                class="politicas">Políticas de
                 privacidad</a></h4>
             <br>
-            <button class="botón" type="submit">Crear cuenta</button>
+            <button class="botón" type="submit">Enviar</button>
             <br>
           </form>
         </div>

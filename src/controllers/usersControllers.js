@@ -9,7 +9,7 @@ const usersControllers = {
 
     index: (req, res) => {
         const users = req.session.users;
-        // Renderiza la vista llamada "home"
+        // Renderiza la vista llamada "index"
         res.render("index", { users });
     },
 
@@ -22,7 +22,13 @@ const usersControllers = {
             age: req.body.age
         }
         res.redirect('/');
-    }
-};
+    },
+
+    register: (req, res) => {
+        // Renderiza la vista llamada "login"
+        res.render("register");
+    },
+
+}
 
 module.exports = usersControllers;

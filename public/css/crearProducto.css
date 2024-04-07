@@ -10,8 +10,15 @@ body {
 }
 
 .main {
-    height: 65vh;
-    margin-left: 15px;
+    padding: 1%;
+    border-radius: 30px;
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.formulario {
+    text-align: center;
+    background-color: #b3d0ff;
 }
 
 .desc {
@@ -19,6 +26,26 @@ body {
     height: 70px;
 }
 
-.products-title {
-    text-align: center;
+.form-label {
+    display: flex;
+    justify-content: center;
+    color: #51535a;
+}
+
+.relleno {
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+  }
+
+.relleno2 {
+    color: #3b3d47;
+    display: flex;
+    margin: auto;
+}
+
+.botones-final {
+    padding-bottom: 20px;
 }

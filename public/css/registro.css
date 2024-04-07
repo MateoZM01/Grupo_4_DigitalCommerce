@@ -75,3 +75,15 @@ h4 {
 .terminos, .politicas {
   color: #0072bb;
 }
+
+.form-label {
+  display: flex;
+  justify-content: center;
+  color: #51535a;
+}
+
+.relleno2 {
+  color: #3b3d47;
+  display: flex;
+  margin: auto;
+}

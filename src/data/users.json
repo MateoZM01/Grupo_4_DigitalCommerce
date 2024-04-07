@@ -4,7 +4,7 @@
     "name": "Juan Perez",
     "email": "juan.perez@correo.com",
     "password": "clave123",
-    "date_of_birth": 27
+    "age": 27
   },
   {
     "id": 2,
