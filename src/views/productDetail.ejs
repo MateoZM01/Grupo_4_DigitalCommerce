@@ -11,29 +11,16 @@
       <main class="main-product-detail">
         <div class="product-detail">
           <!-- Imagen del producto -->
-          <img class="product-image" src="/images/macbookpro.jpg" alt="product-image" />
+          <img class="product-image" src="/images/products/<%= producto.image %>" alt="product-image" />
 
           <div class="product-info">
-            <span class="product-name">MacBook Pro 2019</span>
-            <span class="product-price">$9000</span>
+            <span class="product-name"><%= producto.name %></span>
+            <span class="product-price">$<%= producto.price %></span>
 
             <!-- Detalles técnicos del producto -->
-            <p class="product-description">
-              CPU: 1.6GHz Intel Core i5-8210Y (dual-core, 4 threads, 4MB cache, up
-              to 3.6GHz)<br />
-              Placa de Video: Intel UHD Graphics 617<br />
-              RAM: 8GB (2,133MHz LPDDR3)<br />
-              Tamaño de pantalla: 13.3 pulgadas, 2,560 x 1,600 Retina True Tone
-              display (backlit LED, IPS)<br />
-              Storage: 256GB PCIe SSD[^1^][4]<br />
-              Almacenamiento: SSD PCIe de 256 GB<br />
-              Puertos: 2x Thunderbolt 3 (USB-C), conector para auriculares de 3,5
-              mm<br />
-              Tamaño: 11,97 x 8,36 x 0,61 pulgadas (30,41 x 21,24 x 1,56 cm; ancho x
-              profundidad x alto)<br />
-            </p>
+            <p class="product-description"><%= producto.description %></p>
 
-            <button>Agregar al carrito</button>
+            <button><a href="/cart">Agregar al carrito</a></button>
           </div>
         </div>
 
@@ -43,7 +30,7 @@
 
           <!-- Producto relacionado 1 -->
           <div class="main__product">
-            <img class="main__product-img" src="/images/auri.logi.png" alt="imagen auris" />
+            <img class="main__product-img" src="/images/products/auri.logi.png" alt="imagen auris" />
             <h3>Auriculares Logitech Pro X Wireless</h3>
             <p>$32.000</p>
             <a href="/products/detail/2">Ver producto</a>
@@ -51,7 +38,7 @@
 
           <!-- Producto relacionado 2 -->
           <div class="main__product">
-            <img class="main__product-img" src="/images/teclado_red.webp" alt="imagen teclado" />
+            <img class="main__product-img" src="/images/products/teclado_red.png" alt="imagen teclado" />
             <h3>Teclado mecánico Redragon K630</h3>
             <p>$20.000</p>
             <a href="/products/detail/1">Ver producto</a>

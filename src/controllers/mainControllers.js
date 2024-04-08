@@ -1,9 +1,11 @@
-// Definiendo un objeto llamado mainControllers
+const path = require('path');
+const fs = require('fs');
+
 const mainControllers = {
     // Controlador para la ruta principal ("/" o "home")
-    home: (req, res) => {
-        // Renderiza la vista llamada "home"
-        res.render("home");
+    index: (req, res) => {
+        // Renderiza la vista llamada "index"
+        res.render("index");
     },
 
     // Controlador para la ruta de inicio de sesión ("/login")
@@ -11,13 +13,6 @@ const mainControllers = {
         // Renderiza la vista llamada "login"
         res.render("login");
     },
-
-    // Controlador para la ruta de registro ("/register")
-    register: (req, res) => {
-        // Renderiza la vista llamada "register"
-        res.render("register");
-    },
-    
 
 };
 

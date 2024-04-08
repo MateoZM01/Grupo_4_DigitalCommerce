@@ -1,22 +1,93 @@
-// Objeto productsControllers que contiene funciones relacionadas con productos
+const path = require('path');
+const fs = require('fs');
+const methodOverride = require('method-override');
+
+const productsFilePath = path.join(__dirname, '../data/products.json');
+// const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+function getProducts() {
+  return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+}
 
 const productsControllers = {
 
-  // Controlador para obtener todos los productos
-  getAllProducts: (req, res) => {
+  index: (req, res) => {
+    const productos = getProducts();
 
-    // Renderiza la vista llamada "home"
-    res.render("home");
+    res.render('admin', { productos });
+
   },
-  // Controlador para la ruta del detalle del producto ("/productDetail")
-  productDetail: (req, res) => {
-    
-    // Renderiza la vista llamada "productDetail" en la carpeta "products"
-    res.render("productDetail");
+  create: (req, res) => {
+    const productos = getProducts();
+    res.render('crearProducto');
+  },
+  save: (req, res) => {
+    const productos = getProducts();
+
+    const image = req.file ? req.file.filename : 'default-image.png';
+
+    const nuevoProducto = {
+      id: productos[productos.length - 1.].id + 1,
+      name: req.body.name,
+      price: req.body.price,
+      description: req.body.description,
+      image,
+    };
+
+    productos.push(nuevoProducto);
+    fs.writeFileSync(productsFilePath, JSON.stringify(productos), {
+      flag: 'w',
+      encoding: 'utf-8',
+    });
+
+    res.redirect('/');
+  },
+  show: (req, res) => {
+    const { id } = req.params;
+
+    const productos = getProducts();
+
+    const producto = productos.find((producto) => producto.id == id);
+
+    if (!producto) {
+      res.redirect('/');
+    }
+
+    res.render('productDetail', { producto })
+  },
+  edit: (req, res) => {
+    const productos = getProducts();
     const id = req.params.id;
-    console.log(id);
+    const producto = productos.find((producto) => producto.id == id)
+    if (!producto) {
+      return res.send("No se encontró el producto");
+    }
+    res.render('editarProducto', { producto: producto })
   },
-};
+  update: (req, res) => {
+    const productos = getProducts();
+    const id = req.params.id;
+    productos.forEach((producto) => {
+      if (producto.id == id) {
+        producto.id = req.body.id;
+        producto.name = req.body.name;
+        producto.price = req.body.price;
+        producto.description = req.body.description;
+        producto.image = req.body.image;
+      }
+    });
 
+    fs.writeFileSync(productsFilePath, JSON.stringify(productos));
+
+    res.redirect('/products');
+  },
+  destroy: (req, res) => {
+    const productos = getProducts();
+    const id = req.params.id;
+    const productoFiltrado = productos.filter(producto => producto.id != id);
+    fs.writeFileSync(productsFilePath, JSON.stringify(productoFiltrado));
+    res.redirect('/products');
+  }
+};
 // Exporta el objeto productsControllers para su uso en otros archivos
 module.exports = productsControllers;

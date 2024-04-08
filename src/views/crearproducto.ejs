@@ -10,25 +10,42 @@
     <%- include('./partials/header.ejs') %>
 
         <main class="main">
-            <div id="crearProducto">
-                <form action="/products/create" method="POST" enctype="multipart/form-data">
+            <div class="card-products">
+                <h1>Cargar un nuevo producto</h1>
 
-                    <h1>Cargar un nuevo producto</h1>
+                <form action="/products" method="POST" enctype="multipart/form-data" class="formulario">
                     <br>
-                    <input type="text" name="name" placeholder="Nombre" required="required" value="">
-                    <br>
-                    <br>
-                    <input type="text" name="description" placeholder="Descripción" required="required" value="">
+                    <label for="name" class="form-label">Nombre del producto:</label>
+                    <input type="text" id="name " name="name" placeholder="Ej: Iphone 11 128GB" class="relleno">
                     <br>
                     <br>
-                    <input type="number" id="price" name="price" value="" required="required">
+                    <label for="price" class="form-label">Precio del producto:</label>
+                    <input type="text" id="price" name="price" placeholder="Ej: 5000" class="relleno">
                     <br>
                     <br>
-                    <input type="file" name="images" accept=".jpg,.png" multiple>
+                    <label for="discount" class="form-label">Descuento:</label>
+                    <input type="text" id="discount" name="discount" placeholder="Ej: 15" class="relleno">
                     <br>
                     <br>
-                    <button type="submit" class="btn btn btn-info">Guardar</button>
-                    <a href="/products" class="btn btn-danger">Volver</a>
+                    <label for="images" class="form-label">Imagen del producto:</label>
+                    <input class="relleno2" type="file" id="image" name="image" accept=".jpg,.png" multiple>
+                    <br>
+                    <label for="category" class="form-label">Categoría:</label>
+                    <select name="category" id="category" class="relleno">
+                        <option value="">Elegí</option>
+                        <option value="">En oferta</option>
+                        <option value="">Últimos agregados</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="description" class="form-label">Descripción:</label>
+                    <textarea name="description" id="description" class="desc"></textarea>
+                    <br>
+                    <br>
+                    <div class="botones-final">
+                        <button type="submit" class="btn btn btn-info">Guardar producto</button>
+                        <a href="/products" class="btn btn-danger">Volver</a>
+                    </div>
                 </form>
             </div>
         </main>

@@ -1,20 +1,40 @@
-const { Router } = require("express");
-const router = Router();
+const express = require('express');
+const router = express.Router();
+const path = require('path');
+const multer = require('multer');
+const fs = require('fs');
+
+// Multer - manejo del almacenamiento
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, path.resolve(__dirname, '../../public/images/products'))
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + "-" + file.originalname);
+    },
+});
+// Instancia del Multer para manejar los métodos
+const upload = multer({ storage })
+
 const productsControllers = require("../controllers/productsControllers");
 
 // Definición de rutas para productos
-const productsRoutes = {
-    
-    // Ruta para mostrar todos los productos
-    index: "/",
 
-    // Ruta para mostrar detalles de un producto específico usando un parámetro de ruta ":id"
-    detail: "/detail/:id"
-};
+// GET ALL PRODUCTS
+router.get('/products', productsControllers.index);
 
-// Asociación de la ruta "/index" con la función getAllProducts del controlador productsControllers
-router.get(productsRoutes.index, productsControllers.getAllProducts);
-router.get(productsRoutes.detail, productsControllers.productDetail);
+// CREATE ONE PRODUCT
+router.get('/products/create/', productsControllers.create);
+router.post('/products', upload.single('image'), productsControllers.save);
 
-// Exportación del router para su uso en otros archivos
+// GET ONE PRODUCT
+router.get('/products/detail/:id', productsControllers.show);
+
+// EDIT ONE PRODUCT
+router.get('/products/:id/edit', productsControllers.edit);
+router.put('/products/:id', productsControllers.update);
+
+// DELETE ONE PRODUCT
+router.get('/products/delete/:id', productsControllers.destroy);
+
 module.exports = router;
