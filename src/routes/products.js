@@ -3,7 +3,6 @@ const router = express.Router();
 const path = require('path');
 const multer = require('multer');
 const fs = require('fs');
-const methodOverride = require('method-override');
 
 // Multer - manejo del almacenamiento
 const storage = multer.diskStorage({
@@ -33,7 +32,7 @@ router.get('/products/detail/:id', productsControllers.show);
 
 // EDIT ONE PRODUCT
 router.get('/products/:id/edit', productsControllers.edit);
-router.put('/products/:id/edit', productsControllers.update);
+router.put('/products/:id', productsControllers.update);
 
 // DELETE ONE PRODUCT
 router.get('/products/delete/:id', productsControllers.destroy);

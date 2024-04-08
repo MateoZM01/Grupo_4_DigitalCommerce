@@ -14,7 +14,7 @@
           <h1>Crea tu cuenta</h1>
 
           <!-- Formulario de registro -->
-          <form action="/" method="POST" class="formulario">
+          <form action="/users" method="POST" enctype="multipart/form-data" class="formulario">
             <br>
             <label for="name" class="form-label">Ingrese su nombre:</label>
             <input type="text" id="name " name="name" placeholder="Ej: José Martín Guzmán Olivera" class="relleno">
@@ -26,7 +26,7 @@
             <br>
             <br>
             <label for="password" class="form-label">Ingrese su contraseña:</label>
-            <input class="relleno" type="password" id="password" name="pass" placeholder="Ej: abc123" required>
+            <input class="relleno" type="password" id="password" name="password" placeholder="Ej: abc123" required>
             <br>
             <br>
             <label for="age" class="form-label">Ingrese su edad:</label>
@@ -34,7 +34,7 @@
             <br>
             <br>
             <label for="images" class="form-label">Imagen del perfil de usuario:</label>
-            <input class="relleno2" type="file" name="images" accept=".jpg,.png" multiple>
+            <input class="relleno2" type="file" id="image" name="image" accept=".jpg,.png" multiple>
             <br>
             <h4>Al registrarse, acepta nuestros <a href="" class="terminos">Términos y Condiciones</a> y <a href=""
                 class="politicas">Políticas de

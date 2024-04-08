@@ -1,11 +1,11 @@
 const path = require('path');
 const fs = require('fs');
-const { log } = require('console');
+const methodOverride = require('method-override');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 // const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-function getProducts(){
+function getProducts() {
   return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 }
 
@@ -13,11 +13,12 @@ const productsControllers = {
 
   index: (req, res) => {
     const productos = getProducts();
-    
+
     res.render('admin', { productos });
 
   },
   create: (req, res) => {
+    const productos = getProducts();
     res.render('crearProducto');
   },
   save: (req, res) => {
@@ -38,7 +39,7 @@ const productsControllers = {
       flag: 'w',
       encoding: 'utf-8',
     });
-    
+
     res.redirect('/');
   },
   show: (req, res) => {
@@ -48,41 +49,43 @@ const productsControllers = {
 
     const producto = productos.find((producto) => producto.id == id);
 
-      if (!producto) {
-        res.redirect('/');
-      }
+    if (!producto) {
+      res.redirect('/');
+    }
 
     res.render('productDetail', { producto })
   },
   edit: (req, res) => {
-    let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));
-    let id = req.params.id;
-    let productoAEditar = productos.find(producto => {
-      return producto.id == id;
-    })
-    res.render(path.resolve(__dirname, '../views/editarProducto.ejs'), { productoAEditar })
+    const productos = getProducts();
+    const id = req.params.id;
+    const producto = productos.find((producto) => producto.id == id)
+    if (!producto) {
+      return res.send("No se encontró el producto");
+    }
+    res.render('editarProducto', { producto: producto })
   },
   update: (req, res) => {
-    let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));
-    let id = req.params.id;
-    req.body.id = id;
-    let productoAActualizar = productos.map(producto => {
+    const productos = getProducts();
+    const id = req.params.id;
+    productos.forEach((producto) => {
       if (producto.id == id) {
-        return producto = req.body;
+        producto.id = req.body.id;
+        producto.name = req.body.name;
+        producto.price = req.body.price;
+        producto.description = req.body.description;
+        producto.image = req.body.image;
       }
-      return producto;
-    })
-    console.log(productoAActualizar);
-    let productoActualizado = JSON.stringify(productoAActualizar, null, 2)
-    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), productoActualizado);
+    });
+
+    fs.writeFileSync(productsFilePath, JSON.stringify(productos));
+
     res.redirect('/products');
   },
   destroy: (req, res) => {
-    let productos = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json')));
-    let id = req.params.id;
-    let productoFinal = productos.filter(producto => producto.id != id);
-    let productoGuardarFinal = JSON.stringify(productoFinal, null, 2);
-    fs.writeFileSync(path.resolve(__dirname, '../data/products.json'), productoGuardarFinal);
+    const productos = getProducts();
+    const id = req.params.id;
+    const productoFiltrado = productos.filter(producto => producto.id != id);
+    fs.writeFileSync(productsFilePath, JSON.stringify(productoFiltrado));
     res.redirect('/products');
   }
 };

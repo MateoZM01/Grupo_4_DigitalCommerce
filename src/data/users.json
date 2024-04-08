@@ -1,44 +1,44 @@
 [
-  {
-    "id": 1,
-    "name": "Juan Perez",
-    "email": "juan.perez@correo.com",
-    "password": "clave123",
-    "age": 27
-  },
-  {
-    "id": 2,
-    "name": "Roxana Carabajal",
-    "email": "roxi.cara@correo.com",
-    "password": "roxcara",
-    "age": 42
-  },
-  {
-    "id": 3,
-    "name": "Maria Fernandez",
-    "email": "maria.fernadez@correo.com",
-    "password": "contraseña",
-    "age": 31
-  },
-  {
-    "id": 4,
-    "name": "David Torres",
-    "email": "david.torres@correo.com",
-    "password": "password123",
-    "age": 25
-  },
-  {
-    "id": 5,
-    "name": "Isabella Ruiz",
-    "email": "isabella.ruiz@correo.com",
-    "password": "isaruiz2",
-    "age": 19
-  },
-  {
-    "id": 6,
-    "name": "Gabriel Lopez",
-    "email": "gabriel.lopez@correo.com",
-    "password": "gabilopez123",
-    "age": 23
-  }
+    {
+        "id": 1,
+        "name": "Juan Perez",
+        "email": "juan.perez@correo.com",
+        "password": "clave123",
+        "age": 27
+    },
+    {
+        "id": 2,
+        "name": "Roxana Carabajal",
+        "email": "roxi.cara@correo.com",
+        "password": "roxcara",
+        "age": 42
+    },
+    {
+        "id": 3,
+        "name": "Maria Fernandez",
+        "email": "maria.fernadez@correo.com",
+        "password": "contraseña",
+        "age": 31
+    },
+    {
+        "id": 4,
+        "name": "David Torres",
+        "email": "david.torres@correo.com",
+        "password": "password123",
+        "age": 25
+    },
+    {
+        "id": 5,
+        "name": "Isabella Ruiz",
+        "email": "isabella.ruiz@correo.com",
+        "password": "isaruiz2",
+        "age": 19
+    },
+    {
+        "id": 6,
+        "name": "Gabriel Lopez",
+        "email": "gabriel.lopez@correo.com",
+        "password": "gabilopez123",
+        "age": 23
+    }
 ]
