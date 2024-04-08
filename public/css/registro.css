@@ -11,14 +11,15 @@ body {
 
 /* main */
 .main {
-  height: 100vh;
+  height: 110svh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.main input, .main button {
+.main input,
+.main button {
   width: 100%;
 }
 
@@ -32,9 +33,10 @@ body {
 }
 
 .card-login {
-  padding: 1%;
+  padding: 3%;
+  width: 40%;
   border-radius: 30px;
-  background-color: #4285f4;
+  background-color: #5b9aff;
   color: #fff;
 }
 
@@ -42,17 +44,16 @@ body {
   width: 50%;
   font-size: 15px;
   padding: 5px 10px;
-  margin-bottom: 20px;
-  background-color: #fff;
   color: #3A3B42;
   transition: color 450ms;
 }
 
 .botón:hover {
   background-color: #0072bb;
-  color: #FFF;
-  border-radius: 10px;
-  transition: all 1s ease;
+  color: #fff;
+  border-radius: 5px;
+  border-radius: 25px;
+  transition: all 0.5s ease;
 }
 
 .relleno {
@@ -66,11 +67,10 @@ body {
 
 .formulario {
   text-align: center;
-  background-color: #b3d0ff;
 }
 
-h4 {
-  color: #3A3B42;
+h1 {
+  padding-bottom: 25px;
 }
 
 .terminos, .politicas {
@@ -86,5 +86,5 @@ h4 {
 .relleno2 {
   color: #3b3d47;
   display: flex;
-  margin: auto;
+  margin: flex;
 }
