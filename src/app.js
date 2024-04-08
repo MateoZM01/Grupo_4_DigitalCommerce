@@ -25,8 +25,16 @@ app.use(methodOverride('_method'));
 //URL encode  - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
 
-// Configuración de token para uso de session
-app.use(session ({ secret: "abc123" }));
+
+// URL encode - Para que nos pueda llegar la información desde el formulario al req.body
+app.use(express.urlencoded({ extended: false }));
+
+// Configuración de session
+app.use(session({
+    secret: "abc123", // Secreto para firmar la cookie de sesión
+    resave: false, // Evitar guardar sesiones que no han sido modificadas
+    saveUninitialized: false // Evitar crear sesiones para peticiones que no las inicializan
+}));
 
 // Uso de las rutas definidas en los archivos de rutas
 app.use("/", mainRoutes);
