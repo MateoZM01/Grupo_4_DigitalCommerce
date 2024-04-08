@@ -5,6 +5,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+
 /* Header styles */
 .header {
   background-color: #b3d0ff;
@@ -186,14 +187,11 @@ i {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)); /* Mantener exactamente 4 columnas */
   gap: 30px;
-<<<<<<< HEAD
   padding: 10px 15px 30px 15px;
   background-color: rgb(224, 227, 233);
-=======
   /* Espaciado entre productos */
-  padding: 5px 10px 30px 10px;
+  padding: 30px 10px 30px 10px;
   background-color: #c1d8fc;
->>>>>>> 529194a946158e855150ba316553236262cf8d5d
 }
 
 
