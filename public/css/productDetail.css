@@ -1,44 +1,64 @@
+/* Estilos generales y configuración */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(224, 227, 233);
+  font-family: "Ubuntu", Helvetica, sans-serif;
+}
+
+/* Product Detail */
 .product-detail {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(224, 227, 233);
+  align-items: center;
+  background-color: #fff;
   padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 2em;
 }
 
 .product-name {
   font-size: 1.5em;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .product-price {
   color: #0a0a0a;
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 span {
-  font-size: 20px;
+  font-size: 1.4em;
 }
 
 button {
-  background-color: #8fb4f0;
+  background-color: #4285f4;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -47,45 +67,55 @@ button {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 50px;
   border-radius: 15px;
-  margin: 0 5px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #0072bb;
-  transition: all 1s ease;
 }
 
 .related-products {
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  font-weight: bold;
-  overflow-x: auto;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   background-color: #b3d0ff;
+  padding: 20px;
+  border-radius: 12px;
 }
 
-img {
-  width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+.related-products img {
+  width: 100%;
+  max-width: 200px; /* Ajustar el tamaño máximo de las imágenes relacionadas */
   height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-/* main */
+/* Main Products Container */
 .main__products-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Espaciado entre productos */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0072bb
 }
 
 .main__product {
-  width: 200px; /* Ajusta el ancho y el margen entre productos */
-  margin: 0 10px 20px 0;
+  width: 200px;
   padding: 15px;
-  border: 1px solid #ddd; /* Borde suave alrededor de cada producto */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  background-color: rgb(224, 227, 233);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.main__product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

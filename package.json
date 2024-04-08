@@ -15,14 +15,16 @@
     "bootstrap": "^5.3.2",
     "ejs": "^3.1.9",
     "express": "^4.19.2",
+    "express-session": "^1.18.0",
     "json": "^11.0.0",
     "method-override": "^3.0.0",
     "module": "^0.0.1",
     "multer": "^1.4.5-lts.1",
-    "mysql2": "^3.7.1",
+    "mysql2": "^3.9.3",
     "node": "^21.2.0",
     "nodemon": "^3.0.2",
     "render": "^0.1.4",
+    "sequelize": "^6.37.2",
     "src": "^1.0.0"
   }
 }

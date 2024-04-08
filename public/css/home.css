@@ -158,14 +158,12 @@
 
 .main__products-container {
   display: grid;
-  /* Usamos grid layout para un mejor control */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* Columnas autoajustables */
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Mantener exactamente 4 columnas */
   gap: 30px;
-  /* Espaciado entre productos */
-  padding: 5px 10px 30px 10px;
+  padding: 10px 15px 30px 15px;
   background-color: rgb(224, 227, 233);
 }
+
 
 .main__product {
   background-color: #b3d0ff;
@@ -192,6 +190,11 @@
   object-fit: contain;
 }
 
+.main__heading {
+  padding: 40px 15px;
+  margin: 0;
+  background-color: rgb(224, 227, 233);
+}
 
 .footer__methods {
   justify-content: center;
