@@ -14,13 +14,20 @@ const productsControllers = {
   index: (req, res) => {
     const productos = getProducts();
 
-    res.render('admin', { productos });
+    res.render('products', { productos });
 
   },
+  //Controlador para la ruta del carrito de productos ("/productCart")
+  productCart: (req, res) => {
+
+    res.render('productCart');
+},
+
   create: (req, res) => {
     const productos = getProducts();
     res.render('crearProducto');
   },
+
   save: (req, res) => {
     const productos = getProducts();
 
@@ -42,6 +49,7 @@ const productsControllers = {
 
     res.redirect('/');
   },
+
   show: (req, res) => {
     const { id } = req.params;
 
@@ -55,6 +63,7 @@ const productsControllers = {
 
     res.render('productDetail', { producto })
   },
+
   edit: (req, res) => {
     const productos = getProducts();
     const id = req.params.id;
@@ -64,8 +73,10 @@ const productsControllers = {
     }
     res.render('editarProducto', { producto: producto })
   },
+
   update: (req, res) => {
     const productos = getProducts();
+    
     const id = req.params.id;
     productos.forEach((producto) => {
       if (producto.id == id) {
@@ -81,6 +92,7 @@ const productsControllers = {
 
     res.redirect('/products');
   },
+  
   destroy: (req, res) => {
     const productos = getProducts();
     const id = req.params.id;

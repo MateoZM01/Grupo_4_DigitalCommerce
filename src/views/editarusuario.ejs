@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs')%>
+        <link rel="stylesheet" href="/css/editarProducto.css">
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+
+        <main class="main">
+            <div class="card-users">
+                <h1>Editar usuario</h1>
+
+                <form method="POST" action="/users/<%= usuario.id %>?_method=PUT" enctype="multipart/form-data"
+                    class="formulario">
+                    <br>
+                    <label for="name" class="form-label">Nombre de usuario:</label>
+                    <input type="text" id="name" name="name" value="<%= usuario.name %>" class="relleno" required>
+                    <br>
+                    <br>
+                    <label for="description" class="form-label">Email:</label>
+                    <input type="text" class="relleno" id="email" name="description" placeholder="Email"
+                        required="required" value="<%= usuario.email %>">
+                    <br>
+                    <br>
+                    <img class="user-image" src="/images/users/<%= usuario.image %>" alt="user-image" />
+                    <br>
+                    <label for="image" class="form-label">Selecciona una imagen para el perfil:</label>
+                    <input class="relleno2" type="file" id="image" name="image" accept=".jpg,.png" multiple>
+                    <br>
+                    <br>
+                    <label for="age" class="form-label">Edad:</label>
+                    <input type="number" id="age" name="age" value="<%= usuario.age %>" class="relleno" required>
+                    <br>
+                    <br>
+                    <div class="botones-final">
+                        <button type="submit" class="btn btn btn-info">Guardar usuario</button>
+                        <a href="/users" class="btn btn btn-info">Volver</a>
+                    </div>
+                </form>
+
+                <form action="/users/delete/<%= usuario.id %>?_method=DELETE" method="POST" class="formulariodelete">
+                    <button class="btn btn-danger" id="boton-eliminar" type="submit" value="Eliminar usuario">Eliminar
+                        usuario</button>
+                </form>
+            </div>
+        </main>
+
+        <%- include('./partials/footer.ejs')%>
+</body>
+
+</html>

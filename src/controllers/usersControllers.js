@@ -13,13 +13,13 @@ function getUsers() {
 const usersControllers = {
 
   index: (req, res) => {
-    const users = req.session.users;
-    // Renderiza la vista llamada "index"
-    res.render("index", { errors: [], users });
-  },
+    const usuarios = getUsers();
 
+    res.render('users', { usuarios });
+  },
+  
   register: (req, res) => {
-    // Renderiza la vista llamada "login"
+    // Renderiza la vista llamada "register"
     res.render("register");
   },
 
@@ -28,19 +28,25 @@ const usersControllers = {
     res.render("login");
   },
 
+  profileUser: (req, res) => {
+
+    res.render('profileUser');
+},
+
   create: (req, res) => {
+    const usuarios = getUsers();
     res.render('register');
   },
 
   save: (req, res) => {
-    const users = getUsers();
+    const usuarios = getUsers();
 
     const { password } = req.body;
 
     const image = req.file ? req.file.filename : 'default-profile-image.png';
 
     const nuevoUsuario = {
-      id: users[users.length - 1.].id + 1,
+      id: usuarios[usuarios.length - 1.].id + 1,
       name: req.body.name,
       email: req.body.email,
       password: bcrypt.hashSync(password, 10),
@@ -48,13 +54,59 @@ const usersControllers = {
       image,
     };
 
-    users.push(nuevoUsuario);
-    fs.writeFileSync(usersFilePath, JSON.stringify(users), {
+    usuarios.push(nuevoUsuario);
+    fs.writeFileSync(usersFilePath, JSON.stringify(usuarios), {
       flag: 'w',
       encoding: 'utf-8',
     });
 
     res.redirect('/');
+  },
+
+  show: (req, res) => {
+    const { id }= req.params;
+    
+    const usuarios = getUsers();
+
+    const usuario = usuarios.find((usuario) => usuario.id == id);
+    
+    if (!usuario) {
+      res.redirect('/');
+    }
+
+    res.render('userDetail', { usuario })
+  },
+
+  edit: (req, res) => {
+    const usuarios = getUsers();
+    const id = req.params.id;
+    const usuario = usuarios.find((usuario) => usuario.id == id)
+    if (!usuario) {
+      return res.send("No se encontró el usuario");
+    }
+    res.render('editarUsuario', { usuario: usuario })
+  },
+
+  update: (req, res) => {
+    const usuarios = getUsers();
+
+    const id = req.params.id;
+    usuarios.forEach((usuario) => {
+      if (usuario.id == id) {
+        usuario.id = req.body.id;
+        usuario.name = req.body.name;
+        usuario.email = req.body.email;
+        usuario.age = req.body.age;
+        usuario.image = req.body.image;
+      }
+    });
+
+    fs.writeFileSync(usersFilePath, JSON.stringify(usuarios), {
+      flag: 'w',
+      encoding: 'utf-8',
+    });
+
+    res.redirect('/users');
   },
 
   session: (req, res) => {

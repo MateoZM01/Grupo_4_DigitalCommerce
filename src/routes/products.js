@@ -20,6 +20,8 @@ const productsControllers = require("../controllers/productsControllers");
 
 // Definición de rutas para productos
 
+router.get('/cart', productsControllers.productCart);
+
 // GET ALL PRODUCTS
 router.get('/products', productsControllers.index);
 

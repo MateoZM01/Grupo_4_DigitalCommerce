@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Juan Perez",
+        "name": "Juan Pérez",
         "email": "juan.perez@correo.com",
         "password": "clave123",
         "age": 27
@@ -15,7 +15,7 @@
     },
     {
         "id": 3,
-        "name": "Maria Fernandez",
+        "name": "María Fernández",
         "email": "maria.fernadez@correo.com",
         "password": "contraseña",
         "age": 31
@@ -36,7 +36,7 @@
     },
     {
         "id": 6,
-        "name": "Gabriel Lopez",
+        "name": "Gabriel López",
         "email": "gabriel.lopez@correo.com",
         "password": "gabilopez123",
         "age": 23

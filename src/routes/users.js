@@ -24,6 +24,11 @@ router.get('/users/create/', usersControllers.create);
 router.get('/login', guestMiddleware, usersControllers.login);
 router.post('/login', usersControllers.session);
 
+router.get('users/detail/:id', usersControllers.show)
+
+router.get('/users/:id/edit', usersControllers.edit);
+router.put('/users/:id',  upload.single('image'), usersControllers.update);
+
 // Rutas "profile"
 router.get('/profile', userMiddleware, usersControllers.profile);
 router.get('/logout', usersControllers.logout);
