@@ -19,7 +19,7 @@ app.set("views", path.join(__dirname, "/views"));
 // Configuración para servir archivos estáticos en la carpeta 'public'
 app.use(express.static('public'));
 
-//Esto nos permite poder enviar datos desde el POST por el metodo PUT y el metodo DELETE
+//Esto nos permite poder enviar datos desde el POST por el método PUT y el método DELETE
 app.use(methodOverride('_method'));
 
 //URL encode  - Para que nos pueda llegar la información desde el formulario al req.body

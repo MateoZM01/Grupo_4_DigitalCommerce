@@ -32,7 +32,7 @@ router.get('/products/detail/:id', productsControllers.show);
 
 // EDIT ONE PRODUCT
 router.get('/products/:id/edit', productsControllers.edit);
-router.put('/products/:id', productsControllers.update);
+router.put('/products/:id',  upload.single('image'), productsControllers.update);
 
 // DELETE ONE PRODUCT
 router.get('/products/delete/:id', productsControllers.destroy);

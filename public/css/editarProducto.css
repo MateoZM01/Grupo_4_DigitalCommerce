@@ -9,7 +9,50 @@ body {
     font-family: "Ubuntu", helvetica;
 }
 
-.main {
-    height: 60vh;
-    margin-left: 15px;
+.main {    
+    padding: 1%;
+    border-radius: 30px;
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.formulario {
+    text-align: center;
+    background-color: #b3d0ff;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}
+
+.desc {
+    color: black;
+    width: 50%;
+    height: 70px;
+}
+
+.form-label {
+    display: flex;
+    justify-content: center;
+    color: #51535a;
+}
+
+.relleno {
+    color: black;
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.relleno2 {
+    color: #3b3d47;
+    display: flex;
+    margin: auto;
+}
+
+.botones-final {
+    padding-bottom: 20px;
 }

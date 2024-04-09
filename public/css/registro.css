@@ -11,7 +11,7 @@ body {
 
 /* main */
 .main {
-  height: 110svh;
+  height: 125svh;
   display: flex;
   justify-content: center;
   align-items: center;

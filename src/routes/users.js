@@ -6,33 +6,26 @@ const fs = require('fs');
 const methodOverride = require('method-override');
 const { check } = require('express-validator');
 
-// Multer - manejo del almacenamiento
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, path.resolve(__dirname, '../../public/images/users'))
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + "-" + file.originalname);
-    },
-});
-// Instancia del Multer para manejar los métodos
-const upload = multer({ storage })
+const upload = require('../middlewares/multerMiddleware');
+const guestMiddleware = require('../middlewares/guestMidleware');
+const userMiddleware = require('../middlewares/userMiddleware');
 
 const usersControllers = require("../controllers/usersControllers");
 
 router.get('/users', usersControllers.index);
-router.post('/users',
-    [
-        check('email').isEmail().withMessage('Debe introducir un email válido.'),
-        check('password').isLength({ min: 8 }).withMessage('Debe introducir una contraseña más larga.'),
-    ],
-    usersControllers.store);
 
-// Para renderizar la vista "register"
-router.get('/register', usersControllers.register);
-
+// Rutas "register"
+router.get('/register', guestMiddleware, usersControllers.register);
+router.post('/users', upload.single('image'), usersControllers.save);
 // CREATE ONE USER
 router.get('/users/create/', usersControllers.create);
-router.post('/users', upload.single('image'), usersControllers.save);
+
+// Rutas "login"
+router.get('/login', guestMiddleware, usersControllers.login);
+router.post('/login', usersControllers.session);
+
+// Rutas "profile"
+router.get('/profile', userMiddleware, usersControllers.profile);
+router.get('/logout', usersControllers.logout);
 
 module.exports = router;

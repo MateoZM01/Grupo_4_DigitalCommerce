@@ -9,7 +9,6 @@ const mainControllers = require("../controllers/mainControllers");
 
 // Mapeando las rutas a los controladores correspondientes
 router.get('/', mainControllers.index);
-router.get('/login', mainControllers.login);
 
 // Ruta para manejar cualquier otra solicitud (404)
 // router.get('*', (req, res) => {
