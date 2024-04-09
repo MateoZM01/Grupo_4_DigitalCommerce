@@ -12,7 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "ejs": "^3.1.9",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
@@ -24,6 +27,7 @@
     "mysql2": "^3.9.3",
     "node": "^21.2.0",
     "nodemon": "^3.0.2",
+    "ors": "^1.0.0",
     "render": "^0.1.4",
     "sequelize": "^6.37.2",
     "src": "^1.0.0"
