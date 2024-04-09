@@ -10,7 +10,6 @@ const session = require("express-session");
 
 // Importación de rutas definidas en archivos separados
 const mainRoutes = require("./routes/main");
-const cartRoutes = require("./routes/cart");
 const productsRoutes = require("./routes/products");
 const usersRoutes = require("./routes/users");
 
@@ -21,12 +20,8 @@ app.set("views", path.join(__dirname, "/views"));
 // Configuración para servir archivos estáticos en la carpeta 'public'
 app.use(express.static('public'));
 
-//Esto nos permite poder enviar datos desde el POST por el metodo PUT y el metodo DELETE
+// Esto nos permite poder enviar datos desde el POST por el método PUT y el método DELETE
 app.use(methodOverride('_method'));
-
-//URL encode  - Para que nos pueda llegar la información desde el formulario al req.body
-app.use(express.urlencoded({ extended: false }));
-
 
 // URL encode - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
@@ -40,9 +35,15 @@ app.use(session({
 
 // Uso de las rutas definidas en los archivos de rutas
 app.use("/", mainRoutes);
-app.use("/", cartRoutes);
 app.use("/", productsRoutes);
 app.use("/", usersRoutes);
+
+app.get('*', (req, res) => {
+    res.send(`
+    <h1>No existe esa página</h1>
+    <h3><a href="/">Volver al Home</a></h3>
+    `)
+});
 
 // Iniciar el servidor en el puerto especificado
 app.listen(port, () => {

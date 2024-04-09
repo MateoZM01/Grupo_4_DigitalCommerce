@@ -22,6 +22,7 @@ body {
 }
 
 .desc {
+    color: black;
     width: 50%;
     height: 70px;
 }
@@ -33,6 +34,7 @@ body {
 }
 
 .relleno {
+    color: black;
     width: 50%;
     height: 35px;
     border: none;

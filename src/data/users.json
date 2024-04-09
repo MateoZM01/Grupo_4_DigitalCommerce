@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Juan Perez",
+        "name": "Juan Pérez",
         "email": "juan.perez@correo.com",
         "password": "clave123",
         "image": "avatar2",
@@ -18,7 +18,7 @@
     },
     {
         "id": 3,
-        "name": "Maria Fernandez",
+        "name": "María Fernández",
         "email": "maria.fernadez@correo.com",
         "password": "contraseña",
         "image": "avatar4",
@@ -42,7 +42,7 @@
     },
     {
         "id": 6,
-        "name": "Gabriel Lopez",
+        "name": "Gabriel López",
         "email": "gabriel.lopez@correo.com",
         "password": "gabilopez123",
         "image": "avatar7",

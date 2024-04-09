@@ -8,12 +8,6 @@ const mainControllers = {
         res.render("index");
     },
 
-    // Controlador para la ruta de inicio de sesión ("/login")
-    login: (req, res) => {
-        // Renderiza la vista llamada "login"
-        res.render("login");
-    },
-
 };
 
 // Exporta el objeto mainControllers para su uso en otros archivos

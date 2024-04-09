@@ -10,31 +10,40 @@
     <%- include('./partials/header.ejs') %>
 
         <main class="main">
+            <div class="card-products">
+                <h1>Editar producto</h1>
 
-            <div>
-                <form method="POST" action="/products/<%= producto.id %>?_method=PUT" enctype="multipart/form-data">
+                <form method="POST" action="/products/<%= producto.id %>?_method=PUT" enctype="multipart/form-data"
+                    class="formulario">
+                    <br>
+                    <label for="name" class="form-label">Nombre del producto:</label>
+                    <input type="text" id="name" name="name" value="<%= producto.name %>" class="relleno" required>
+                    <br>
+                    <br>
+                    <label for="description" class="form-label">Descripción:</label>
+                    <input type="text" class="relleno" id="description" name="description" placeholder="Descripción"
+                        required="required" value="<%= producto.description %>">
+                    <br>
+                    <br>
+                    <img class="product-image" src="/images/products/<%= producto.image %>" alt="product-image" />
+                    <br>
+                    <label for="image" class="form-label">Selecciona una o más imagenes para el producto:</label>
+                    <input class="relleno2" type="file" id="image" name="image" accept=".jpg,.png" multiple>
+                    <br>
+                    <br>
+                    <label for="price" class="form-label">Precio:</label>
+                    <input type="number" id="price" name="price" value="<%= producto.price %>" class="relleno" required>
+                    <br>
+                    <br>
+                    <div class="botones-final">
+                        <button type="submit" class="btn btn btn-info">Guardar producto</button>
+                        <a href="/products" class="btn btn btn-info">Volver</a>
+                    </div>
+                </form>
 
-                    <h1>Editar producto</h1>
-                    <br>
-                    <label for="name">Nombre del producto:</label>
-                    <input type="text" id="name" name="name" value="<%= producto.name %>" required>
-                    <br>
-                    <br>
-                    <label for="description">Descripción:</label>
-                    <input type="text" class="form-control" id="description" name="description"
-                        placeholder="Descripción" required="required" value="<%= producto.description %>">
-                    <br>
-                    <br>
-                    <label for="image">Selecciona una o más imagenes para el producto:</label>
-                    <input type="file" id="image" name="image" accept=".jpg,.png" multiple>
-                    <br>
-                    <br>
-                    <label for="price">Precio:</label>
-                    <input type="number" id="price" name="price" value="<%= producto.price %>" required>
-                    <br>
-                    <br>
-                    <button type="submit" class="btn btn btn-info">Guardar cambios</button>
-                    <a href="/products" class="btn btn-danger">Volver</a>
+                <form action="/products/delete/<%= producto.id %>?_method=DELETE" method="POST" class="formulariodelete">
+                    <button class="btn btn-danger" id="boton-eliminar" type="submit" value="Eliminar producto">Eliminar
+                        producto</button>
                 </form>
             </div>
         </main>

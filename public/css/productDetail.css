@@ -54,8 +54,7 @@ span {
 }
 
 button {
-  background-color: #4285f4;
-  color: #fff;
+  background-color: rgb(219, 219, 219);
   border: none;
   padding: 10px 20px;
   text-align: center;
@@ -72,7 +71,7 @@ button {
 }
 
 button:hover {
-  background-color: #0072bb;
+  background-color: #9dc2fd;
 }
 
 .related-products {
