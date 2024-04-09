@@ -4,7 +4,7 @@
         "name": "Juan Pérez",
         "email": "juan.perez@correo.com",
         "password": "clave123",
-        "image": "avatar2",
+        "image": "avatar2.png",
         "age": 27
     },
     {
@@ -12,7 +12,7 @@
         "name": "Roxana Carabajal",
         "email": "roxi.cara@correo.com",
         "password": "roxcara",
-        "image": "avatar3",
+        "image": "avatar3.png",
         "age": 42
         
     },
@@ -21,7 +21,7 @@
         "name": "María Fernández",
         "email": "maria.fernadez@correo.com",
         "password": "contraseña",
-        "image": "avatar4",
+        "image": "avatar4.png",
         "age": 31
     },
     {
@@ -29,7 +29,7 @@
         "name": "David Torres",
         "email": "david.torres@correo.com",
         "password": "password123",
-        "image": "avatar5",
+        "image": "avatar5.png",
         "age": 25
     },
     {
@@ -37,7 +37,7 @@
         "name": "Isabella Ruiz",
         "email": "isabella.ruiz@correo.com",
         "password": "isaruiz2",
-        "image": "avatar6",
+        "image": "avatar6.png",
         "age": 19
     },
     {
@@ -45,7 +45,7 @@
         "name": "Gabriel López",
         "email": "gabriel.lopez@correo.com",
         "password": "gabilopez123",
-        "image": "avatar7",
+        "image": "avatar7.png",
         "age": 23
     }
 ]
