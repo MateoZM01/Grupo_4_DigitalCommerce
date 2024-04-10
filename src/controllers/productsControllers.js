@@ -21,7 +21,7 @@ const productsControllers = {
   productCart: (req, res) => {
 
     res.render('productCart');
-},
+  },
 
   create: (req, res) => {
     const productos = getProducts();
@@ -76,15 +76,15 @@ const productsControllers = {
 
   update: (req, res) => {
     const productos = getProducts();
-    
+
     const id = req.params.id;
     productos.forEach((producto) => {
       if (producto.id == id) {
-        producto.id = req.body.id;
+        producto.id = Number(id);
         producto.name = req.body.name;
         producto.price = req.body.price;
         producto.description = req.body.description;
-        producto.image = req.body.image;
+        producto.image = req.body.image ? req.body.image : producto.image
       }
     });
 
@@ -92,14 +92,15 @@ const productsControllers = {
 
     res.redirect('/products');
   },
-  
+
   destroy: (req, res) => {
     const productos = getProducts();
     const id = req.params.id;
     const productoFiltrado = productos.filter(producto => producto.id != id);
     fs.writeFileSync(productsFilePath, JSON.stringify(productoFiltrado));
     res.redirect('/products');
-  }
+  },
+
 };
 // Exporta el objeto productsControllers para su uso en otros archivos
 module.exports = productsControllers;

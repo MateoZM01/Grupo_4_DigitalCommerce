@@ -23,8 +23,7 @@ router.get('/users/create/', usersControllers.create);
 // Rutas "login"
 router.get('/login', guestMiddleware, usersControllers.login);
 router.post('/login', usersControllers.session);
-
-router.get('users/detail/:id', usersControllers.show)
+router.get('/users/detail/:id', usersControllers.show)
 
 router.get('/users/:id/edit', usersControllers.edit);
 router.put('/users/:id',  upload.single('image'), usersControllers.update);

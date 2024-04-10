@@ -18,7 +18,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
 
 // Configuración para servir archivos estáticos en la carpeta 'public'
-app.use(express.static('public'));
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 // Esto nos permite poder enviar datos desde el POST por el método PUT y el método DELETE
 app.use(methodOverride('_method'));

@@ -28,9 +28,9 @@ const usersControllers = {
     res.render("login");
   },
 
-  profileUser: (req, res) => {
+  userDetail: (req, res) => {
 
-    res.render('profileUser');
+    res.render('userDetail');
 },
 
   create: (req, res) => {
@@ -74,7 +74,7 @@ const usersControllers = {
       res.redirect('/');
     }
 
-    res.render('userDetail', { usuario })
+    res.render('userDetail', { usuario });
   },
 
   edit: (req, res) => {
@@ -108,7 +108,6 @@ const usersControllers = {
 
     res.redirect('/users');
   },
-
   session: (req, res) => {
     let { email, password } = req.body;
     let userFound = users.find(user => user.email == email);
@@ -134,9 +133,7 @@ const usersControllers = {
 
   logout: (req, res) => {
     req.session.destroy();
-    return res.redirect('/');
   }
-
 }
 
 module.exports = usersControllers;
