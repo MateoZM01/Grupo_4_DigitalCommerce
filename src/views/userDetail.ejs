@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %>
+  
+
+  <body>
+
+    <%- include('./partials/header') %>
+
+      <main class="main-product-detail">
+        <div class="user-detail">
+          <!-- Imagen del producto -->
+          <img class="user-image" src="/images/users/<%= usuario.image %>" alt="product-image" />
+
+          <div class="user-info">
+            <span class="user-name"><%= usuario.name %></span>
+            <span class="user-email">$<%= usuario.email %></span>
+
+            <!-- Detalles técnicos del producto -->
+            <p class="user-age"><%= usuario.age %></p>
+
+            <button><a href="/editarUsuario" class="botón-carrito">Editar usuario</a></button>
+          </div>
+        </div>
+        </main>
+        
+        <%- include('./partials/footer.ejs')%>
+</body>
+
+</html>

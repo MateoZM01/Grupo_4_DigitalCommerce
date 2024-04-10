@@ -53,7 +53,7 @@ span {
   font-size: 1.4em;
 }
 
-button {
+.botón-carrito {
   background-color: rgb(219, 219, 219);
   border: none;
   padding: 10px 20px;
@@ -70,7 +70,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.botón-carrito:hover {
   background-color: #9dc2fd;
 }
 

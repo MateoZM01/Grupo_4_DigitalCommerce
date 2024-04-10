@@ -56,3 +56,7 @@ body {
 .botones-final {
     padding-bottom: 20px;
 }
+
+#boton-eliminar {
+    margin-top: 5px;
+}

@@ -1,1 +1,55 @@
+<<<<<<< HEAD
 [{"id":1,"name":"Juan Perez","email":"juan.perez@correo.com","password":"clave123","age":27},{"id":2,"name":"Roxana Carabajal","email":"roxi.cara@correo.com","password":"roxcara","age":42},{"id":3,"name":"Maria Fernandez","email":"maria.fernadez@correo.com","password":"contraseña","age":31},{"id":4,"name":"David Torres","email":"david.torres@correo.com","password":"password123","age":25},{"id":5,"name":"Isabella Ruiz","email":"isabella.ruiz@correo.com","password":"isaruiz2","age":19},{"id":6,"name":"Gabriel Lopez","email":"gabriel.lopez@correo.com","password":"gabilopez123","age":23},{"id":7,"name":"ricardo coronel","email":"rcoronel146@gmail.com","password":"$2a$10$MNEbOHPoe2uViXxRuzubmOPBnjGv4T0EKs5DVMpzIMOQHzkTstdtS","age":"29","image":"default-profile-image.png"}]
+=======
+[
+    {
+        "id": 1,
+        "name": "Juan Pérez",
+        "email": "juan.perez@correo.com",
+        "password": "clave123",
+        "image": "avatar2.png",
+        "age": 27
+    },
+    {
+        "id": 2,
+        "name": "Roxana Carabajal",
+        "email": "roxi.cara@correo.com",
+        "password": "roxcara",
+        "image": "avatar3.png",
+        "age": 42
+        
+    },
+    {
+        "id": 3,
+        "name": "María Fernández",
+        "email": "maria.fernadez@correo.com",
+        "password": "contraseña",
+        "image": "avatar4.png",
+        "age": 31
+    },
+    {
+        "id": 4,
+        "name": "David Torres",
+        "email": "david.torres@correo.com",
+        "password": "password123",
+        "image": "avatar5.png",
+        "age": 25
+    },
+    {
+        "id": 5,
+        "name": "Isabella Ruiz",
+        "email": "isabella.ruiz@correo.com",
+        "password": "isaruiz2",
+        "image": "avatar6.png",
+        "age": 19
+    },
+    {
+        "id": 6,
+        "name": "Gabriel López",
+        "email": "gabriel.lopez@correo.com",
+        "password": "gabilopez123",
+        "image": "avatar7.png",
+        "age": 23
+    }
+]
+>>>>>>> 9932bc88b2672fe1b98ab119a8be1cc116de3190
