@@ -93,11 +93,11 @@ const usersControllers = {
     const id = req.params.id;
     usuarios.forEach((usuario) => {
       if (usuario.id == id) {
-        usuario.id = req.body.id;
+        usuario.id = Number(id);
         usuario.name = req.body.name;
         usuario.email = req.body.email;
         usuario.age = req.body.age;
-        usuario.image = req.body.image;
+        usuario.image = req.body.image ? req.body.image : usuario.image
       }
     });
 
@@ -108,6 +108,15 @@ const usersControllers = {
 
     res.redirect('/users');
   },
+
+  destroy: (req, res) => {
+    const usuarios = getUsers();
+    const id = req.params.id;
+    const usuarioFiltrado = usuarios.filter(usuario => usuario.id != id);
+    fs.writeFileSync(usersFilePath, JSON.stringify(usuarioFiltrado));
+    res.redirect('/users');
+  },
+
   session: (req, res) => {
     let { email, password } = req.body;
     let userFound = users.find(user => user.email == email);

@@ -17,8 +17,12 @@ router.get('/users', usersControllers.index);
 // Rutas "register"
 router.get('/register', guestMiddleware, usersControllers.register);
 router.post('/users', upload.single('image'), usersControllers.save);
+
 // CREATE ONE USER
 router.get('/users/create/', usersControllers.create);
+
+// DELETE ONE PRODUCT
+router.get('/users/delete/:id', usersControllers.destroy);
 
 // Rutas "login"
 router.get('/login', guestMiddleware, usersControllers.login);
