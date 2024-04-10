@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(224, 227, 233);
+    font-family: "Ubuntu", Helvetica, sans-serif;
+}
+
+.main-user-detail {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* User Detail */
+.user-detail {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 25px;
+    background-color: #5b9aff;
+    color: #3A3B42;
+}
+
+.user-image {
+    width: 300px;
+    height: 300px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+.user-name {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-email {
+    color: #0a0a0a;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.user-age {
+    color: #0a0a0a;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 1.4em;
+}
+
+.botón-editar {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.botón-editar:hover {
+    background-color: #9dc2fd;
+}

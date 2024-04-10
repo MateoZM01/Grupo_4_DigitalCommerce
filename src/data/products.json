@@ -44,7 +44,7 @@
     "name": "Impresora Multifunción",
     "price": 250000,
     "image": "impresora.hp.png",
-    "description": "Agregar descripción",
+    "description": "Las impresoras multifunción HP son una excelente opción para quienes necesitan un dispositivo que pueda imprimir, escanear, copiar y enviar faxes. Ofrecen una variedad de funciones y opciones para satisfacer las necesidades de diferentes usuarios, desde estudiantes y propietarios de pequeñas empresas hasta grandes empresas.",
     "discount": 5000
   },
   {
@@ -52,7 +52,7 @@
     "name": "Router WiFi Gigabit",
     "price": 180000,
     "image": "router.png",
-    "description": "Agregar descripción",
+    "description": "El Router WiFi Gigabit te permite disfrutar de una experiencia online rápida, confiable y segura. Con velocidades WiFi Gigabit (hasta 1000 Mbps), es ideal para streaming de video 4K/8K, juegos online, descargas rápidas y mucho más.",
     "discount": 5000
   },
   {

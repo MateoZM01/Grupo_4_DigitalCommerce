@@ -2,30 +2,29 @@
 <html lang="en">
 
 <%- include('./partials/head') %>
-  
+  <link rel="stylesheet" href="/css/userDetail.css">
 
   <body>
 
     <%- include('./partials/header') %>
 
-      <main class="main-product-detail">
+      <main class="main-user-detail">
         <div class="user-detail">
-          <!-- Imagen del producto -->
+          <!-- Imagen del usuario -->
           <img class="user-image" src="/images/users/<%= usuario.image %>" alt="product-image" />
 
           <div class="user-info">
-            <span class="user-name"><%= usuario.name %></span>
-            <span class="user-email">$<%= usuario.email %></span>
+            <span class="user-name">Nombre: <%= usuario.name %></span>
+            <span class="user-email">Email: <%= usuario.email %></span>
+            <span class="user-age">Edad: <%= usuario.age %></span>
 
-            <!-- Detalles técnicos del producto -->
-            <p class="user-age"><%= usuario.age %></p>
+            <button><a href="/users" class="botón-editar">Volver</a></button>
 
-            <button><a href="/editarUsuario" class="botón-carrito">Editar usuario</a></button>
           </div>
         </div>
-        </main>
-        
-        <%- include('./partials/footer.ejs')%>
-</body>
+      </main>
+
+      <%- include('./partials/footer.ejs')%>
+  </body>
 
 </html>
