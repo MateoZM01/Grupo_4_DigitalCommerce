@@ -21,13 +21,17 @@ body {
   justify-content: space-around;
   background-color: #fff;
   padding: 2em;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  background-color: #5b9aff;
+  color: #3A3B42;
+  
+
+
 }
 
 .product-image {
-  width: 50%;
-  height: 250px;
+  width: 300px;
+  height:300px;
 }
 
 .product-info {
