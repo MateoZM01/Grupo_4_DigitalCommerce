@@ -40,4 +40,24 @@ SPRINT 5
 *Asociamos una nueva base de datos simulada para realizar pruebas.
 *Agregamos usuarios ficticios 
 
+SPRINT 6
+Resumen del Sprint:
+El Sprint 6 presentó desafíos debido a la ausencia de varios miembros del equipo. A continuación, analizaremos los aspectos positivos y negativos para mejorar el rendimiento en próximos sprints.
+*Aspectos Positivos:
+-Compromiso y esfuerzo: Agradecemos el compromiso y esfuerzo de José Martin, Ricardo y Aynelen, quienes continuaron trabajando en el proyecto a pesar de las ausencias.
+-Adaptación: El equipo demostró capacidad para adaptarse a las circunstancias y seguir avanzando.
+
+*Aspectos Negativos:Falta de integrantes: La ausencia de Mateo, Mauro e Ignacio generó una carga de trabajo excesiva para los integrantes presentes, afectando el ritmo de desarrollo.
+-Comunicación dificultada: La falta de algunos miembros dificulta la comunicación y coordinación del equipo.
+-Desaprovechamiento de habilidades: No se pudieron aprovechar todas las habilidades del equipo al completo.
+
+*Conclusiones:
+-Este sprint evidenció la necesidad de mejorar la comunicación, la planificación ante ausencias y la búsqueda de soluciones ante imprevistos.
+
+*Acciones para mejorar en próximos sprints:
+-Reuniones virtuales: Implementar reuniones virtuales periódicas para facilitar la comunicación e integración de todos los miembros, incluso los ausentes.
+-Planificación flexible: Adaptar la planificación del proyecto considerando posibles ausencias y definiendo tareas que puedan realizarse individualmente.
+-Herramientas colaborativas: Utilizar herramientas online para facilitar el trabajo colaborativo en tiempo real o asincrónico (ej: documentos compartidos, chats grupales).
+-Definición de roles: Asignar roles y responsabilidades específicas a cada integrante para optimizar la gestión del tiempo y las tareas.
+
 
