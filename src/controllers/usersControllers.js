@@ -28,11 +28,6 @@ const usersControllers = {
     res.render("login");
   },
 
-  userDetail: (req, res) => {
-
-    res.render('userDetail');
-},
-
   create: (req, res) => {
     const usuarios = getUsers();
     res.render('register');
@@ -118,8 +113,10 @@ const usersControllers = {
   },
 
   session: (req, res) => {
-    let { email, password } = req.body;
-    let userFound = users.find(user => user.email == email);
+    const usuarios = getUsers();
+
+    const { email, password } = req.body;
+    const userFound = usuarios.find(usuario => usuario.email == email);
 
     if (userFound) {
       if (bcrypt.compareSync(password, userFound.password)) {
@@ -133,11 +130,11 @@ const usersControllers = {
       }
 
     }
-    res.send('<h1>El email y/o contraseña no son válidos</h1><button><a href="/users/login">Volver a loguearse</a></button>');
+    res.send('<h1>El email y/o contraseña no son válidos</h1><button><a href="/login">Volver a loguearse</a></button>');
   },
 
-  profile: (req, res) => {
-    res.render('./users/profile.ejs', { user: req.session.userLogged, books });
+  userDetail: (req, res) => {
+    res.render('userDetail', { usuario: req.session.userLogged });
   },
 
   logout: (req, res) => {
