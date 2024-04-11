@@ -6,7 +6,7 @@
   }
 
 html {
-  font-size: 62.5%;
+  font-size: 30.5%;
 }
 
 body {
@@ -19,8 +19,7 @@ body {
   width: 90%;
   height: 70vh;
   display: flex;
-  margin: 6rem auto 10rem;
-  height: 70vh;
+  margin: 16rem auto 16rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,14 +28,16 @@ body {
 
 .main__product {
   background-color: #b3d0ff;
-  border-radius: 25px;
+  border-radius: 10px;
+  
 }
 
 .main input {
   padding: 3%;
-  width: 100%;
+  width: 80%;
   color: #090C1F;
   transition: color 450ms;
+  
 }
 
 .main input:hover {
@@ -52,7 +53,7 @@ body {
   justify-content: space-around;
   padding: 3rem;
   background-color: #5b9aff;
-  color: #fff;
+  color: #3A3B42;
   border-radius: 30px;
 }
 
@@ -63,12 +64,19 @@ body {
 }
 
 .main__cupon-descuento {
-  margin: 50px;
+  margin: 50px auto;
+  color: #fff;
+  
+  
 }
 
 .main__calcular-costo-envio {
   margin: 50px;
+  color: #fff;
+    margin: 50px auto;
 }
 h1 {
-  padding-bottom: 25px;
+  background-color: #5b9aff;
+  color: #fff;
+  
 }

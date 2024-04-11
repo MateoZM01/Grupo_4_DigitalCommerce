@@ -20,7 +20,11 @@
             <!-- Detalles técnicos del producto -->
             <p class="product-description"><%= producto.description %></p>
 
-            <button><a href="/cart" class="botón-carrito">Agregar al carrito</a></button>
+            <button class="botón-carrito" onclick="agregarProducto()">Agregar al Carrito</button>
+
+
+
+            <!-- <button><a href="/cart" class="botón-carrito">Agregar al carrito</a></button> -->
 
           </div>
         </div>
@@ -77,3 +81,32 @@
   </body>
 
 </html>
+
+<script>
+  function agregarProducto() {
+    const url = window.location.href;
+    const id = url.split('/')[url.split('/').length -1]
+    const newProduct = {
+    product: id,
+    cantidad: 1
+  };
+
+  let cart = [];
+
+  if (localStorage.getItem('cart')) {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    
+    const existingProductIndex = cart.findIndex(item => item.product === id);
+
+    if (existingProductIndex !== -1) {
+      cart[existingProductIndex].cantidad++;
+    } else {
+      cart.push(newProduct);
+    }
+  } else {
+    cart.push(newProduct);
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  }
+</script>
