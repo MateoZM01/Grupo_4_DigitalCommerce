@@ -53,7 +53,11 @@ body {
   justify-content: space-around;
   padding: 3rem;
   background-color: #5b9aff;
+<<<<<<< HEAD
   color: #3A3B42;
+=======
+  color: rgb(36, 32, 32);
+>>>>>>> f5b5f628422f90d6f0bcbceaf5a52858c68b1f20
   border-radius: 30px;
 }
 

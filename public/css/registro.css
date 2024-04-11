@@ -80,11 +80,11 @@ h1 {
 .form-label {
   display: flex;
   justify-content: center;
-  color: #51535a;
+  color: rgb(44, 40, 40);
 }
 
 .relleno2 {
-  color: #3b3d47;
+  color: rgb(44, 40, 40);
   display: flex;
   margin: flex;
 }
