@@ -46,5 +46,13 @@
         "password": "gabilopez123",
         "image": "avatar7.png",
         "age": 23
+    },
+    {
+        "id": 7,
+        "name": "Aynelen Agustina",
+        "email": "ayneledesmar@gmail.com",
+        "password": "$2a$10$33gJnHFEghVSu7VCSflAketpiCV3/.hQ6JQDiqOfB.3fZqLXGZrSK",
+        "age": "25",
+        "image": "default-profile-image.png"
     }
 ]
