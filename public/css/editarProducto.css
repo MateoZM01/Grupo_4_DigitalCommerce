@@ -35,7 +35,7 @@ body {
 .form-label {
     display: flex;
     justify-content: center;
-    color: #51535a;
+    color: rgb(44, 40, 40);
 }
 
 .relleno {

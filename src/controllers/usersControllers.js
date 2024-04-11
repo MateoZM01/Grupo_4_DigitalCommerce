@@ -136,10 +136,7 @@ const usersControllers = {
   userDetail: (req, res) => {
     res.render('userDetail', { usuario: req.session.userLogged });
   },
-
-  logout: (req, res) => {
-    req.session.destroy();
-  }
+  
 }
 
 module.exports = usersControllers;

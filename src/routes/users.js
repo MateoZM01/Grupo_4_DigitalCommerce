@@ -15,7 +15,11 @@ router.get('/users', usersControllers.index);
 // CREATE ONE USER
 router.get('/users/create/', usersControllers.create);
 
-// DELETE ONE PRODUCT
+// EDIT USER
+router.get('/users/:id/edit', usersControllers.edit);
+router.put('/users/:id', upload.single('image'), usersControllers.update);
+
+// DELETE ONE USER
 router.get('/users/delete/:id', usersControllers.destroy);
 
 // Rutas "register"
@@ -27,11 +31,7 @@ router.get('/login', guestMiddleware, usersControllers.login);
 router.post('/login', usersControllers.session);
 router.get('/users/detail/:id', usersControllers.show)
 
-router.get('/users/:id/edit', usersControllers.edit);
-router.put('/users/:id',  upload.single('image'), usersControllers.update);
-
 // Rutas "profile"
 router.get('/users/detail', userMiddleware, usersControllers.userDetail);
-router.get('/logout', usersControllers.logout);
 
 module.exports = router;
