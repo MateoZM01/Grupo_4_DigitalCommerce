@@ -11,7 +11,7 @@ Ajustaremos nuestra oferta al público de la siguiente manera:
 
 -Segmentaremos nuestro catálogo de productos y contenido para atender las necesidades específicas de nuestros clientes.
 
--Ofreceremos promociones y descuentos específicos para cada sector.
+-Ofreceremos los mejores precios para cada sector.
 
 -Capacitaremos a nuestro equipo de atención al cliente para brindar asesoramiento especializado.
 
