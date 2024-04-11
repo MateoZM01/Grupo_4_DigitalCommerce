@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const { check } = require('express-validator');
 
-const upload = require('../middlewares/multerMiddleware');
+const upload = require('../middlewares/usersMulterMiddleware');
 const guestMiddleware = require('../middlewares/guestMidleware');
 const userMiddleware = require('../middlewares/userMiddleware');
 

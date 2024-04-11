@@ -10,7 +10,8 @@ const storage = multer.diskStorage({
         cb(null, Date.now() + "-" + file.originalname);
     },
 });
+
 // Instancia del Multer para manejar los métodos
 const upload = multer({ storage })
 
-module.exports = upload
+module.exports = upload;
