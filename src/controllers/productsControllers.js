@@ -37,8 +37,9 @@ const productsControllers = {
       id: productos[productos.length - 1.].id + 1,
       name: req.body.name,
       price: req.body.price,
-      description: req.body.description,
       image,
+      description: req.body.description,
+      category: req.body.category
     };
 
     productos.push(nuevoProducto);
@@ -83,6 +84,7 @@ const productsControllers = {
         producto.id = Number(id);
         producto.name = req.body.name;
         producto.price = req.body.price;
+        producto.category = req.body.category;
         producto.description = req.body.description;
         producto.image = req.body.image ? req.body.image : producto.image
       }

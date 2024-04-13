@@ -21,7 +21,7 @@
             <br>
             <br>
             <label for="email" class="form-label">Ingrese su email:</label>
-            <input class="relleno" type="email " id="email" name="email" placeholder="Ej: martin123@hotmail.com"
+            <input class="relleno" type="email" id="email" name="email" placeholder="Ej: martin123@hotmail.com"
               required>
             <br>
             <br>
@@ -29,12 +29,40 @@
             <input class="relleno" type="password" id="password" name="password" placeholder="Ej: abc123" required>
             <br>
             <br>
-            <label for="age" class="form-label">Ingrese su edad:</label>
-            <input class="relleno" type="number" id="age" name="age" placeholder="Ej: 30" required>
-            <br>
-            <br>
             <label for="images" class="form-label">Imagen del perfil de usuario:</label>
             <input class="relleno2" type="file" id="image" name="image" accept=".jpg,.png" multiple>
+            <br>
+            <label for="gender" class="form-label">Género:</label>
+            <select name="gender" id="gender" class="relleno" required>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+            <br>
+            <br>
+            <label for="date_of_birth" class="form-label">Fecha de nacimiento:</label>
+            <input type="date" name="date_of_birth" id="date_of_birth" class="relleno" required>
+            <br>
+            <br>
+            <label for="category" class="form-label">Categoría:</label required>
+            <select name="category" id="category" class="relleno">
+              <option value="Elija">Elija</option>
+              <option value="Minorista">Minorista</option>
+              <option value="Mayorista">Mayorista</option>
+            </select>
+            <br>
+            <br>
+            <label for="country" class="form-label">País:</label>
+            <input type="text" id="country" name="country" placeholder="Ej: Argentina" class="relleno">
+            <br>
+            <br>
+            <label for="city" class="form-label">Ciudad:</label>
+            <input type="text" id="city" name="city" placeholder="Ej: Bariloche, Río Negro" class="relleno">
+            <br>
+            <br>
+            <label for="address" class="form-label">Dirección:</label>
+            <input type="text" id="address" name="address" placeholder="Ej: Mitre N°259" class="relleno">
+            <br>
             <br>
             <h4>Al registrarse, acepta nuestros <a href="" class="terminos">Términos y Condiciones</a> y <a href=""
                 class="politicas">Políticas de privacidad</a></h4>

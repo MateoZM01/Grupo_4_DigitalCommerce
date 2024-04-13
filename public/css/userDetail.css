@@ -46,18 +46,18 @@ body {
 
 .user-name {
     color: black;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.user-email {
-    color: #0a0a0a;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.user-age {
+.user-email,
+.user-gender,
+.user-category,
+.user-date_of_birth,
+.user-country,
+.user-city,
+.user-address {
     color: #0a0a0a;
     font-size: 1.2em;
     margin-bottom: 10px;

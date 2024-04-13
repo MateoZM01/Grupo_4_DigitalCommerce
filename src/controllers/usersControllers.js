@@ -45,7 +45,12 @@ const usersControllers = {
       name: req.body.name,
       email: req.body.email,
       password: bcrypt.hashSync(password, 10),
-      age: req.body.age,
+      category: req.body.category,
+      gender: req.body.gender,
+      date_of_birth: req.body.date_of_birth,
+      country: req.body.country,
+      city: req.body.city,
+      address: req.body.address,
       image,
     };
 
@@ -91,7 +96,12 @@ const usersControllers = {
         usuario.id = Number(id);
         usuario.name = req.body.name;
         usuario.email = req.body.email;
-        usuario.age = req.body.age;
+        usuario.category = req.body.category;
+        usuario.gender = req.body.gender;
+        usuario.date_of_birth = req.body.date_of_birth;
+        usuario.country = req.body.country;
+        usuario.city = req.body.city;
+        usuario.address = req.body.address;
         usuario.image = req.body.image ? req.body.image : usuario.image
       }
     });

@@ -5,7 +5,12 @@
         "email": "juan.perez@correo.com",
         "password": "clave123",
         "image": "avatar1.png",
-        "age": 27
+        "gender": "Masculino",
+        "date_of_birth": "1997-02-03",
+        "category": "Minorista",
+        "country": "Argentina",
+        "city": "Buenos Aires",
+        "address": "Av. Corrientes N°1957"
     },
     {
         "id": 2,
@@ -13,7 +18,12 @@
         "email": "roxi.cara@correo.com",
         "password": "roxcara",
         "image": "avatar2.png",
-        "age": 37
+        "gender": "Femenino",
+        "date_of_birth": "1987-01-15",
+        "category": "Mayorista",
+        "country": "Argentina",
+        "city": "Santiago del Estero",
+        "address": "Av. Belgrano N°593"
     },
     {
         "id": 3,
@@ -21,7 +31,12 @@
         "email": "maria.fernadez@correo.com",
         "password": "contraseña",
         "image": "avatar3.png",
-        "age": 24
+        "gender": "Femenino",
+        "date_of_birth": "2000-03-27",
+        "category": "Minorista",
+        "country": "Argentina",
+        "city": "Tucumán",
+        "address": "Balcarce N°841"
     },
     {
         "id": 4,
@@ -29,7 +44,12 @@
         "email": "david.torres@correo.com",
         "password": "password123",
         "image": "avatar4.png",
-        "age": 25
+        "gender": "Masculino",
+        "date_of_birth": "1998-12-16",
+        "category": "Mayorista",
+        "country": "Argentina",
+        "city": "Santiago del Estero",
+        "address": "Libertad N°225"
     },
     {
         "id": 5,
@@ -37,7 +57,12 @@
         "email": "isabella.ruiz@correo.com",
         "password": "isaruiz2",
         "image": "avatar6.png",
-        "age": 74
+        "gender": "Femenino",
+        "date_of_birth": "1950-06-10",
+        "category": "Minorista",
+        "country": "Argentina",
+        "city": "Córdoba",
+        "address": "José Manuel Estrada N°398"
     },
     {
         "id": 6,
@@ -45,6 +70,11 @@
         "email": "gabriel.lopez@correo.com",
         "password": "gabilopez123",
         "image": "avatar7.png",
-        "age": 23
+        "gender": "Masculino",
+        "date_of_birth": "1993-04-01",
+        "category": "Mayorista",
+        "country": "Argentina",
+        "city": "Santiago del Estero",
+        "address": "25 de Mayo N°140"
     }
 ]
