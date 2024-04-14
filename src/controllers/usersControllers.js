@@ -42,7 +42,8 @@ const usersControllers = {
 
     const nuevoUsuario = {
       id: usuarios[usuarios.length - 1.].id + 1,
-      name: req.body.name,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
       email: req.body.email,
       password: bcrypt.hashSync(password, 10),
       category: req.body.category,
@@ -94,7 +95,8 @@ const usersControllers = {
     usuarios.forEach((usuario) => {
       if (usuario.id == id) {
         usuario.id = Number(id);
-        usuario.name = req.body.name;
+        usuario.firstName = req.body.firstName;
+        usuario.lastName = req.body.lastName;
         usuario.email = req.body.email;
         usuario.category = req.body.category;
         usuario.gender = req.body.gender;

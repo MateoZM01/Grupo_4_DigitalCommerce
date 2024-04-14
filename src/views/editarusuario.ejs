@@ -16,8 +16,14 @@
                 <form method="POST" action="/users/<%= usuario.id %>?_method=PUT" enctype="multipart/form-data"
                     class="formulario">
                     <br>
-                    <label for="name" class="form-label">Nombre de usuario:</label>
-                    <input type="text" id="name" name="name" value="<%= usuario.name %>" class="relleno" required>
+                    <label for="firstName" class="form-label">Nombre:</label>
+                    <input type="text" id="firstName" name="firstName" value="<%= usuario.firstName %>" class="relleno"
+                        required>
+                    <br>
+                    <br>
+                    <label for="lastName" class="form-label">Apellido:</label>
+                    <input type="text" id="lastName" name="lastName" value="<%= usuario.lastName %>" class="relleno"
+                        required>
                     <br>
                     <br>
                     <label for="description" class="form-label">Email:</label>

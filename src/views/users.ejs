@@ -25,6 +25,7 @@
               <tr>  
                 <th scope="col">Id</th>
                 <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
                 <th scope="col">Ver</th>
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
@@ -35,7 +36,8 @@
               <% usuarios.forEach(usuario => { %>
               <tr>
                 <td><%= usuario.id%> </td>
-                <td><%= usuario.name%> </td>
+                <td><%= usuario.firstName%> </td>
+                <td><%= usuario.lastName%> </td>
                 <td><a href="/users/detail/<%= usuario.id%>"> <ion-icon name="eye-outline"></ion-icon></a></td>
                 <td><a href="/users/<%= usuario.id%>/edit"> <ion-icon name="pencil-outline"></ion-icon></a></td>
                 <td><a href="/users/delete/<%= usuario.id%>"><ion-icon name="trash-outline"></ion-icon></a></td>

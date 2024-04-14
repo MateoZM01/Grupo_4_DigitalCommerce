@@ -15,7 +15,7 @@ body {
 }
 
 .main-user-detail {
-    height: 65vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
     padding-left: 2em;
 }
 
-.user-name {
+.user-firstname, .user-lastname {
     color: black;
     font-size: 1.3em;
     font-weight: bold;
