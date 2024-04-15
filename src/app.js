@@ -7,7 +7,6 @@ const methodOverride = require('method-override');
 const session = require("express-session");
 
 
-
 // Importación de rutas definidas en archivos separados
 const mainRoutes = require("./routes/main");
 const productsRoutes = require("./routes/products");
