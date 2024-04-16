@@ -1,9 +1,9 @@
-module.exports= {
+module.exports = {
   "development": {
     "username": "root",
-    "password": "12391973",
-    "database": "Grupo_4DigitalCommerce",
-    "host": "localhost",
+    "password": "root",
+    "database": "digitalcommerce",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
