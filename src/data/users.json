@@ -11,7 +11,7 @@
         "category": "Minorista",
         "country": "Argentina",
         "city": "Buenos Aires",
-        "address": "Av. Corrientes N°1957"
+        "address": "La Rioja N°1957"
     },
     {
         "id": 2,
@@ -25,7 +25,7 @@
         "category": "Mayorista",
         "country": "Argentina",
         "city": "Santiago del Estero",
-        "address": "Av. Belgrano N°593"
+        "address": "Paris N°593"
     },
     {
         "id": 3,
@@ -67,7 +67,7 @@
         "category": "Minorista",
         "country": "Argentina",
         "city": "Córdoba",
-        "address": "José Manuel Estrada N°398"
+        "address": "Estrada N°398"
     },
     {
         "id": 6,
@@ -81,6 +81,6 @@
         "category": "Mayorista",
         "country": "Argentina",
         "city": "Santiago del Estero",
-        "address": "25 de Mayo N°140"
+        "address": "Mayo N°140"
     }
 ]
