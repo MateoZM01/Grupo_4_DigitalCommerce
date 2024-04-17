@@ -1,3 +1,5 @@
+const Usuario = require("./Usuario")
+
 module.exports = (sequelize, dataTypes) => {
     let alias = "Producto"
     let cols = {
@@ -36,6 +38,17 @@ module.exports = (sequelize, dataTypes) => {
 
     const Producto = sequelize.define(alias, cols, config)
 
-    return Producto
+    Producto.associate = function (models) {
+        Producto.belongsTo(models.Stock_producto, {
+            as: 'stock_productos',
+            foreignKey: 'id_producto'
+        }),
+        
+        Producto.hasMany(models.Compra, {
+            as: 'compras',
+            foreignKey: 'id_producto'
+        });
+    }
 
-}
+    return Producto
+};

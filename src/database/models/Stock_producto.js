@@ -25,6 +25,12 @@ module.exports = (sequelize, dataTypes) => {
 
     const Stock_producto = sequelize.define(alias, cols, config)
 
-    return Stock_producto
+    Stock_producto.associate = function (models) {
+        Stock_producto.hasMany(models.Producto, {
+            as: 'productos',
+            foreignKey: 'id_producto'
+        });
+    }
 
-}
+    return Stock_producto
+};
