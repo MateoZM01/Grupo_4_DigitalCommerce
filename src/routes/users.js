@@ -10,28 +10,29 @@ const userMiddleware = require('../middlewares/userMiddleware');
 
 const usersControllers = require("../controllers/usersControllers");
 
-router.get('/users', usersControllers.index);
+// Lista de usuarios
+router.get('/users', usersControllers.users);
 
-// CREATE ONE USER
+// Perfil de un usuario
+router.get('/users/detail', userMiddleware, usersControllers.userDetail);
+
+// Crear un usuario
 router.get('/users/create/', usersControllers.create);
+router.post('/users', upload.single('imagen'), usersControllers.save);
 
-// EDIT USER
+// Editar un usuario
 router.get('/users/:id/edit', usersControllers.edit);
-router.put('/users/:id', upload.single('image'), usersControllers.update);
+router.put('/users/:id', upload.single('imagen'), usersControllers.update);
 
-// DELETE ONE USER
+// Eliminar un usuario
 router.get('/users/delete/:id', usersControllers.destroy);
 
-// Rutas "register"
+// Ruta "register"
 router.get('/register', guestMiddleware, usersControllers.register);
-router.post('/users', upload.single('image'), usersControllers.save);
 
 // Rutas "login"
 router.get('/login', guestMiddleware, usersControllers.login);
 router.post('/login', usersControllers.session);
 router.get('/users/detail/:id', usersControllers.show)
-
-// Rutas "profile"
-router.get('/users/detail', userMiddleware, usersControllers.userDetail);
 
 module.exports = router;

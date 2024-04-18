@@ -11,18 +11,19 @@
       <main class="main-user-detail">
         <div class="user-detail">
           <!-- Imagen del usuario -->
-          <img class="user-image" src="/images/users/<%= usuario.image %>" alt="product-image" />
+          <img class="user-image" src="/images/users/<%= usuario.imagen %>" alt="product-image" />
 
           <div class="user-info">
-            <span class="user-firstname">Nombre: <%= usuario.firstName %></span>
-            <span class="user-lastname">Apellido: <%= usuario.lastName %></span>
+            <span class="user-firstname">Nombre: <%= usuario.nombre %></span>
+            <span class="user-lastname">Apellido: <%= usuario.apellido %></span>
             <span class="user-email">Email: <%= usuario.email %></span>
-            <span class="user-gender">Género: <%= usuario.gender %></span>
-            <span class="user-date_of_birth">Fecha de nacimiento: <%= usuario.date_of_birth %></span>
-            <span class="user-category">Categoría: <%= usuario.category %></span>
-            <span class="user-country">País: <%= usuario.country %></span>
-            <span class="user-city">Ciudad: <%= usuario.city %></span>
-            <span class="user-address">Dirección: <%= usuario.address %></span>
+            <span class="user-gender">Género: <%= usuario.genero %></span>
+            <span class="user-date_of_birth">Fecha de nacimiento: <%= usuario.fecha_nacimiento %></span>
+            <span class="user-category">Categoría: <%= usuario.categoria %></span>
+            <span class="user-country">País: <%= usuario.pais %></span>
+            <span class="user-city">Ciudad: <%= usuario.ciudad %></span>
+            <span class="user-address">Dirección: <%= usuario.direccion %></span>
+            <span class="user-tel">Teléfono: <%= usuario.telefono %></span>
 
             <button><a href="/users" class="botón-editar">Volver</a></button>
 

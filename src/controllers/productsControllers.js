@@ -1,108 +1,100 @@
-const path = require('path');
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require('sequelize');
+
+/*const path = require('path');
 const fs = require('fs');
-const methodOverride = require('method-override');
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 // const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 function getProducts() {
   return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-}
+}*/
+
+const Productos = db.Producto;
 
 const productsControllers = {
 
-  index: (req, res) => {
-    const productos = getProducts();
-
-    res.render('products', { productos });
-
+  products: (req, res) => {
+    Productos.findAll()
+      .then(productos => {
+        res.render('products', { productos });
+      })
   },
-  //Controlador para la ruta del carrito de productos ("/productCart")
+
+  show: (req, res) => {
+    Productos.findByPk(req.params.id)
+      .then(producto => {
+        res.render('productDetail', { producto })
+      })
+  },
+
   productCart: (req, res) => {
 
     res.render('productCart');
   },
 
   create: (req, res) => {
-    const productos = getProducts();
-    res.render('crearProducto');
+    Productos.findAll()
+      .then(productos => {
+        res.render('crearProducto', { productos });
+      })
   },
 
   save: (req, res) => {
-    const productos = getProducts();
+    const imagen = req.file ? req.file.filename : 'default-image.png';
 
-    const image = req.file ? req.file.filename : 'default-image.png';
-
-    const nuevoProducto = {
-      id: productos[productos.length - 1.].id + 1,
-      name: req.body.name,
-      price: req.body.price,
-      image,
-      description: req.body.description,
-      category: req.body.category
-    };
-
-    productos.push(nuevoProducto);
-    fs.writeFileSync(productsFilePath, JSON.stringify(productos), {
-      flag: 'w',
-      encoding: 'utf-8',
-    });
-
-    res.redirect('/');
-  },
-
-  show: (req, res) => {
-    const { id } = req.params;
-
-    const productos = getProducts();
-
-    const producto = productos.find((producto) => producto.id == id);
-
-    if (!producto) {
-      res.redirect('/');
-    }
-
-    res.render('productDetail', { producto })
+    Productos.create(
+      {
+        id: Productos[Productos.length - 1.].id + 1,
+        nombre: req.body.nombre,
+        precio: req.body.precio,
+        categoria: req.body.categoria,
+        imagen,
+        descripcion: req.body.descripcion,
+        cantidad: req.body.cantidad,
+      }
+    )
+      .then(() => {
+        return res.redirect('/')
+      })
   },
 
   edit: (req, res) => {
-    const productos = getProducts();
-    const id = req.params.id;
-    const producto = productos.find((producto) => producto.id == id)
-    if (!producto) {
-      return res.send("No se encontró el producto");
-    }
-    res.render('editarProducto', { producto: producto })
+    Productos.findByPk(req.params.id)
+      .then((producto) => {
+        if (!producto) {
+          return res.send("No se encontró el producto");
+        };
+        res.render('editarProducto', { producto })
+      })
   },
 
   update: (req, res) => {
-    const productos = getProducts();
-
     const id = req.params.id;
-    productos.forEach((producto) => {
-      if (producto.id == id) {
-        producto.id = Number(id);
-        producto.name = req.body.name;
-        producto.price = req.body.price;
-        producto.category = req.body.category;
-        producto.description = req.body.description;
-        producto.image = req.body.image ? req.body.image : producto.image
-      }
-    });
-
-    fs.writeFileSync(productsFilePath, JSON.stringify(productos));
-
-    res.redirect('/products');
+    Productos.update(
+      {
+        id: Number(id),
+        nombre: req.body.nombre,
+        precio: req.body.precio,
+        categoria: req.body.categoria,
+        imagen: req.body.imagen ? req.body.imagen : producto.imagen,
+        descripcion: req.body.descripcion,
+      },
+      {
+        where: { id: id }
+      })
+      .then(() => {
+        return res.redirect('/')
+      })
   },
 
   destroy: (req, res) => {
-    const productos = getProducts();
     const id = req.params.id;
-    const productoFiltrado = productos.filter(producto => producto.id != id);
-    fs.writeFileSync(productsFilePath, JSON.stringify(productoFiltrado));
-    res.redirect('/products');
-  },
+    Productos.destroy({ where: { id: id }, force: true });
+  }
 
 };
-// Exporta el objeto productsControllers para su uso en otros archivos
+
 module.exports = productsControllers;

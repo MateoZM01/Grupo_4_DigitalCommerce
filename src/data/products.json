@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Teclado Redragon",
+        "name": "Teclado mecánico Redragon K630",
         "price": 60000,
         "category": "Nuevo",
         "image": "teclado_red.png",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Auriculares",
+        "name": "Auriculares Logitech Pro X Wireless",
         "price": 320000,
         "category": "Nuevo",
         "image": "auri.logi.png",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Samsung S23 Ultra",
+        "name": "Celular Samsung S23 Ultra",
         "price": 1600000,
         "category": "Nuevo",
         "image": "celular.png",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "name": "Monitor Gamer",
+        "name": "Monitor Gamer Gigabyte Curvo 165hz 1ms",
         "price": 600000,
         "category": "Usado",
         "image": "monitor.png",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "name": "Motherboard",
+        "name": "Motherboard Am5 - Msi Pro X670-p Wifi Ddr5 Ryzen",
         "price": 520000,
         "category": "Nuevo",
         "image": "placamadre.png",
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "name": "Mouse Pad Gamer",
+        "name": "Mouse Pad Gamer Oficina Xl Negro Antideslizante 80x40 Cm 3mm",
         "price": 7200,
         "category": "Nuevo",
         "image": "mousepad.png",
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "name": "Procesador Amd Ryzen",
+        "name": "Procesador Amd Ryzen 97900X AMD",
         "price": 800000,
         "category": "Usado",
         "image": "Procesador-Amd-Ryzen-9-7900X.png",
@@ -73,7 +73,7 @@
     },
     {
         "id": 10,
-        "name": "Memoria Kingston",
+        "name": "Memoria Kingston FURY DDR5",
         "price": 80000,
         "category": "Nuevo",
         "image": "MEMORIADDR5.png",

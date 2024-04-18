@@ -57,7 +57,7 @@ body {
 .user-date_of_birth,
 .user-country,
 .user-city,
-.user-address {
+.user-address, .user-tel {
     color: #0a0a0a;
     font-size: 1.2em;
     margin-bottom: 10px;

@@ -11,15 +11,16 @@
       <main class="main-product-detail">
         <div class="product-detail">
           <!-- Imagen del producto -->
-          <img class="product-image" src="/images/products/<%= producto.image %>" alt="product-image" />
+          <img class="product-image" src="/images/products/<%= producto.imagen %>" alt="product-image" />
 
           <div class="product-info">
-            <span class="product-name"><%= producto.name %></span>
-            <span class="product-price">$<%= producto.price %></span>
-            <span class="product-category"><%= producto.category %></span>
+            <span class="product-name"><%= producto.nombre %></span>
+            <span class="product-price">$<%= producto.precio %></span>
+            <span class="product-category"><%= producto.categoria %></span>
 
             <!-- Detalles técnicos del producto -->
-            <p class="product-description"><%= producto.description %></p>
+            <p class="product-description"><%= producto.descripcion %></p>
+            <span class="product-cantidad">Stock disponible:<%= producto.cantidad %></span>
 
             <button class="botón-carrito" onclick="agregarProducto()">Agregar al Carrito</button>
 

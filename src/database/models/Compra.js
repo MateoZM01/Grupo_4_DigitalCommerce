@@ -7,12 +7,12 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         id_usuario: {
-            type: dataTypes.INT(15),
+            type: dataTypes.INTEGER,
             foreignKey: true,
             allowNull: false
         },
         id_producto: {
-            type: dataTypes.INT(15),
+            type: dataTypes.INTEGER,
             foreignKey: true,
             allowNull: false
         },

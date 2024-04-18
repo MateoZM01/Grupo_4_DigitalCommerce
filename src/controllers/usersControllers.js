@@ -1,127 +1,117 @@
-const path = require('path');
-const fs = require('fs');
+const db = require('../database/models');
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
+
+/*const path = require('path');
+const fs = require('fs');
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 // const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 function getUsers() {
   return JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-}
+}*/
+
+const Usuarios = db.Usuario;
 
 const usersControllers = {
 
-  index: (req, res) => {
-    const usuarios = getUsers();
-
-    res.render('users', { usuarios });
+  users: (req, res) => {
+    Usuarios.findAll({
+      include: [
+        { association: 'compras' }
+      ]
+    })
+      .then(usuarios => {
+        res.render('users', { usuarios });
+      })
   },
-  
+
   register: (req, res) => {
-    // Renderiza la vista llamada "register"
     res.render("register");
   },
 
   login: (req, res) => {
-    // Renderiza la vista llamada "login"
     res.render("login");
   },
 
+  show: (req, res) => {
+    Usuarios.findByPk(req.params.id)
+      .then(usuario => {
+        res.render('userDetail', { usuario });
+      })
+  },
+
   create: (req, res) => {
-    const usuarios = getUsers();
     res.render('register');
   },
 
   save: (req, res) => {
-    const usuarios = getUsers();
+    const { contrasenia } = req.body;
 
-    const { password } = req.body;
+    const imagen = req.file ? req.file.filename : 'default-profile-image.png';
 
-    const image = req.file ? req.file.filename : 'default-profile-image.png';
-
-    const nuevoUsuario = {
-      id: usuarios[usuarios.length - 1.].id + 1,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      password: bcrypt.hashSync(password, 10),
-      category: req.body.category,
-      gender: req.body.gender,
-      date_of_birth: req.body.date_of_birth,
-      country: req.body.country,
-      city: req.body.city,
-      address: req.body.address,
-      image,
-    };
-
-    usuarios.push(nuevoUsuario);
-    fs.writeFileSync(usersFilePath, JSON.stringify(usuarios), {
-      flag: 'w',
-      encoding: 'utf-8',
-    });
-
-    res.redirect('/');
-  },
-
-  show: (req, res) => {
-    const { id }= req.params;
-    
-    const usuarios = getUsers();
-
-    const usuario = usuarios.find((usuario) => usuario.id == id);
-    
-    if (!usuario) {
-      res.redirect('/');
-    }
-
-    res.render('userDetail', { usuario });
+    Usuarios.create(
+      {
+        id: Usuarios[Usuarios.length - 1.].id + 1,
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+        email: req.body.email,
+        contrasenia: bcrypt.hashSync(contrasenia, 10),
+        categoria: req.body.categoria,
+        genero: req.body.genero,
+        fecha_nacimiento: req.body.fecha_nacimiento,
+        pais: req.body.pais,
+        ciudad: req.body.ciudad,
+        direccion: req.body.direccion,
+        telefono: req.body.telefono,
+        imagen,
+      }
+    )
+      .then(() => {
+        return res.redirect('/')
+      })
   },
 
   edit: (req, res) => {
-    const usuarios = getUsers();
-    const id = req.params.id;
-    const usuario = usuarios.find((usuario) => usuario.id == id)
-    if (!usuario) {
-      return res.send("No se encontró el usuario");
-    }
-    res.render('editarUsuario', { usuario: usuario })
+    Usuarios.findByPk(req.params.id)
+      .then((usuario) => {
+        if (!usuario) {
+          return res.send("No se encontró el usuario");
+        };
+        res.render('editarUsuario', { usuario })
+      })
   },
 
   update: (req, res) => {
-    const usuarios = getUsers();
-
     const id = req.params.id;
-    usuarios.forEach((usuario) => {
-      if (usuario.id == id) {
-        usuario.id = Number(id);
-        usuario.firstName = req.body.firstName;
-        usuario.lastName = req.body.lastName;
-        usuario.email = req.body.email;
-        usuario.category = req.body.category;
-        usuario.gender = req.body.gender;
-        usuario.date_of_birth = req.body.date_of_birth;
-        usuario.country = req.body.country;
-        usuario.city = req.body.city;
-        usuario.address = req.body.address;
-        usuario.image = req.body.image ? req.body.image : usuario.image
-      }
-    });
-
-    fs.writeFileSync(usersFilePath, JSON.stringify(usuarios), {
-      flag: 'w',
-      encoding: 'utf-8',
-    });
-
-    res.redirect('/users');
+    Usuarios.update(
+      {
+        id: Number(id),
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+        email: req.body.email,
+        contrasenia: bcrypt.hashSync(contrasenia, 10),
+        categoria: req.body.categoria,
+        genero: req.body.genero,
+        fecha_nacimiento: req.body.fecha_nacimiento,
+        pais: req.body.pais,
+        ciudad: req.body.ciudad,
+        direccion: req.body.direccion,
+        telefono: req.body.telefono,
+        imagen: req.body.imagen ? req.body.imagen : usuario.imagen
+      },
+      {
+        where: { id: id }
+      })
+      .then(() => {
+        return res.redirect('/')
+      })
   },
 
   destroy: (req, res) => {
-    const usuarios = getUsers();
     const id = req.params.id;
-    const usuarioFiltrado = usuarios.filter(usuario => usuario.id != id);
-    fs.writeFileSync(usersFilePath, JSON.stringify(usuarioFiltrado));
-    res.redirect('/users');
+    Usuarios.destroy({ where: { id: id }, force: true });
   },
 
   session: (req, res) => {
@@ -148,7 +138,7 @@ const usersControllers = {
   userDetail: (req, res) => {
     res.render('userDetail', { usuario: req.session.userLogged });
   },
-  
+
 }
 
 module.exports = usersControllers;
