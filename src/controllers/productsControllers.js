@@ -47,7 +47,7 @@ const productsControllers = {
 
     Productos.create(
       {
-        id: Productos[Productos.length - 1.].id + 1,
+        id: Productos[Productos.length - 1.].id + 1, // consultar nacho
         nombre: req.body.nombre,
         precio: req.body.precio,
         categoria: req.body.categoria,
@@ -79,7 +79,7 @@ const productsControllers = {
         nombre: req.body.nombre,
         precio: req.body.precio,
         categoria: req.body.categoria,
-        imagen: req.body.imagen ? req.body.imagen : producto.imagen,
+        // imagen: req.body.imagen ? req.body.imagen : producto.imagen, CONSULTAR NACHOO
         descripcion: req.body.descripcion,
       },
       {
