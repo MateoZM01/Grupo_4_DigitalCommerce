@@ -16,13 +16,16 @@
       <!-- Formulario de inicio de sesión -->
       <div class="card-login">
         <h1>Iniciar sesión</h1>
-        <form action="/login" method="POST" class="formulario">
+        <div class="errores">
+          <ul></ul>
+        </div>
+        <form action="/login" method="POST" class="formulogin">
           <br>
           <!-- Campos de usuario y contraseña -->
-          <input class="relleno" type="email" name="email" placeholder="Ingresa tu email" required>
+          <input class="email" type="email" name="email" placeholder="Ingresa tu email">
           <br>
           <br>
-          <input class="relleno" type="password" name="password" placeholder="Ingresa tu contraseña" required>
+          <input class="contraseña" type="password" name="contrasenia" placeholder="Ingresa tu contraseña">
           <br>
           <br>
           <br>
@@ -36,6 +39,9 @@
 
     <!-- Pie de página -->
     <%- include('./partials/footer.ejs')%>
+
+    <script src="/js/validationsLogin.js"></script>
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
-CREATE DATABASE DigitalCommerce;
+CREATE DATABASE Digital_Commerce;
 
-USE DigitalCommerce;
+USE Digital_Commerce;
 
 CREATE TABLE usuarios(
 	id INTEGER NOT NULL AUTO_INCREMENT,

@@ -12,11 +12,11 @@ body {
 .main {    
     padding: 1%;
     border-radius: 30px;
-    background-color: #4285f4;
+    background-color: #76abff;
     color: #fff;
 }
 
-.formulario {
+.formproducts {
     text-align: center;
     background-color: #b3d0ff;
 }
@@ -26,19 +26,13 @@ body {
     height: 150px;
 }
 
-.desc {
-    color: black;
-    width: 50%;
-    height: 70px;
-}
-
 .form-label {
     display: flex;
     justify-content: center;
     color: rgb(44, 40, 40);
 }
 
-.relleno {
+.relleno, .nombre, .descripcion {
     color: black;
     width: 50%;
     height: 35px;
@@ -60,3 +54,10 @@ body {
 #boton-eliminar {
     margin-top: 5px;
 }
+
+div.errores {
+    color: rgb(216, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+  }

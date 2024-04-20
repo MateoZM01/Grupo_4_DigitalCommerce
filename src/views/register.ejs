@@ -12,25 +12,26 @@
       <main class="main">
         <div class="card-login">
           <h1>Crea tu cuenta</h1>
-
+          <div class="errores">
+            <ul></ul>
+          </div>
           <!-- Formulario de registro -->
-          <form action="/users" method="POST" enctype="multipart/form-data" class="formulario">
+          <form action="/users" method="POST" enctype="multipart/form-data" class="formuregister">
             <br>
             <label for="firstName" class="form-label">Ingrese su nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: José Martín" class="relleno">
+            <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Ej: José Martín">
             <br>
             <br>
             <label for="lastName" class="form-label">Ingrese su apellido:</label>
-            <input type="text" id="apellido" name="apellido" placeholder="Ej: Guzmán Olivera" class="relleno">
+            <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Ej: Guzmán Olivera">
             <br>
             <br>
             <label for="email" class="form-label">Ingrese su email:</label>
-            <input class="relleno" type="email" id="email" name="email" placeholder="Ej: martin123@hotmail.com"
-              required>
+            <input class="email" type="email" id="email" name="email" placeholder="Ej: martin123@hotmail.com">
             <br>
             <br>
             <label for="password" class="form-label">Ingrese su contraseña:</label>
-            <input class="relleno" type="password" id="contrasenia" name="contrasenia" placeholder="Ej: abc123" required>
+            <input class="contraseña" type="password" id="contrasenia" name="contrasenia" placeholder="Ej: abc123">
             <br>
             <br>
             <label for="images" class="form-label">Imagen del perfil de usuario:</label>
@@ -83,6 +84,9 @@
 
       <!-- Pie de página de la página -->
       <%- include('./partials/footer.ejs')%>
+
+      <script src="/js/validationsRegister.js"></script>
+
   </body>
 
 </html>

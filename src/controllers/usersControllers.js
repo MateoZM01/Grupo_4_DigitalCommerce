@@ -118,15 +118,14 @@ const usersControllers = {
   },
 
   session: (req, res) => {
-    const usuarios = getUsers();
 
-    const { email, password } = req.body;
-    const userFound = usuarios.find(usuario => usuario.email == email);
+    const { email, contrasenia } = req.body;
+    const userFound = Usuarios.find(usuario => usuario.email == email);
 
     if (userFound) {
-      if (bcrypt.compareSync(password, userFound.password)) {
+      if (bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
         //proteger la contraseña
-        userFound.password = null;
+        userFound.contrasenia = null;
 
         //Crear la sesión
         req.session.userLogged = userFound;
