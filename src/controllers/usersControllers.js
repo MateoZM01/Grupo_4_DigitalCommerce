@@ -53,11 +53,11 @@ const usersControllers = {
 
     Usuarios.create(
       {
-        id: Usuarios[Usuarios.length - 1.].id + 1,
         nombre: req.body.nombre,
         apellido: req.body.apellido,
         email: req.body.email,
         contrasenia: bcrypt.hashSync(contrasenia, 10),
+        imagen,
         categoria: req.body.categoria,
         genero: req.body.genero,
         fecha_nacimiento: req.body.fecha_nacimiento,
@@ -65,7 +65,6 @@ const usersControllers = {
         ciudad: req.body.ciudad,
         direccion: req.body.direccion,
         telefono: req.body.telefono,
-        imagen,
       }
     )
       .then(() => {
@@ -85,6 +84,7 @@ const usersControllers = {
 
   update: (req, res) => {
     const id = req.params.id;
+    const { contrasenia } = req.body;
     Usuarios.update(
       {
         id: Number(id),
@@ -99,7 +99,7 @@ const usersControllers = {
         ciudad: req.body.ciudad,
         direccion: req.body.direccion,
         telefono: req.body.telefono,
-        imagen: req.body.imagen ? req.body.imagen : usuario.imagen
+        imagen: req.file.filename,
       },
       {
         where: { id: id }
@@ -111,7 +111,10 @@ const usersControllers = {
 
   destroy: (req, res) => {
     const id = req.params.id;
-    Usuarios.destroy({ where: { id: id }, force: true });
+    Usuarios.destroy({ where: { id: id }, force: true })
+      .then(() => {
+        return res.redirect('/users')
+      })
   },
 
   session: (req, res) => {

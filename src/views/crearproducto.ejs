@@ -13,7 +13,7 @@
             <div class="card-products">
                 <h1>Cargar un nuevo producto</h1>
 
-                <form action="/products" method="POST" enctype="multipart/form-data" class="formulario">
+                <form action="/products" method="POST" enctype="multipart/form-data" class="formulario">                    
                     <br>
                     <label for="name" class="form-label">Nombre del producto:</label>
                     <input type="text" id="nombre " name="nombre" placeholder="Ej: Iphone 11 128GB" class="relleno">
@@ -24,8 +24,7 @@
                     <br>
                     <br>
                     <label for="category" class="form-label">Categoría:</label required>
-                    <select name="categoria" id="categoria" class="relleno">
-                      <option value="Elija">Elija</option>
+                    <select name="categoria" id="categoria" class="relleno">                     
                       <option value="Nuevo">Nuevo</option>
                       <option value="Usado">Usado</option>
                     </select>

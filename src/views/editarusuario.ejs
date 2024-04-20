@@ -32,8 +32,7 @@
                     <br>
                     <br>
                     <label for="password" class="form-label">Contraseña:</label>
-                    <input class="relleno" type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña"
-                        required>
+                    <input class="relleno" type="password" id="contrasenia" name="contrasenia" placeholder="Contraseña" value="<%= usuario.contrasenia %>" required >
                     <br>
                     <br>
                     <img class="user-image" src="/images/users/<%= usuario.imagen %>" alt="user-image" />
@@ -55,7 +54,6 @@
                     <br>
                     <label for="category" class="form-label">Categoría:</label>
                     <select name="categoria" id="categoria" class="relleno" value="<%= usuario.categoria %>">
-                        <option value="Elegí">Elegí</option>
                         <option value="Minorista">Minorista</option>
                         <option value="Mayorista">Mayorista</option>
                     </select>

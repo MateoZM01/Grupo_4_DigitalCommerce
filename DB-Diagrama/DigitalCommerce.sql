@@ -1,9 +1,9 @@
-CREATE DATABASE Digital_Commerce;
+CREATE DATABASE DigitalCommerce;
 
-USE Digital_Commerce;
+USE DigitalCommerce;
 
 CREATE TABLE usuarios(
-	id INTEGER NOT NULL,
+	id INTEGER NOT NULL AUTO_INCREMENT,
 	nombre VARCHAR(50) NOT NULL,
 	apellido VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
@@ -28,7 +28,7 @@ INSERT INTO usuarios (id, nombre, apellido, email, contrasenia, imagen, genero, 
 (6, 'Gabriel', 'López', 'gabriel.lopez@correo.com', 'gabilopez123', 'avatar6.png', 'Masculino', '1993-04-01', 'Mayorista', 'Argentina', 'Santiago del Estero', '25 de Mayo N°140', '385565569');
 
 CREATE TABLE productos(
-	id INTEGER NOT NULL,
+	id INTEGER NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
     precio DECIMAL(10,2) NOT NULL,
     categoria VARCHAR(20) NOT NULL,
