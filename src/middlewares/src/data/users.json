@@ -1,0 +1,154 @@
+[
+ {
+  "id": 1,
+  "nombreApellido": "Pablo Hernández",
+  "nombreUsuario": "PabloHernández",
+  "email": "mgould0@soundcloud.com",
+  "contrasena": "qQ6/tp2K",
+  "domicilio": "callefalsa5",
+  "fechaNacimiento": "11/06/1997",
+  "category": "User",
+  "foto": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 2,
+  "nombreApellido": "Mauricio García",
+  "nombreUsuario": "MauricioGarcía",
+  "email": "edorber1@netvibes.com",
+  "contrasena": "wV0+t(85wdu&",
+  "domicilio": "callefalsa10",
+  "fechaNacimiento": "25/02/1993",
+  "category": "User",
+  "foto": "/images/avatars/kipa.jpg"
+ },
+ {
+  "id": 3,
+  "nombreApellido": "Leonardo Martínez",
+  "nombreUsuario": "LeonardoMartínez",
+  "email": "dtreuge2@hexun.com",
+  "contrasena": "qK9|@vP>V3",
+  "domicilio": "callefalsa15",
+  "fechaNacimiento": "03/07/1989",
+  "category": "User",
+  "foto": "https://img.freepik.com/vector-premium/diseno-ilustracion-vector-personaje-avatar-hombre-joven_24877-18514.jpg"
+ },
+ {
+  "id": 4,
+  "nombreApellido": "Esteban López",
+  "nombreUsuario": "EstebanLópez",
+  "email": "cvaneeden3@hexun.com",
+  "contrasena": "hG9<2W",
+  "domicilio": "callefalsa20",
+  "fechaNacimiento": "24/08/2000",
+  "category": "User",
+  "foto": "/images/avatars/pletzale.jpg"
+ },
+ {
+  "id": 5,
+  "nombreApellido": "Ricardo González",
+  "nombreUsuario": "RicardoGonzález",
+  "email": "sroman4@nature.com",
+  "contrasena": "tK9/z?s/uF~G",
+  "domicilio": "callefalsa25",
+  "fechaNacimiento": "30/12/1999",
+  "category": "User",
+  "foto": "/images/avatars/kipa.jpg"
+ },
+ {
+  "id": 6,
+  "nombreApellido": "Soledad Pérez",
+  "nombreUsuario": "SoledadPérez",
+  "email": "bmckellen5@cocolog-nifty.com",
+  "contrasena": "xV1|f8mH",
+  "domicilio": "callefalsa30",
+  "fechaNacimiento": "15/04/1985",
+  "category": "User",
+  "foto": "/images/avatars/kipa.jpg"
+ },
+ {
+  "id": 7,
+  "nombreApellido": "Estefania Rodríguez",
+  "nombreUsuario": "EstefaniaRodríguez",
+  "email": "lkienzle6@livejournal.com",
+  "contrasena": "zW6*_?hU",
+  "domicilio": "callefalsa35",
+  "fechaNacimiento": "17/09/2001",
+  "category": "User",
+  "foto": "/images/avatars/pretzel.jpg"
+ },
+ {
+  "id": 8,
+  "nombreApellido": "Myriam Sánchez",
+  "nombreUsuario": "MyriamSánchez",
+  "email": "mwoffenden7@nih.gov",
+  "contrasena": "kO3\\\"OM",
+  "domicilio": "callefalsa40",
+  "fechaNacimiento": "16/01/1991",
+  "category": "User",
+  "foto": "/images/avatars/tostada.jpg"
+ },
+ {
+  "id": 9,
+  "nombreApellido": "Patricia Cortez",
+  "nombreUsuario": "PatriciaCortez",
+  "email": "rfissenden8@netvibes.com",
+  "contrasena": "nT9=AX<",
+  "domicilio": "callefalsa45",
+  "fechaNacimiento": "04/02/2003",
+  "category": "User",
+  "foto": "/images/avatars/polloCorazon.jpg"
+ },
+ {
+  "id": 10,
+  "nombreApellido": "Ingrid Pereyra",
+  "nombreUsuario": "IngridPereyra",
+  "email": "ngreensted9@state.gov",
+  "contrasena": "dY6$V_9m,Ax(",
+  "domicilio": "callefalsa50",
+  "fechaNacimiento": "09/08/1996",
+  "category": "User",
+  "foto": "/images/avatars/pretzel.jpg"
+ },
+ {
+  "id": 1705705354642,
+  "category": "User",
+  "foto": "http://localhost:4050/images/users/default-image.jpg"
+ },
+ {
+  "id": 1705788798910,
+  "nombreApellido": "adolfo",
+  "nombreUsuario": "antuz",
+  "email": "antuz@mail.com",
+  "fechaNacimiento": "1990-05-18",
+  "domicilio": "republica del libano 2117",
+  "contrasena": "ieiaieia",
+  "confirmarContrasena": "ieiaieia",
+  "terminosServicios": "Terminos y Servicios",
+  "category": "User",
+  "foto": "http://localhost:4050/images/users/default-image.jpg"
+ },
+ {
+  "id": 1705789174433,
+  "nombreApellido": "Gerardo Zamora",
+  "nombreUsuario": "Zamorita",
+  "email": "gzamora@mail.com",
+  "fechaNacimiento": "1970-12-06",
+  "domicilio": "callevereda123",
+  "contrasena": "sgopasion",
+  "confirmarContrasena": "sgopasion",
+  "terminosServicios": "Terminos y Servicios",
+  "category": "User",
+  "foto": "http://localhost:4050/images/users/1705789174429_img.jpg"
+ },
+ {
+  "id": 1705874974479,
+  "nombreApellido": "Aquiles Bailoyo",
+  "nombreUsuario": "Brapit",
+  "email": "talon@mail.com",
+  "fechaNacimiento": "1950-05-05",
+  "domicilio": "Troya123",
+  "contrasena": "$2a$10$8uz1oni8rjDDA7MP7mDvseSpXbbErDAew8M5aw20Vg69qd4tKmgzq",
+  "category": "User",
+  "foto": "http://localhost:4050/images/users/1705874974475_img.jpg"
+ }
+]

@@ -1,0 +1,839 @@
+[33mcommit 40b8ac6bfb4ef5ddda5f8ef2e439cc71e929da95[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sat Apr 20 15:06:01 2024 -0300
+
+    Validaciones del front-end
+
+[33mcommit aa84b38fab4f938b4dee3801ce0b06a3defef74a[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sat Apr 20 00:01:21 2024 -0300
+
+    Terminando de configurar CRUD
+
+[33mcommit f9c64c588de2767a4751ae5c1dd78d0f23adf7f7[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 18 20:18:47 2024 -0300
+
+    Corrigiendo detalles de vistas
+
+[33mcommit e132ec96a13cb89e8d9df8b7eaa773decaf5bf56[m
+Author: Aynelen <ayneledesmar@gmail.com>
+Date:   Thu Apr 18 20:14:50 2024 -0300
+
+    Diagrama corregido
+
+[33mcommit 48748a74a5459240f1adf4b12cc8c4fd09c7b0af[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 18 20:06:51 2024 -0300
+
+    Reemplazando archivo de Base de Datos
+
+[33mcommit da8d1cb8ff6c6bdad6958afcb4e3f43d6b4020b4[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 18 19:53:22 2024 -0300
+
+    Agregando carpeta DB-Diagrama con archivo de Base de Datos
+
+[33mcommit 5132ef6e5cbe53006824f480938576fe6ce373ad[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 18 19:48:55 2024 -0300
+
+    Actualización de Base de Datos y CRUD
+
+[33mcommit d581837d2b4bea6f8edf590c2304c124c3358c28[m
+Author: Aynelen <ayneledesmar@gmail.com>
+Date:   Tue Apr 16 23:04:13 2024 -0300
+
+    diagrama
+
+[33mcommit f041a106a934ac1a909535f5f9737b0c90b2ce5b[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 16 22:57:30 2024 -0300
+
+    Agregando carpeta Diagrama_DB y poblando tablas
+
+[33mcommit 63b2cda8fd9cb33e34b5e05ffac57c3fbee3022b[m
+Author: Aynelen <ayneledesmar@gmail.com>
+Date:   Tue Apr 16 22:27:05 2024 -0300
+
+    Cambios en json
+
+[33mcommit b872ef0cb82d7be4f0aabdfb6f61866f496a3d6b[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 16 21:24:14 2024 -0300
+
+    Agregando relaciones a los modelos de base de datos
+
+[33mcommit 7de30ffe1edc784d10c2430c7b44f46f9e976ed5[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 16 16:51:11 2024 -0300
+
+    Agregando modelo Compra.js
+
+[33mcommit 445baf8c64aa95183ff13f0452f0c82c993d4ce6[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 16 16:35:07 2024 -0300
+
+    Creando modelos para representar tablas
+
+[33mcommit 48f0954d2958e15fd43cb6f50eda2fcd274c1086[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Mon Apr 15 23:19:49 2024 -0300
+
+    Reemplazando base de datos
+
+[33mcommit 0c7e3fb097f857ed77336d3eb9a828dfe8a7027f[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Mon Apr 15 19:31:51 2024 -0300
+
+    Modificando .sequelizerc
+
+[33mcommit 2aea5a74b79dde642554e4c9fc153da0d45fee73[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sun Apr 14 10:17:21 2024 -0300
+
+    Separando nombre y apellido en users.json y vistas
+
+[33mcommit d153516c7657419cc6db3543be0e3212346e4959[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sat Apr 13 09:44:11 2024 -0300
+
+    Agregando propiedades a products.json y users.json, y modificando controladores y formularios respectivos
+
+[33mcommit 265f3ad361e09e96c26673ef4d1edcb4f27a29e9[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Fri Apr 12 00:36:47 2024 -0300
+
+    Corrigiendo imágenes de usuarios
+
+[33mcommit 77780e111050299f8597028982d64e27c3a6be3b[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 11 18:27:31 2024 -0300
+
+    Modificando formularios y products.json
+
+[33mcommit 85cae0827e07350daa5db5428c35a57fda669fad[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Apr 11 15:56:20 2024 -0300
+
+     retro terminado fin cursada
+
+[33mcommit b6827ce563fafaaa4ed7e6fc129b640ecaefadb1[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Apr 11 15:54:04 2024 -0300
+
+     F5 al retro
+
+[33mcommit f5dfe9447002717e44debda7cb29edf587d7b825[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Apr 11 14:44:17 2024 -0300
+
+    normalizado css cart
+
+[33mcommit 5c43aa0135c5a527b7231b41bbb6099b5d5faa3b[m
+Merge: 1c91f1a f5b5f62
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Apr 11 14:39:22 2024 -0300
+
+    carrito actualizado
+
+[33mcommit 1c91f1a40419be93c404a2460377c09cdb94c99b[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Apr 11 14:27:35 2024 -0300
+
+    carrito mas lindo
+
+[33mcommit f5b5f628422f90d6f0bcbceaf5a52858c68b1f20[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 11 14:11:19 2024 -0300
+
+    Ordenando rutas y css
+
+[33mcommit 208e7522862af29e67c45d120902c161d8d86ec0[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 11 12:49:35 2024 -0300
+
+    Creando productsMulterMiddleware.js
+
+[33mcommit 296c2f0647f9a31a77f83980b69b600a6c649e6e[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Apr 11 12:28:46 2024 -0300
+
+    Modificando rutas y controladores de users para session
+
+[33mcommit 6498ef00d76ef4feac7fff7ebd3620d73a6ce56d[m
+Author: Aynelen <ayneledesmar@gmail.com>
+Date:   Thu Apr 11 11:47:27 2024 -0300
+
+    Database sequelizerc
+
+[33mcommit 5dc92d792cd53a1af021dcae50a4e72e50d85a3f[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Wed Apr 10 19:39:02 2024 -0300
+
+    CRUD de productos y usuarios funcionando correctamente
+
+[33mcommit 94fdbcf3bc5cf9bc0bc796f95e621784c5ac8040[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Wed Apr 10 18:39:49 2024 -0300
+
+    Creando userDetail.css y corrigiendo products.json y users.json
+
+[33mcommit 65c1b462b1d01bc9cb0cdeed837df21a13aef727[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Wed Apr 10 17:20:20 2024 -0300
+
+    correcion del css del producDetail
+
+[33mcommit fa7509d5592cf1d8e7f986f762e14c5a921345bf[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Wed Apr 10 16:10:24 2024 -0300
+
+     agregados al producDetail
+
+[33mcommit 49b2eb07595bf68fe496d186f5b1e9ed25975232[m
+Merge: 0460565 9932bc8
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Wed Apr 10 08:49:07 2024 -0300
+
+    Resolve merge conflicts
+
+[33mcommit 0460565472c451dc151a779a45be00f4c062f4a7[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Wed Apr 10 08:43:56 2024 -0300
+
+     src/data/users.json
+
+[33mcommit 9932bc88b2672fe1b98ab119a8be1cc116de3190[m
+Author: Aynelen <ayneledesmar@gmail.com>
+Date:   Tue Apr 9 21:46:50 2024 -0300
+
+    actualizacion produtos
+
+[33mcommit ffd1385606b82c9868f56588123328e895cea834[m
+Merge: 1a41138 28869e8
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 9 21:26:16 2024 -0300
+
+    Merge branch 'main' of https://github.com/MateoZM01/Grupo_4_DigitalCommerce
+
+[33mcommit 1a41138a597780721475b386c026ab4e100ab879[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 9 21:23:46 2024 -0300
+
+    Modificando rutas y controladores de users; modificando ruta imagen footer
+
+[33mcommit 28869e81c74f6a9183a58e8bb586c726e3cb4d5a[m
+Author: Aynelen <ayneledesmar@gmail.com>
+Date:   Tue Apr 9 21:09:35 2024 -0300
+
+    cambios productos
+
+[33mcommit 5b1d1911f9d574110d16bf937a2ba506d19d7746[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Tue Apr 9 19:54:57 2024 -0300
+
+    correccion de avatar
+
+[33mcommit 5e94c13d870734aa703048ae952b84cc8bc2ba6c[m
+Merge: 5d8424a 0f00636
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Tue Apr 9 16:51:22 2024 -0300
+
+    Merge branch 'main' of https://github.com/MateoZM01/Grupo_4_DigitalCommerce
+
+[33mcommit 5d8424a09516088570117c802a93d37c891c986f[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Tue Apr 9 16:49:46 2024 -0300
+
+     carga de avatares y descripcion de articulos
+
+[33mcommit 0f00636a305e1b0775023665bf62376575b26f26[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 9 16:43:35 2024 -0300
+
+    Añadiendo rutas y controllers del carrito a products.js y productsControllers.js; creando vistas para users
+
+[33mcommit e0a1aa1259227d409a84d5f6b28cee7338ad0abf[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Tue Apr 9 00:25:38 2024 -0300
+
+    Fusionando controladores de users y mejorando CCS de editarProducto
+
+[33mcommit 038626225d1583c04cf42fa3d380ad4f892d2561[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Mon Apr 8 15:48:36 2024 -0300
+
+     css del home corregido la columnas y margenes
+
+[33mcommit 3f12d90becfae4631307e3b5659c353ed81fbb98[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Mon Apr 8 15:34:21 2024 -0300
+
+    se unifico criterio css login-registro-carrito
+
+[33mcommit 38a2ea12466725869d6a9d5e152b628418a36673[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Mon Apr 8 14:17:29 2024 -0300
+
+     corregido el app.js
+
+[33mcommit e6a0bd17fad2740a74a47cc84cd4c7d76377c454[m
+Merge: 0914e26 529194a
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Mon Apr 8 12:28:30 2024 -0300
+
+    correccion al ccs del home
+
+[33mcommit 0914e2677324003c0fef3eff694d5dd8610a71d4[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Mon Apr 8 12:00:34 2024 -0300
+
+    f5 AL RETRO,MIDDLEWARE,SEQUELIZERC
+
+[33mcommit 529194a946158e855150ba316553236262cf8d5d[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Mon Apr 8 03:23:49 2024 -0300
+
+    Modificando controllers y haciendo funcionar el registro de usuarios
+
+[33mcommit 6346c9adf04d0f53e20b520ed72ee33adcf98751[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sun Apr 7 13:20:45 2024 -0300
+
+    Implementando el registro de usuarios
+
+[33mcommit ec0d9d5c1fe29f38b40bb8e229b4c1bb7a400503[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sat Apr 6 20:30:27 2024 -0300
+
+    Agregando rutas en users.js, y creando usersControllers.js y carpeta middlewares
+
+[33mcommit e9e943a5acc54bef358217698c7890f2ba3ae2d2[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sat Apr 6 13:03:13 2024 -0300
+
+    Agregando dinámica a productDetail y mejorando CRUD de productos
+
+[33mcommit ebb4bd0077bf91a6fcd9e2421285a276d6deecd8[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Fri Apr 5 18:07:31 2024 -0300
+
+    Corrigiendo rutas y controllers
+
+[33mcommit bf873caf379fbd5ab03bc979f65653c74b2cf15b[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Fri Apr 5 14:20:40 2024 -0300
+
+    Ordenando imágenes
+
+[33mcommit 8bb166bcd038b89065794564139f3927e5c731a3[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Wed Apr 3 07:30:42 2024 -0300
+
+    Mejorando CSS y renombrando carrito a productCart
+
+[33mcommit 92d91fb9ae6144076d5613200dd85b92db321ab7[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Mon Apr 1 00:45:00 2024 -0300
+
+    Agregando más estilos y creando crearPrdoucto.css y editarProducto.css
+
+[33mcommit 41db85c1a1055abf02c74cd515872537a68b841f[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Mar 28 18:15:10 2024 -0300
+
+    Maquetando productDetail
+
+[33mcommit c3a873813e5e1cbb90b9592d652bd8ad3bbb1197[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Wed Mar 27 01:35:13 2024 -0300
+
+    Mejorando CCS y simplificando código
+
+[33mcommit cd11a39f620d65add9e63bea189c46795d1d1c5b[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Wed Feb 21 12:03:10 2024 -0300
+
+    mejoras en el css carousel
+
+[33mcommit ddbd2447e1424f7e217361f9a7c96642943a7ca4[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Sun Feb 18 17:55:33 2024 -0300
+
+    retro.md
+
+[33mcommit d91b72bbbf36feda3212044b60c00f24838fcd9a[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sun Feb 18 17:27:30 2024 -0300
+
+    CRUD de Productos; Agregación y modificación de vistas (simplificando código e importando desde partials); Agregación de adminControllers.js
+
+[33mcommit 000a83886630e761901b7b14892e45a7c79f3ebe[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Wed Feb 14 12:07:46 2024 -0300
+
+    cambios esteticos  en css del home
+
+[33mcommit c80a35b8fc65cb7885269664d721a5533fa784d4[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Wed Feb 14 10:04:41 2024 -0300
+
+     creado users.json
+
+[33mcommit c79ba868badba0a26ebb12737ad6f220f1dc881e[m
+Author: Mateo <mateozarba01@gmail.com>
+Date:   Fri Feb 9 18:08:24 2024 -0300
+
+    borrando carpeta innecesaria
+
+[33mcommit 87f31ccf35c88bf0638da842bcd90c7a9de90af4[m
+Merge: b9a3d95 5d06bd4
+Author: Mateo <mateozarba01@gmail.com>
+Date:   Fri Feb 9 18:06:26 2024 -0300
+
+    Merge https://github.com/MateoZM01/Grupo_4_DigitalCommerce
+
+[33mcommit b9a3d9577a02d095bd6c9730108e405d497db1f8[m
+Author: Mateo <mateozarba01@gmail.com>
+Date:   Fri Feb 9 18:05:19 2024 -0300
+
+    agregando data y partials
+
+[33mcommit 5d06bd45d8dc49d916bfe0d12a551f229c7b6c54[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Fri Jan 26 12:24:13 2024 -0300
+
+    Correccion al CSS y EJS del carrito
+
+[33mcommit 030634fc098136cb3b836dbe7e0b5428ed01412b[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Fri Jan 26 11:46:23 2024 -0300
+
+    Correciones en CSS y EJS del producDetail
+
+[33mcommit 426521adf689a2880e4440a3c89c8a92015585ea[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Thu Jan 25 13:13:50 2024 -0300
+
+    Cambiando el puerto a 4000
+
+[33mcommit 68e1db712f407f86b9a19fe8a6ea42f9b58ba105[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Jan 25 10:46:41 2024 -0300
+
+    redireccion del css y carga de imagenes
+
+[33mcommit d415a8de7f20e7e1e36740d5a0bf35a865fdd26d[m
+Author: Mateo <mateozarba01@gmail.com>
+Date:   Tue Jan 23 21:48:15 2024 -0300
+
+    tratando de estilizar productDetail
+
+[33mcommit 857ce9363ebda88639b7f8e79800b6c5f5e386a8[m
+Author: Mateo <mateozarba01@gmail.com>
+Date:   Tue Jan 23 21:22:04 2024 -0300
+
+    reparando detalle del producto
+
+[33mcommit d9f9f658d230586728bc160c520c83fa87f20880[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Mon Jan 22 09:30:30 2024 -0300
+
+    ruta del carrio en login
+
+[33mcommit 0f8b7f948000fc5f452a514c1b86e11762c38ebe[m
+Merge: 8f7c32e 0431d6f
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Sat Jan 20 22:38:52 2024 -0300
+
+    Merge branch 'main' of https://github.com/MateoZM01/Grupo_4_DigitalCommerce
+
+[33mcommit 8f7c32e38dd0bcc26b2570d5bc50a71cabfd7f30[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Sat Jan 20 22:36:27 2024 -0300
+
+    cart.js , cartControllers.js ,productCart se a creado y corregido el Home
+
+[33mcommit efad4d0c9064e5414dd0d410692dee7f7b679d21[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Sat Jan 20 22:17:09 2024 -0300
+
+    modifique src/ap.js , controllers/cartControler,routes/cart,home,login
+
+[33mcommit 0431d6fe5f745b7fc0b44747394c9571665040db[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Sat Jan 20 19:54:11 2024 -0300
+
+    retro.md
+
+[33mcommit 3094fd5ed50180ac4a019969346b72bf6ed6ce5c[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Fri Jan 19 11:02:27 2024 -0300
+
+    se acomodo y comento todo
+
+[33mcommit 7961ce5a124ce44f5fdcc2d8e44544c32528e26e[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Fri Jan 19 09:38:39 2024 -0300
+
+     ya anda pero sin carrito
+
+[33mcommit 1503d4a40de0331f7fdeb1339ce6045aa94890e1[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Wed Jan 17 12:44:55 2024 -0300
+
+    remil crayea todo ayudaaa git add .
+
+[33mcommit 1fc3c22c61c2c6dcc6a3850e876a853ee0cb109a[m
+Author: nachof9 <nachofonzo@gmail.com>
+Date:   Tue Jan 16 16:05:23 2024 -0300
+
+    Maquetado de Carrito
+
+[33mcommit 3b26cbd52b5a2184b41e293a4366d9d7e19f6e3c[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Fri Jan 12 18:47:03 2024 -0300
+
+    SRC
+
+[33mcommit 6f652ef5aabe6704c8e6da3546803f51e222fef7[m
+Author: Ktawin146 <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Thu Jan 11 21:37:16 2024 -0300
+
+    mod packjson
+
+[33mcommit 1f3c141da96613cadd07878286c00214dc68df59[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Jan 11 11:23:31 2024 -0300
+
+    detalles esteticos
+
+[33mcommit a21dd22786d9ece1a824bc3a08e8e1179348ca7a[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Jan 11 11:06:04 2024 -0300
+
+    correcion login
+
+[33mcommit 8248a5fa3a6c745e2a3ec11392643403020fe6f2[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Thu Jan 11 10:56:02 2024 -0300
+
+    maqueado del login y registro
+
+[33mcommit 6257025d6fb12f8096d9cee86b7f46ed5814a6f1[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Tue Dec 19 12:06:50 2023 -0300
+
+    Revert "SRC-controllers-routes-falta corregir"
+    
+    This reverts commit 2375cd07985a4c6d3f55bc63b633b95c76023d71.
+
+[33mcommit 2375cd07985a4c6d3f55bc63b633b95c76023d71[m
+Author: Ktawin <rcoronel146@gmail.com>
+Date:   Mon Dec 18 12:10:03 2023 -0300
+
+    SRC-controllers-routes-falta corregir
+
+[33mcommit 89c4cdcf8075e1bbfa2a24a84aa1445fdb6c78a3[m
+Author: Ktawin <145071572+Ktawin146@users.noreply.github.com>
+Date:   Thu Dec 14 10:59:17 2023 -0300
+
+    footer y agregados
+
+[33mcommit fc76a49d2d335ac40cfb59ed459fef31f56576d0[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Wed Dec 13 23:22:12 2023 -0300
+
+    Maquetando login
+
+[33mcommit 3728728f41ab0c744fb348e174f53e918971d301[m
+Author: Ktawin <145071572+Ktawin146@users.noreply.github.com>
+Date:   Wed Dec 13 13:07:18 2023 -0300
+
+    home
+
+[33mcommit 36e92d8bed8f28dfdc5320b919f9865ee73071ff[m
+Author: Ktawin <145071572+Ktawin146@users.noreply.github.com>
+Date:   Mon Dec 11 12:53:28 2023 -0300
+
+    Modificaciones de imagenes y correccion de codigo
+
+[33mcommit cea49382846aa861c9287c25b9d243ba34f77729[m
+Author: martinguzol <martin_guzman_@hotmail.com>
+Date:   Sun Dec 10 22:32:51 2023 -0300
+
+    Corrigiendo rutas y agregando footer al login
+
+[33mcommit 30914730f9325c61df36c8ea9d9e9a60b1e5177f[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Dec 7 19:22:20 2023 -0300
+
+    probando css
+
+[33mcommit 3446668bddac64bc393488e254457ab6c7c2506c[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Dec 7 19:19:16 2023 -0300
+
+    probando css
+
+[33mcommit 57ae871d73562bc8b7b64e3ba41464d6090a7aaf[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Dec 7 19:17:09 2023 -0300
+
+    retocando css
+
+[33mcommit 9dfa1cf6d1a19b5b8ea843d66bb84ba724ef6396[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Dec 7 19:16:30 2023 -0300
+
+    probando css
+
+[33mcommit 44abf0aadd8420e85f0ccadb5f3f308923cf9949[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Dec 7 19:16:04 2023 -0300
+
+    Add files via upload
+
+[33mcommit 581739228926fe14ab00a1dedb8fae58aef96546[m
+Merge: 876dc3f 89db014
+Author: nachof9 <nachofonzo@gmail.com>
+Date:   Thu Dec 7 02:16:14 2023 -0300
+
+    Merge branch 'main' of https://github.com/MateoZM01/Grupo_4_DigitalCommerce
+
+[33mcommit 876dc3f0840cf9608f9a1a63c5b18ba5180ab102[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:17:46 2023 -0300
+
+    editar un poco el detalle de producto y su css
+
+[33mcommit 89db014d1eb55b680c330a3fc0560000472fa797[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:17:46 2023 -0300
+
+    Delete CONTB/public/css/images directory
+
+[33mcommit e0127aaa81f1306699d073178456e112a9b931be[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:17:08 2023 -0300
+
+    update public
+
+[33mcommit 33993fb3d5ae18c4eaed0dc01a8543d358b69927[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:16:30 2023 -0300
+
+    update public
+
+[33mcommit 260336e48ad5cdaf50bb98f70a0d4c2a9dc23663[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:13:41 2023 -0300
+
+    update home
+
+[33mcommit 1ad1a99a7a54231d0a35b040e750326ea774d009[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:13:00 2023 -0300
+
+    registro
+
+[33mcommit 4452056b6e9191d7905f6d121c87cdd35f39a90e[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 21:12:38 2023 -0300
+
+    registro
+
+[33mcommit 0a3fa9ddee30f7153a2b5971e730a6447a36cecb[m
+Author: nachof9 <nachofonzo@gmail.com>
+Date:   Wed Dec 6 18:42:20 2023 -0300
+
+    ordene un poco los archivos realice el home.html
+
+[33mcommit 1f3aacff95b6e359ca826b5308512179954557ac[m
+Author: Ricardo Coronel <145071572+RCORONEL146@users.noreply.github.com>
+Date:   Wed Dec 6 17:16:35 2023 -0300
+
+    borrado de cometarios
+
+[33mcommit 8340f3f8237bc6fd817adbeba2f4ca5e45d2956d[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Dec 6 16:46:27 2023 -0300
+
+    retro.md sp 3
+
+[33mcommit 9ba9770fcbec2eab3b637ff3291a47ccfd11fa67[m
+Author: nachof9 <137942857+nachof9@users.noreply.github.com>
+Date:   Thu Nov 30 19:39:26 2023 -0300
+
+    Update README.md
+
+[33mcommit 4a27966053b5c1759930fc528734026f7057e6cd[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Tue Nov 28 19:31:45 2023 -0300
+
+    Update app.js
+
+[33mcommit 6d642de90bb29170eada9875de8db741609a4c4f[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Tue Nov 28 19:30:55 2023 -0300
+
+    Add files via upload
+
+[33mcommit ea8a04f1ed77bfb364390886cee14eb686ace85b[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Tue Nov 28 19:24:48 2023 -0300
+
+    Add files via upload
+
+[33mcommit 4aa65a2c10cafee800f2528efab4e92f2e3b9379[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Tue Nov 21 10:22:07 2023 -0300
+
+    enlace de Trello
+
+[33mcommit 8d5baff2e88495e1b290555c6544f3a284fb0401[m
+Author: Ktawin <145071572+Ktawin146@users.noreply.github.com>
+Date:   Fri Nov 17 12:03:16 2023 -0300
+
+    login
+
+[33mcommit c332a5ec232ce3d4595ce1f59685ab240b3c4553[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Tue Nov 7 16:29:38 2023 -0300
+
+    Update README.md
+
+[33mcommit 84e1d01cd4e6236d7c2332a7f9b69c77aa93cf5e[m
+Author: MauRodriguez <148507707+maurodriguez53199@users.noreply.github.com>
+Date:   Thu Nov 2 15:05:32 2023 -0300
+
+    Add files via upload
+
+[33mcommit e93fbc45a64752e5576424a63a838350231fe486[m
+Author: Ricardo Coronel <145071572+Ktawin146@users.noreply.github.com>
+Date:   Wed Nov 1 23:44:56 2023 -0300
+
+    Add files via upload
+
+[33mcommit 2df62ebad7d2d7f1f778701dc8131dae99e0a964[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Wed Nov 1 21:47:54 2023 -0300
+
+    Add files via upload
+
+[33mcommit ae5979f2531c867c8e97f9e02714afa7d658b061[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Nov 1 21:41:48 2023 -0300
+
+    Delete
+
+[33mcommit b19be2498dfec1ce639335f400b6433bbff785c7[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Nov 1 21:41:28 2023 -0300
+
+    Delete
+
+[33mcommit 91baa2fc92d611fbd40954b86c8fe88b1f81c4f7[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Nov 1 21:40:57 2023 -0300
+
+    detalle del producto
+
+[33mcommit e61659e1db9e85ebcd7b7541313ac05d7a48da99[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Nov 1 21:39:13 2023 -0300
+
+    Create wireframes
+
+[33mcommit 8e549d9a17f89746ff3081fb57e4e45eb91871c4[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Nov 1 21:38:12 2023 -0300
+
+    Delete wireframes
+
+[33mcommit 925a865dc8b3effda8529b3fe3be2dfc9057d036[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Wed Nov 1 20:36:53 2023 -0300
+
+    Wireframe de detalles del producto
+
+[33mcommit 1a52da16b889f0b0a18b364be113166544a2e124[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Wed Nov 1 20:24:18 2023 -0300
+
+    Update and rename design to wireframes
+
+[33mcommit 59d39b9e2783f23cf184b0b416e201132c39a835[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Tue Oct 31 19:24:37 2023 -0300
+
+    Create design
+
+[33mcommit 9fcc280cd4663e452bc9db4114a0abb35cab0e63[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 14:13:17 2023 -0300
+
+    Update README.md
+
+[33mcommit e3f08c2a32ecad6f3f8262478ac91789304b6f90[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 12:40:57 2023 -0300
+
+    Update README.md
+
+[33mcommit 52e77ba2713fcdc4dbfdbe9f7dc981853a66d8d7[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 12:36:23 2023 -0300
+
+    Update README.md
+
+[33mcommit b19dc18e3ccc6773c3dacf32712ec04da7158b28[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 12:35:48 2023 -0300
+
+    Update README.md
+
+[33mcommit 0699c6efb88dd8272114f1962c265b47785c0cec[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 12:35:37 2023 -0300
+
+    Update README.md
+
+[33mcommit 357b5c6d5dbe834623baf385921422e1db066f04[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 12:34:44 2023 -0300
+
+    Update README.md
+
+[33mcommit a379371d22060d8a64c0a95c601969927b87b48c[m
+Author: José Martín Guzmán Olivera <147268148+martinguzol@users.noreply.github.com>
+Date:   Fri Oct 20 12:30:42 2023 -0300
+
+    Update README.md
+
+[33mcommit e21001573891006768a1d33d5c4f16a533036eee[m
+Author: Ricardo Coronel <145071572+Ktawin146@users.noreply.github.com>
+Date:   Fri Oct 20 09:41:26 2023 -0300
+
+    Update README.md
+
+[33mcommit 906a4f4bb508cdb1f8bde2371d05e61d3b27f967[m
+Author: Ricardo Coronel <145071572+Ktawin146@users.noreply.github.com>
+Date:   Fri Oct 20 09:36:05 2023 -0300
+
+    Update README.md
+
+[33mcommit c78f848a2cb23ef6ee96b9cb7c3e2a4d114fb64f[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Oct 19 21:44:30 2023 -0300
+
+    update README.md
+    
+    Inicio Sprint 1
+
+[33mcommit c983aa7b51d847cf5bfc7f468fe2376ed5f0107b[m
+Author: MateoZM01 <147560992+MateoZM01@users.noreply.github.com>
+Date:   Thu Oct 19 21:15:49 2023 -0300
+
+    Initial commit

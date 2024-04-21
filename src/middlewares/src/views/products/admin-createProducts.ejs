@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+<link rel="stylesheet" href="/css/admin-createProducts.css">
+
+<script src="../../../js/genre.js"></script>
+<script src="../../../js/validationsCreateFrontEnd.js"></script>
+
+<body>
+
+    <%- include('../partials/header') %>
+            
+    <main class="mainCreate">
+
+        <a href="#" id="main-arrow"><i class="fa-solid fa-circle-up"></i></a>
+        <a href="/products/carrito" id="main-basket"><i class="fa-solid fa-basket-shopping"></i></a>
+
+        <div class="formularioCrearProductoShadow">
+
+            <form id="formularioCrearProductoBox" action="/products/create" method="post"
+                    enctype="multipart/form-data">
+
+                <h3 id="crearTitulo">Cargue el libro:</h3>
+
+
+                <label for="titulo" id="labelStyles">Título</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Título" required 
+                value="<%= locals.oldData ? oldData.titulo : null %>"><span></span>
+                
+                <% if (locals.errors && errors.titulo) { %>
+                    <div id="errors">
+                        <%= errors.titulo.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="anio" id="labelStyles">Año</label>
+                <input type="number" id="anio" name="anio" placeholder="Año" required 
+                value="<%= locals.oldData ? oldData.anio : null %>"><span></span>
+
+                <% if (locals.errors && errors.anio) { %>
+                    <div id="errors">
+                        <%= errors.anio.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="autor" id="labelStyles">Autor</label>
+                <input type="search" id="autor" name="autor" placeholder="Autor" required 
+                value="<%= locals.oldData ? oldData.autor : null %>"><span></span>
+
+                <ul id="sugerencias"></ul>
+                <% if (locals.errors && errors.autor) { %>
+                    <div id="errors">
+                        <%= errors.autor.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="description" id="labelStyles">Descripción</label>
+                <input type="text" id="description" name="description" placeholder="Descripción" required 
+                value="<%= locals.oldData ? oldData.description : null %>"><span></span>
+
+                <% if (locals.errors && errors.description) { %>
+                    <div id="errors">
+                        <%= errors.description.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="genero" id="labelStyles">Género</label>
+                <select id="genero" name="genero" required>
+                        <option value="">Elige un Género</option>
+
+                    <% genres.forEach(genre=> { %>
+
+                        <option value="<%= genre.genre_id %>">
+                            <%= genre.name %>
+                        </option>
+
+                    <% }) %>
+
+                </select><span></span>
+
+                <% if (locals.errors && errors.genero) { %>
+                    <div id="errors">
+                        <%= errors.genero.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="cantidad_de_paginas" id="labelStyles">Cantidad de páginas</label>
+                <input type="number" id="cantidad_de_paginas" name="cantidad_de_paginas"
+                        placeholder="Cantidad de páginas" required 
+                        value="<%= locals.oldData ? oldData.cantidad_de_paginas : null %>"><span></span>
+
+                <% if (locals.errors && errors.cantidad_de_paginas) { %>
+                    <div id="errors">
+                        <%= errors.cantidad_de_paginas.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="price" id="labelStyles">Precio</label>
+                <input type="number" id="price" name="price" placeholder="Precio" required 
+                value="<%= locals.oldData ? oldData.price : null %>"><span></span>
+
+                <% if (locals.errors && errors.price) { %>
+                    <div id="errors">
+                        <%= errors.price.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="editorial" id="labelStyles">Editorial</label>
+                <input type="text" id="editorial" name="editorial" placeholder="Editorial"
+                            required value="<%= locals.oldData ? oldData.editorial : null %>"><span></span>
+
+                <% if (locals.errors && errors.editorial) { %>
+                    <div id="errors">
+                        <%= errors.editorial.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="ISBN" id="labelStyles">ISBN</label>
+                <input type="number" id="ISBN" name="ISBN" placeholder="ISBN" required 
+                value="<%= locals.oldData ? oldData.ISBN : null %>"><span></span>
+
+                <% if (locals.errors && errors.ISBN) { %>
+                    <div id="errors">
+                        <%= errors.ISBN.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="stock" id="labelStyles">Stock</label>
+                <input type="number" id="stock" name="stock" placeholder="Stock" required 
+                value="<%= locals.oldData ? oldData.stock : null %>"><span></span>
+
+                <% if (locals.errors && errors.stock) { %>
+                    <div id="errors">
+                        <%= errors.stock.msg %>
+                    </div>
+                <% } %>
+
+
+                <label for="imagenProducto" id="imagenProductoTitulo">Imagen:</label>
+                <input type="file" id="imagenProducto" name="imagenProducto" multiple 
+                value="<%= locals.oldData ? oldData.imagenProducto : null %>"><span></span>
+
+                <% if (locals.errors && errors.imagenProducto) { %>
+                    <div id="errors">
+                        <%= errors.imagenProducto.msg %>
+                    </div>
+                <% } %>
+
+
+                <div class="botonesBox">
+
+                            <input id="botonBorrarCreate" type="reset" value="Borrar">
+                            <input id="botonEnviarCreate" type="submit" value="Enviar">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <%- include('../partials/footer') %>
+
+</body>
+
+</html>

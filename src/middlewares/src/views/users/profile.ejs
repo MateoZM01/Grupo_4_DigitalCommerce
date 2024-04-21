@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/product.css">
+
+    <body>
+
+        <%- include('../partials/header') %>
+
+        
+        <main>
+                <img src="/images/users/<%= user.image %>" alt="foto de usuario" style="width: 400px;">
+
+                <a href="#" id="main-arrow">
+                    <i class="fa-solid fa-circle-up"></i>
+                </a>
+                <a href="/products/carrito" id="main-basket">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+
+                <h2 style="color: aliceblue; background-color: blue;">Tu biblioteca de Libros comprados: </h2>
+                <div class="productos-box">
+
+                        <section class="productos-contenedor">
+
+                            <%- include('../partials/product') %>
+
+                        </section>
+
+                </div>
+
+        </main>
+
+        <%- include('../partials/footer') %>
+
+    </body>
+
+</html>

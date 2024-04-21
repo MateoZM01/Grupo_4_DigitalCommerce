@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+    <link rel="stylesheet" href="/css/admin-editProducts.css">
+
+    <body>
+
+        <%- include('../partials/header') %>
+
+            <main class="mainEdit">
+
+                <a href="#" id="main-arrow"><i class="fa-solid fa-circle-up"></i></a>
+                <a href="/products/carrito" id="main-basket"><i class="fa-solid fa-basket-shopping"></i></a>
+
+                <div class="formularioEditarProductoShadow">
+
+                    <form id="formularioEditarProductoBox" action="/products/<%= book.book_id %>?_method=PUT" method="post" enctype="multipart/form-data">
+
+                        <h3 id="editarTitulo">Edite los productos:</h3>
+
+
+                        <label for="titulo" id="labelStyles">Título</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="<%= book.title %>">
+
+                        <label for="anio" id="labelStyles">Año</label>
+                        <input type="text" id="anio" name="anio" placeholder="<%= book.year %>">
+
+                        <label for="autor" id="labelStyles">Autor</label>
+                        <input type="text" id="autor" name="autor" placeholder="<%= book.author_id %>">
+
+                        <label for="description" id="labelStyles">Descripción</label>
+                        <input type="text" id="description" name="description" placeholder="<%= book.description %>">
+
+                        <label for="genero" id="labelStyles">Género</label>
+                        <input type="text" id="genero" name="genero" placeholder="<%= book.genre_id %>">
+                        
+                        <label for="cantidad_de_paginas" id="labelStyles">Cantidad de páginas</label>
+                        <input type="number" id="cantidad_de_paginas" name="cantidad_de_paginas"
+                            placeholder="<%= book.pages %>">
+
+                        <label for="price" id="labelStyles">Precio</label>
+                        <input type="number" id="price" name="price" placeholder="<%= book.price %>">
+
+                        <label for="editorial" id="labelStyles">Editorial</label>
+                        <input type="text" id="editorial" name="editorial" placeholder="<%= book.publisher_id %>">
+
+                        <label for="ISBN" id="labelStyles">ISBN</label>
+                        <input type="number" id="ISBN" name="ISBN" placeholder="<%= book.isbn %>">
+
+                        <label for="stock" id="labelStyles">Stock</label>
+                        <input type="number" id="stock" name="stock" placeholder="<%= book.stock %>">
+
+
+                        <label for="imagenProducto" id="imagenProductoTitulo">Imagen:</label>
+                        <input type="file" id="imagenProducto" name="imagenProducto" multiple>
+
+                        <div class="botonesBox">
+
+                            <input id="botonBorrarEdit" type="reset" value="Borrar">
+
+                            <button id="botonEnviarEdit" type="submit" value="Enviar">Editar Libro</button>
+                            
+                        </div>
+                        
+                    </form>
+                    <form action="/products/delete/<%= book.book_id %>?_method=DELETE" method="post">
+                        <button id="botonBorrarEdit" type="submit" value="Eliminar Libro">Eliminar Libro</button>
+                    </form>
+
+                </div>
+
+            </main>
+
+            <%- include('../partials/footer') %>
+
+    </body>
+
+</html>

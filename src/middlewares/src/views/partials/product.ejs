@@ -1,0 +1,22 @@
+<% books.forEach(book => { %>
+    <article class="producto-libro">
+
+        <div class="box-izquierda">
+            <a href="/products/<%= book.book_id %>">
+                <img src="/images/books/<%= book.image %>" alt="<%= book.title %>">
+            </a>
+        </div>
+
+        <div class="box-derecha">
+            <p class="name">
+                <%= book.title %>
+            </p>
+            <p class="autor">
+                <%= book.author.fullname %>
+            </p>
+            <p class="price">$<%= book.price %>
+            </p>
+        </div>
+
+    </article>
+    <% }) %>
