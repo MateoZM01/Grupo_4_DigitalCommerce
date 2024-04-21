@@ -7,8 +7,7 @@ const { check } = require('express-validator');
 const upload = require('../middlewares/usersMulterMiddleware');
 const guestMiddleware = require('../middlewares/guestMidleware');
 const userMiddleware = require('../middlewares/userMiddleware');
-const validationsRegister = require('../middlewares/validateUsersRegister');
-const validationsLogin = require('../middlewares/validateUsersLogin');
+
 const usersControllers = require("../controllers/usersControllers");
 
 // Lista de usuarios
