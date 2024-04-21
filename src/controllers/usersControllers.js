@@ -1,17 +1,6 @@
 const db = require('../database/models');
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
-
-/*const path = require('path');
-const fs = require('fs');
-
-const usersFilePath = path.join(__dirname, '../data/users.json');
-// const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-
-function getUsers() {
-  return JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-}*/
-
 const Usuarios = db.Usuario;
 
 const usersControllers = {
@@ -116,26 +105,28 @@ const usersControllers = {
         return res.redirect('/users')
       })
   },
-
   session: (req, res) => {
-
     const { email, contrasenia } = req.body;
-    const userFound = Usuarios.find(usuario => usuario.email == email);
-
-    if (userFound) {
-      if (bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
-        //proteger la contraseña
-        userFound.contrasenia = null;
-
-        //Crear la sesión
-        req.session.userLogged = userFound;
-
-        return res.redirect('/');
-      }
-
-    }
-    res.send('<h1>El email y/o contraseña no son válidos</h1><button><a href="/login">Volver a loguearse</a></button>');
+  
+    Usuarios.findOne({ where: { email: email } })
+      .then(userFound => {
+        if (!userFound || !bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
+          return res.redirect('/login?error=true');
+        }
+  
+        // No incluir la contraseña en la sesión
+        const { contrasenia, ...userData } = userFound.toJSON();
+        req.session.userLogged = userData;
+        res.redirect('/');
+      })
+      .catch(err => {
+        console.error('Error al iniciar sesión:', err);
+        res.status(500).send('Error interno del servidor');
+      });
   },
+  
+
+  
 
   userDetail: (req, res) => {
     res.render('userDetail', { usuario: req.session.userLogged });
