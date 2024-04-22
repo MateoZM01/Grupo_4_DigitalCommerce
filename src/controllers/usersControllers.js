@@ -105,26 +105,55 @@ const usersControllers = {
         return res.redirect('/users')
       })
   },
-  session: (req, res) => {
+  // session: (req, res) => {
+  //   const { email, contrasenia } = req.body;
+  
+  //   Usuarios.findOne({ where: { email: email } })
+  //     .then(userFound => {
+  //       if (!userFound || !bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
+  //         return res.redirect('/login?error=true');
+  //       }
+  
+  //       // No incluir la contraseña en la sesión
+  //       const { contrasenia, ...userData } = userFound.toJSON();
+  //       req.session.userLogged = userData;
+  //       res.redirect('/');
+  //     })
+  //     .catch(err => {
+  //       console.error('Error al iniciar sesión:', err);
+  //       res.status(500).send('Error interno del servidor');
+  //     });
+  // },
+  session: async (req, res) => {
     const { email, contrasenia } = req.body;
-  
-    Usuarios.findOne({ where: { email: email } })
-      .then(userFound => {
-        if (!userFound || !bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
-          return res.redirect('/login?error=true');
+
+    try {
+        // Buscar usuario por email en la base de datos
+        const userFound = await Usuarios.findOne({
+            where: { email: email }
+        });
+
+        if (userFound) {
+            // Comparar contraseñas utilizando bcrypt
+            if (bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
+                // Proteger la contraseña
+                userFound.contrasenia = null;
+
+                // Crear la sesión de usuario
+                req.session.userLogged = userFound;
+
+                return res.redirect('/');
+            }
         }
-  
-        // No incluir la contraseña en la sesión
-        const { contrasenia, ...userData } = userFound.toJSON();
-        req.session.userLogged = userData;
-        res.redirect('/');
-      })
-      .catch(err => {
-        console.error('Error al iniciar sesión:', err);
-        res.status(500).send('Error interno del servidor');
-      });
-  },
-  
+
+        // Renderizar mensaje de error si la autenticación falla
+        res.send('<h1>El email y/o contraseña no son válidos</h1><button><a href="/login">Volver a loguearse</a></button>');
+    } catch (error) {
+        console.log('Error al iniciar sesión:', error.message);
+        res.send('<h1>Error al iniciar sesión</h1>');
+    }
+},
+
 
   
 
