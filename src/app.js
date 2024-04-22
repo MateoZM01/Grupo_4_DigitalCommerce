@@ -12,6 +12,9 @@ const mainRoutes = require("./routes/main");
 const productsRoutes = require("./routes/products");
 const usersRoutes = require("./routes/users");
 
+// Importación de rutas de las APIs
+const apiRoutes = require("./routes/api");
+
 // Configuración del motor de plantillas (EJS en este caso)
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
@@ -24,6 +27,7 @@ app.use(methodOverride('_method'));
 
 // URL encode - Para que nos pueda llegar la información desde el formulario al req.body
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 // Configuración de session
 app.use(session({
@@ -36,6 +40,9 @@ app.use(session({
 app.use("/", mainRoutes);
 app.use("/", productsRoutes);
 app.use("/", usersRoutes);
+
+// Uso de las rutas de APIs
+app.use("/", apiRoutes);
 
 app.get('*', (req, res) => {
     res.send(`

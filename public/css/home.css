@@ -5,11 +5,9 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-
 /* Header styles */
 .header {
   background-color: #b3d0ff;
-  /* Cambia el color del fondo del header */
   color: #fff;
   padding: 10px 0;
 }
@@ -40,7 +38,6 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 15px;
-
   margin: 0 5px;
 }
 
@@ -60,7 +57,6 @@
   line-height: normal;
   overflow: visible;
   cursor: pointer;
-
 }
 
 .botones-header {
@@ -194,7 +190,6 @@ i {
   background-color: #c1d8fc;
 }
 
-
 .main__product {
   background-color: #fff;
   padding: 15px;
@@ -231,23 +226,17 @@ i {
 }
 
 /* Estilo de los enlaces en el pie de página */
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  /* Agrega transición para un cambio de color suave */
-}
-
-.footer a:hover {
-  color: #4285f4;
-  /* Cambia el color al pasar el ratón */
-}
-
 .footer {
   padding: 2rem 0;
-  background-color: #4285f4;
+  background-color: #418aff;
   color: #fff;
+  /* Agrega transición para un cambio de color suave */
+  transition: color 0.6s ease;
+}
+
+.footer:hover {
+  color: #001c49;
+  /* Cambia el color al pasar el mouse */
 }
 
 .footer__container {
@@ -255,7 +244,6 @@ i {
   justify-content: space-around;
   text-align: center;
   align-items: start;
-
 }
 
 .footer__methods div img {
@@ -314,16 +302,4 @@ i {
     border-bottom: 1px solid var(--color-secundario);
     padding-bottom: 1rem;
   }
-}
-
-* .footer a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  /* Agrega transición para un cambio de color suave */
-}
-
-* .footer a:hover {
-  color: #4285f4;
-  /* Cambia el color al pasar el ratón */
 }
