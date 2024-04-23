@@ -141,7 +141,7 @@ const usersControllers = {
                 // Crear la sesión de usuario
                 req.session.userLogged = userFound;
 
-                return res.redirect('/');
+                return res.redirect(`/users/detail/${userFound.id}`);
             }
         }
 
