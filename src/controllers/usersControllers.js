@@ -135,10 +135,9 @@ const usersControllers = {
 
         if (userFound) {
             // Comparar contraseñas utilizando bcrypt
-            if (bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
+           if (bcrypt.compareSync(contrasenia, userFound.contrasenia)) {
                 // Proteger la contraseña
-                userFound.contrasenia = null;
-
+                 userFound.contrasenia = null;
                 // Crear la sesión de usuario
                 req.session.userLogged = userFound;
 
@@ -147,7 +146,7 @@ const usersControllers = {
         }
 
         // Renderizar mensaje de error si la autenticación falla
-        res.send('<h1>El email y/o contraseña no son válidos</h1><button><a href="/login">Volver a loguearse</a></button>');
+       res.send('<h1>El email y/o contraseña no son válidos</h1><button><a href="/login">Volver a loguearse</a></button>');
     } catch (error) {
         console.log('Error al iniciar sesión:', error.message);
         res.send('<h1>Error al iniciar sesión</h1>');
