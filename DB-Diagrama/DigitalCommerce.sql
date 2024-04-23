@@ -1,13 +1,13 @@
-CREATE DATABASE Digital_Commerce;
+CREATE DATABASE DigitalCommerce;
 
-USE Digital_Commerce;
+USE DigitalCommerce;
 
 CREATE TABLE usuarios(
 	id INTEGER NOT NULL AUTO_INCREMENT,
 	nombre VARCHAR(50) NOT NULL,
 	apellido VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    contrasenia VARCHAR(20) NOT NULL,
+    contrasenia VARCHAR(200) NOT NULL,
     imagen VARCHAR(100) NOT NULL,
     genero VARCHAR(20) NOT NULL, 
 	fecha_nacimiento DATE NOT NULL,
@@ -49,7 +49,7 @@ INSERT INTO productos (id, nombre, precio, categoria, imagen, descripcion, canti
 (8, 'Mouse Pad Gamer Oficina Xl Negro Antideslizante 80x40 Cm 3mm', 7200, 'Nuevo', 'mousepad.png', 'Es tan fácil deslizar el mouse. Con tu Alitrade MP408003-1 podrás llenar la pantalla de tu ordenador de clicks. Su elaborada superficie le dará precisión y comodidad a tus movimientos.', '34'),
 (9, 'Procesador Amd Ryzen 97900X AMD', 800000, 'Usado', 'Procesador-Amd-Ryzen-9-7900X.png', 'El AMD Ryzen™ 9 7900X es un potente procesador para computadoras de escritorio para gaming y streaming que está diseñado con 12 núcleos de CPU y 24 subprocesos, y tiene una velocidad de reloj base de 4,7 GHz.', '17'),
 (10, 'Memoria Kingston FURY DDR5', 80000, 'Nuevo', 'MEMORIADDR5.png', 'DDR5 duplica el número de bancos de 16 a 32. Esto permite abrir más páginas simultáneamente, con el consiguiente aumento de la eficiencia. También se duplica la longitud mínima de ráfaga hasta 16, desde los 8 de DDR4.', '33'),
-(11, 'NVIDIA GeForce RTX 4090', 890000, 'Nuevo', 'rtx-4090.png', 'El RTX 4090 es una tarjeta gráfica impresionantemente potente que presenta la GPU AD102-300 en la arquitectura Ada Lovelace y viene con 16384 núcleos CUDA para renders 3D de 2520 MHz de 2520 MHz. Es posible que estos números no signifiquen nada si no sabes lo que estás viendo.', '41');
+(11, 'NVIDIA GeForce RTX 4090', 890000, 'Nuevo', 'rtx-4090.png', 'El RTX 4090 es una tarjeta gráfica impresionantemente potente que presenta la GPU AD102-300 en la arquitectura Ada Lovelace y viene con 16384 núcleos CUDA para renders 3D de 2520 MHz. Es posible que estos números no signifiquen nada si no sabes lo que estás viendo.', '41');
 
 CREATE TABLE compras(
 	id INTEGER NOT NULL,
