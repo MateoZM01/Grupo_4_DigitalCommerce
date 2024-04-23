@@ -21,7 +21,7 @@ module.exports = (sequelize, dataTypes) => {
             unique: true
         },
         contrasenia: {
-            type: dataTypes.STRING(20),
+            type: dataTypes.STRING(200),
             allowNull: false
         },
         imagen: {

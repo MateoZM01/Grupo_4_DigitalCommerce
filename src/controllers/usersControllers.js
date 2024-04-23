@@ -153,9 +153,6 @@ const usersControllers = {
     }
 },
 
-
-  
-
   userDetail: (req, res) => {
     res.render('userDetail', { usuario: req.session.userLogged });
   },
